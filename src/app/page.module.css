@@ -1,0 +1,36 @@
+.page {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas:
+    "header header"
+    "main aside"
+    "footer footer";
+}
+
+.header {
+  margin: 0 0 24px;
+  grid-area: header;
+}
+
+.main {
+  grid-area: main;
+}
+
+.aside {
+  grid-area: aside;
+}
+
+.imagensExameForm {
+  display: grid;
+  row-gap: 4px;
+  justify-content: center;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.dadosMedico {
+  font-size: 13px;
+  text-align: center;
+}

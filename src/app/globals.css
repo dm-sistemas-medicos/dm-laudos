@@ -1,0 +1,22 @@
+body {
+  width: 21cm;
+  height: 29.7cm;
+}
+
+input,
+textarea {
+  @media print {
+    border: none;
+  }
+}
+
+fieldset {
+  margin: 16px 0 0;
+  padding: 0;
+  border: none;
+}
+
+hr {
+  width: 100%;
+  margin: 0;
+}
