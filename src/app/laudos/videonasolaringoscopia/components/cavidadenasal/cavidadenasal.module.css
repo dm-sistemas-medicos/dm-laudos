@@ -1,0 +1,5 @@
+.itensExameDetalhesInternos {
+  padding: 0;
+  display: grid;
+  row-gap: 4px;
+}
