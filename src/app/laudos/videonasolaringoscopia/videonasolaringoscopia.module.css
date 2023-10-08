@@ -20,6 +20,7 @@
   grid-template-columns: auto 1fr;
   gap: 4px;
   justify-content: start;
+  align-items: center;
 }
 
 .itensExameDetalhes {
