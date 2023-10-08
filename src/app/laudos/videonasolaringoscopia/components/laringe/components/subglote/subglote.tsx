@@ -1,0 +1,23 @@
+"use client";
+
+import { useState } from "react";
+
+import parentStyles from "../../../../videonasolaringoscopia.module.css";
+
+export const Subglote = () => {
+  const [subglote, setSubglote] = useState("livre, sem lesões");
+
+  return (
+    <li className={parentStyles.itemExame}>
+      <label>Subglote</label>
+      <input
+        id="subglote"
+        type="text"
+        value={subglote}
+        onChange={({ target: { value } }) => setSubglote(value)}
+      />
+    </li>
+  );
+};
+
+export default Subglote;
