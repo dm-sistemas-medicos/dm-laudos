@@ -5,10 +5,10 @@
     "header header"
     "main aside"
     "footer footer";
+  grid-gap: 24px;
 }
 
 .header {
-  margin: 0 0 24px;
   grid-area: header;
 }
 
