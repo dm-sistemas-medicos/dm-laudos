@@ -1,0 +1,24 @@
+"use client";
+
+import { useState } from "react";
+
+import parentStyles from "../../../../videonasolaringoscopia.module.css";
+import styles from "./lesoes.module.css";
+
+export const Lesoes = () => {
+  const [lesoes, setLesoes] = useState("Ausência de lesões");
+
+  return (
+    <li className={parentStyles.itemExame}>
+      <input
+        className={styles.itemExameDouble}
+        id="lesoes"
+        type="text"
+        value={lesoes}
+        onChange={({ target: { value } }) => setLesoes(value)}
+      />
+    </li>
+  );
+};
+
+export default Lesoes;
