@@ -38,7 +38,7 @@ export const CornetosInferiores = () => {
 
   return (
     <li className={parentStyles.itemExame}>
-      <label>Cornetos inferiores:</label>
+      <label>Cornetos inferiores</label>
       <select
         id="cornetosInferiores"
         value={cornetosInferiores}

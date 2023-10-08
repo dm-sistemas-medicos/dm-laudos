@@ -9,7 +9,7 @@ export const Observacoes = () => {
 
   return (
     <li className={parentStyles.itemExame}>
-      <label>Observações:</label>
+      <label>Observações</label>
       <textarea
         id="observacoes"
         value={observacoes}

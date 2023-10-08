@@ -11,7 +11,7 @@ export const Mucosa = () => {
 
   return (
     <li className={parentStyles.itemExame}>
-      <label>Mucosa:</label>
+      <label>Mucosa</label>
       <select
         id="mucosa"
         value={mucosa}

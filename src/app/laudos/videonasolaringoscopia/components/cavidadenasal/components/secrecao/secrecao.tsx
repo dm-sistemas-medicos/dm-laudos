@@ -11,7 +11,7 @@ export const Secrecao = () => {
 
   return (
     <li className={parentStyles.itemExame}>
-      <label>Secreção:</label>
+      <label>Secreção</label>
       <select
         id="secrecao"
         value={secrecao}

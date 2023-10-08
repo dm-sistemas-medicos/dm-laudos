@@ -38,7 +38,7 @@ export const SeptoNasal = () => {
 
   return (
     <li className={parentStyles.itemExame}>
-      <label>Septo nasal:</label>
+      <label>Septo nasal</label>
       <select
         id="septoNasal"
         value={septoNasal}
