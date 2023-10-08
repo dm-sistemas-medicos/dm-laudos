@@ -32,3 +32,9 @@
 .itemExameDetalhes {
   list-style: none;
 }
+
+.nonPrintable {
+  @media print {
+    display: none;
+  }
+}
