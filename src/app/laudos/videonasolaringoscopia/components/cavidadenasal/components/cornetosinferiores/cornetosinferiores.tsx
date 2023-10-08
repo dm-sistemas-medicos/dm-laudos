@@ -27,6 +27,9 @@ const defaultCornetosInferiores = {
   src: false,
 };
 
+const getPrintableClassName = (condition: boolean) =>
+  condition ? parentStyles.nonPrintable : "";
+
 export const CornetosInferiores = () => {
   const [cornetosInferiores, setCornetosInferiores] = useState("");
 
@@ -58,7 +61,16 @@ export const CornetosInferiores = () => {
               <ul className={parentStyles.itensExameDetalhesInternos}>
                 {cornetosInferioresOptions.alt.map(
                   ({ value: alteracao, text }, i) => (
-                    <li key={i} className={parentStyles.itemExameDetalhes}>
+                    <li
+                      key={i}
+                      className={`${
+                        parentStyles.itemExameDetalhes
+                      } ${getPrintableClassName(
+                        !cornetosInferioresAlterado[narinaOption][
+                          alteracao as keyof ICornetosInferioresAlteradoItem
+                        ]
+                      )}`}
+                    >
                       <input
                         type="checkbox"
                         value={alteracao}

@@ -36,6 +36,9 @@ export const CornetosMedios = () => {
       esquerda: { ...defaultCornetosMedios },
     });
 
+  const getPrintableClassName = (condition: boolean) =>
+    condition ? parentStyles.nonPrintable : "";
+
   return (
     <li className={parentStyles.itemExame}>
       <label>Cornetos inferiores</label>
@@ -58,7 +61,16 @@ export const CornetosMedios = () => {
               <ul className={parentStyles.itensExameDetalhesInternos}>
                 {cornetosMediosOptions.alt.map(
                   ({ value: alteracao, text }, i) => (
-                    <li key={i} className={parentStyles.itemExameDetalhes}>
+                    <li
+                      key={i}
+                      className={`${
+                        parentStyles.itemExameDetalhes
+                      } ${getPrintableClassName(
+                        !cornetosMediosAlterado[narinaOption][
+                          alteracao as keyof ICornetosMediosAlteradoItem
+                        ]
+                      )}`}
+                    >
                       <input
                         type="checkbox"
                         value={alteracao}

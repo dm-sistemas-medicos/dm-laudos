@@ -36,6 +36,9 @@ export const SeptoNasal = () => {
     esquerda: { ...defaultSeptoNasalDesvio },
   });
 
+  const getPrintableClassName = (condition: boolean) =>
+    condition ? parentStyles.nonPrintable : "";
+
   return (
     <li className={parentStyles.itemExame}>
       <label>Septo nasal</label>
@@ -56,7 +59,13 @@ export const SeptoNasal = () => {
             <div key={narinaOption}>
               <li>{text}</li>
               <ul className={parentStyles.itensExameDetalhesInternos}>
-                <li className={parentStyles.itemExameDetalhes}>
+                <li
+                  className={`${
+                    parentStyles.itemExameDetalhes
+                  } ${getPrintableClassName(
+                    !septoNasalDesvio[narinaOption].cottle
+                  )}`}
+                >
                   <div className={styles.itemExameDesvioGrid}>
                     <input
                       type="checkbox"
@@ -75,7 +84,13 @@ export const SeptoNasal = () => {
                     <ul className={styles.itemExameDesvioGridList}>
                       {septoNasalOptions.des.grauCottle.map(
                         ({ value: grauCottle, text }, i) => (
-                          <li key={i}>
+                          <li
+                            key={i}
+                            className={getPrintableClassName(
+                              grauCottle !==
+                                septoNasalDesvio[narinaOption].grauCottle
+                            )}
+                          >
                             <input
                               className={styles.itemExameDesvioGridListItem}
                               type="radio"
@@ -103,7 +118,14 @@ export const SeptoNasal = () => {
                     <ul className={styles.itemExameDesvioGridList}>
                       {septoNasalOptions.des.areaCottle.map(
                         ({ value: areaCottle, text }, i) => (
-                          <li key={i}>
+                          <li
+                            key={i}
+                            className={getPrintableClassName(
+                              septoNasalDesvio[narinaOption].areaCottle.some(
+                                (v) => v !== areaCottle
+                              )
+                            )}
+                          >
                             <input
                               className={styles.itemExameDesvioGridListItem}
                               type="checkbox"
@@ -145,7 +167,16 @@ export const SeptoNasal = () => {
                 </li>
                 {septoNasalOptions.des.simplificado.map(
                   ({ value: simplificado, text }, i) => (
-                    <li key={i} className={parentStyles.itemExameDetalhes}>
+                    <li
+                      key={i}
+                      className={`${
+                        parentStyles.itemExameDetalhes
+                      } ${getPrintableClassName(
+                        !septoNasalDesvio[narinaOption][
+                          simplificado as keyof ISeptoNasalDesvioItem
+                        ]
+                      )}`}
+                    >
                       <input
                         type="checkbox"
                         value={simplificado}
