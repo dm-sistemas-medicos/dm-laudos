@@ -1,5 +1,3 @@
-// TODO: Incluir assinatura antes do footer
-
 "use client";
 
 import { createContext, useState } from "react";
