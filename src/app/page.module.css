@@ -27,6 +27,11 @@
 
 .footer {
   grid-area: footer;
+  display: grid;
+}
+
+.footer > img {
+  margin: 0 auto 12px;
 }
 
 .dadosMedico {
