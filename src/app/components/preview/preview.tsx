@@ -9,7 +9,13 @@ export const Preview = ({ imagens, width, multiColumn }) => (
     className={`${styles.preview} ${multiColumn ? styles.previewColumns : ""}`}
   >
     {imagens.map((image, i) => (
-      <Image key={i} src={image} width={width} height={width * 0.75} />
+      <Image
+        key={i}
+        src={image}
+        width={width}
+        height={width * 0.75}
+        alt={`imagem-${i + 1}`}
+      />
     ))}
   </div>
 );
