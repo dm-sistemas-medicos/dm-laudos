@@ -8,6 +8,7 @@ import styles from "./page.module.css";
 
 import DadosPaciente from "./components/dadospaciente/dadospaciente";
 import VideoNasoLaringoscopia from "./laudos/videonasolaringoscopia/videonasolaringoscopia";
+import DragDrop from "./components/dragdrop/dragdrop";
 const ImagensContext = createContext([]);
 
 export const Page = () => {
@@ -24,6 +25,7 @@ export const Page = () => {
       <VideoNasoLaringoscopia />
     </main>
     <aside className={styles.aside}>
+          <DragDrop setImagens={setImagens} />
       <form className={styles.imagensExameForm}>
         <Image src={"/exame.jpeg"} alt="" width={200} height={200} />
         <Image src={"/exame.jpeg"} alt="" width={200} height={200} />

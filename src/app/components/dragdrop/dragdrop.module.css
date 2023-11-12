@@ -1,0 +1,51 @@
+.dragdropForm {
+  position: relative;
+  height: 80px;
+  margin: 0 0 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: dashed 1px #000;
+  border-radius: 12px;
+  padding: 12px 0;
+
+  @media print {
+    display: none;
+  }
+}
+
+.dragdrogInput {
+  display: none;
+}
+
+.dragdropLabel {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  row-gap: 6px;
+}
+
+.dragdropLabelHidden {
+  display: none;
+}
+
+.dragdropLabelText {
+  margin: 0;
+  text-align: center;
+}
+
+.dragdropLabelButton {
+  display: flex;
+  justify-content: center;
+}
+
+.dropElement {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
