@@ -31,8 +31,4 @@ fieldset {
 hr {
   width: 100%;
   margin: 0;
-
-  @media print {
-    display: none;
-  }
 }

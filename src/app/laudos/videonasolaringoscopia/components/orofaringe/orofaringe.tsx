@@ -11,9 +11,9 @@ export const Orofaringe = () => (
     <h2 className={parentStyles.tituloSecaoExame}>Orofaringe</h2>
     <ul className={parentStyles.itensExame}>
       <Mucosa />
-      <hr />
+      <hr className={parentStyles.separator} />
       <BaseLingua />
-      <hr />
+      <hr className={parentStyles.separator} />
       <Observacoes />
     </ul>
   </fieldset>

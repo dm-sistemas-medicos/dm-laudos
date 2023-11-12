@@ -14,15 +14,15 @@ export const Laringe = () => (
     <h2 className={parentStyles.tituloSecaoExame}>Laringe</h2>
     <ul className={parentStyles.itensExame}>
       <PregasVocais />
-      <hr />
+      <hr className={parentStyles.separator} />
       <BordosLivres />
-      <hr />
+      <hr className={parentStyles.separator} />
       <Coaptacao />
-      <hr />
+      <hr className={parentStyles.separator} />
       <Mucos />
-      <hr />
+      <hr className={parentStyles.separator} />
       <Subglote />
-      <hr />
+      <hr className={parentStyles.separator} />
       <Observacoes />
     </ul>
   </fieldset>

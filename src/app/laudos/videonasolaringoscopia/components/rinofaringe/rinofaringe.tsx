@@ -14,15 +14,15 @@ export const Rinofaringe = () => (
     <h2 className={parentStyles.tituloSecaoExame}>Rinofaringe</h2>
     <ul className={parentStyles.itensExame}>
       <Mucosa />
-      <hr />
+      <hr className={parentStyles.separator} />
       <Meatos />
-      <hr />
+      <hr className={parentStyles.separator} />
       <OstiosTubarios />
-      <hr />
+      <hr className={parentStyles.separator} />
       <FuncaoVelofaringea />
-      <hr />
+      <hr className={parentStyles.separator} />
       <Lesoes />
-      <hr />
+      <hr className={parentStyles.separator} />
       <Observacoes />
     </ul>
   </fieldset>

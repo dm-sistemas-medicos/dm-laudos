@@ -39,3 +39,9 @@
     display: none;
   }
 }
+
+.separator {
+  @media print {
+    display: none;
+  }
+}
