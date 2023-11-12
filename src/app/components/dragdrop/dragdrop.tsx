@@ -1,15 +1,21 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useRef, useState, DragEvent, ChangeEvent } from "react";
+
+import { ImagensType, SetImagensType } from "@/app/page";
 
 import styles from "./dragdrop.module.css";
 
-export const DragDrop = ({ setImagens }) => {
+type DragDropProps = {
+  setImagens: SetImagensType;
+};
+
+export const DragDrop = ({ setImagens }: DragDropProps) => {
   const [dragActive, setDragActive] = useState(false);
 
-  const inputRef = useRef(null);
+  const inputRef = useRef<HTMLInputElement>(null);
 
-  const handleDrag = (e) => {
+  const handleDrag = (e: DragEvent<HTMLDivElement | HTMLFormElement>) => {
     e.preventDefault();
     e.stopPropagation();
 
@@ -20,9 +26,9 @@ export const DragDrop = ({ setImagens }) => {
     }
   };
 
-  const handleImagesUpload = (images) => {
+  const handleImagesUpload = (images: FileList | null) => {
     if (images) {
-      const uploadedImages = [];
+      const uploadedImages: ImagensType = [];
 
       Array.from(images).forEach((image) => {
         uploadedImages.push(URL.createObjectURL(image));
@@ -32,7 +38,7 @@ export const DragDrop = ({ setImagens }) => {
     }
   };
 
-  const handleDrop = (e) => {
+  const handleDrop = (e: DragEvent<HTMLDivElement>) => {
     e.preventDefault();
     e.stopPropagation();
 
@@ -41,14 +47,14 @@ export const DragDrop = ({ setImagens }) => {
     handleImagesUpload(e.dataTransfer.files);
   };
 
-  const handleChange = (e) => {
+  const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     e.preventDefault();
 
     handleImagesUpload(e.target.files);
   };
 
   const onButtonClick = () => {
-    inputRef.current.click();
+    inputRef?.current?.click();
   };
 
   return (
@@ -82,6 +88,7 @@ export const DragDrop = ({ setImagens }) => {
       </label>
       {dragActive && (
         <div
+          draggable={true}
           id="dropElement"
           className={styles.dropElement}
           onDragEnter={handleDrag}

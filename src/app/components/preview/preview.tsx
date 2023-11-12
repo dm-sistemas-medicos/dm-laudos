@@ -4,7 +4,13 @@ import Image from "next/image";
 
 import styles from "./preview.module.css";
 
-export const Preview = ({ imagens, width, multiColumn }) => (
+type PreviewProps = {
+  imagens: string[];
+  width: number;
+  multiColumn: boolean;
+};
+
+export const Preview = ({ imagens, width, multiColumn }: PreviewProps) => (
   <div
     className={`${styles.preview} ${multiColumn ? styles.previewColumns : ""}`}
   >

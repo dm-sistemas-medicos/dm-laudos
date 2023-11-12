@@ -1,6 +1,6 @@
 "use client";
 
-import { createContext, useState } from "react";
+import { Dispatch, SetStateAction, createContext, useState, FC } from "react";
 
 import Image from "next/image";
 
@@ -11,10 +11,21 @@ import VideoNasoLaringoscopia from "./laudos/videonasolaringoscopia/videonasolar
 import DragDrop from "./components/dragdrop/dragdrop";
 import Preview from "./components/preview/preview";
 
-const ImagensContext = createContext([]);
+export type ImagensType = string[];
+export type SetImagensType = Dispatch<SetStateAction<ImagensType>>;
+
+interface IImagensContext {
+  imagens: ImagensType;
+  setImagens: SetImagensType;
+}
+
+const ImagensContext = createContext<IImagensContext>({
+  imagens: [],
+  setImagens: () => {},
+});
 
 export const Page = () => {
-  const [imagens, setImagens] = useState([]);
+  const [imagens, setImagens] = useState<ImagensType>([]);
 
   return (
     <ImagensContext.Provider value={{ imagens, setImagens }}>
@@ -31,6 +42,7 @@ export const Page = () => {
           <Preview
             imagens={imagens.length <= 4 ? imagens : imagens.slice(0, 4)}
             width={300}
+            multiColumn={false}
           />
         </aside>
         {imagens.length > 4 && (
