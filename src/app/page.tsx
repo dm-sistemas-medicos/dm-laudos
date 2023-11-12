@@ -1,13 +1,20 @@
 "use client";
 
+import { createContext, useState } from "react";
+
 import Image from "next/image";
 
 import styles from "./page.module.css";
 
 import DadosPaciente from "./components/dadospaciente/dadospaciente";
 import VideoNasoLaringoscopia from "./laudos/videonasolaringoscopia/videonasolaringoscopia";
+const ImagensContext = createContext([]);
 
-export const Page = () => (
+export const Page = () => {
+  const [imagens, setImagens] = useState([]);
+
+  return (
+    <ImagensContext.Provider value={{ imagens, setImagens }}>
   <section className={styles.page}>
     <header className={styles.header}>
       <Image src={"/logo.png"} alt="" width={400} height={123} />
@@ -32,6 +39,8 @@ export const Page = () => (
       </p>
     </footer>
   </section>
+    </ImagensContext.Provider>
 );
+};
 
 export default Page;
