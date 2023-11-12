@@ -1,0 +1,8 @@
+.preview {
+  display: grid;
+  gap: 6px;
+}
+
+.previewColumns {
+  grid-template-columns: repeat(3, auto);
+}
