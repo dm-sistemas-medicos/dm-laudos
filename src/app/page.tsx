@@ -31,7 +31,13 @@ export const Page = () => {
     <ImagensContext.Provider value={{ imagens, setImagens }}>
       <section className={styles.page}>
         <header className={styles.header}>
-          <Image src={"/logo.png"} alt="" width={400} height={123} />
+          <Image
+            src={"/logo.png"}
+            alt=""
+            width={400}
+            height={123}
+            priority={true}
+          />
           <DadosPaciente />
         </header>
         <main className={styles.main}>
