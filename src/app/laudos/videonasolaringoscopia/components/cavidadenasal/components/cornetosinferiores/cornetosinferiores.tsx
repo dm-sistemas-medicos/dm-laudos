@@ -7,7 +7,7 @@ import { cavidadeNasalOptions } from "../../cavidadenasal.options";
 
 import parentStyles from "../../../../videonasolaringoscopia.module.css";
 
-interface ICornetosInferioresAlteradoItem {
+interface ICornetosInferioresItem {
   ntr: boolean;
   htr: boolean;
   glb: boolean;
@@ -15,8 +15,8 @@ interface ICornetosInferioresAlteradoItem {
   src: boolean;
 }
 
-interface ICornetosInferioresAlterado {
-  [key: string]: ICornetosInferioresAlteradoItem;
+interface ICornetosInferiores {
+  [key: string]: ICornetosInferioresItem;
 }
 
 const defaultCornetosInferiores = {
@@ -31,10 +31,8 @@ const getPrintableClassName = (condition: boolean) =>
   condition ? parentStyles.nonPrintable : "";
 
 export const CornetosInferiores = () => {
-  const [cornetosInferiores, setCornetosInferiores] = useState("");
-
-  const [cornetosInferioresAlterado, setCornetosInferioresAlterado] =
-    useState<ICornetosInferioresAlterado>({
+  const [cornetosInferiores, setCornetosInferiores] =
+    useState<ICornetosInferiores>({
       direita: { ...defaultCornetosInferiores },
       esquerda: { ...defaultCornetosInferiores },
     });
@@ -42,65 +40,52 @@ export const CornetosInferiores = () => {
   return (
     <li className={parentStyles.itemExame}>
       <label>Cornetos inferiores</label>
-      <select
-        id="cornetosInferiores"
-        value={cornetosInferiores}
-        onChange={({ target: { value } }) => setCornetosInferiores(value)}
-      >
-        {cornetosInferioresOptions.options.map(({ value: option, text }, i) => (
-          <option key={i} value={option}>
-            {text}
-          </option>
-        ))}
-      </select>
-      {cornetosInferiores === "alt" && (
-        <ul className={parentStyles.itensExameDetalhes}>
-          {cavidadeNasalOptions.narinas.map(({ value: narinaOption, text }) => (
-            <div key={narinaOption}>
-              <li>{text}</li>
-              <ul className={parentStyles.itensExameDetalhesInternos}>
-                {cornetosInferioresOptions.alt.map(
-                  ({ value: alteracao, text }, i) => (
-                    <li
-                      key={i}
-                      className={`${
-                        parentStyles.itemExameDetalhes
-                      } ${getPrintableClassName(
-                        !cornetosInferioresAlterado[narinaOption][
-                          alteracao as keyof ICornetosInferioresAlteradoItem
+      <ul className={parentStyles.itensExameDetalhes}>
+        {cavidadeNasalOptions.narinas.map(({ value: narinaOption, text }) => (
+          <div key={narinaOption}>
+            <li>{text}</li>
+            <ul className={parentStyles.itensExameDetalhesInternos}>
+              {cornetosInferioresOptions.options.map(
+                ({ value: option, text }, i) => (
+                  <li
+                    key={i}
+                    className={`${
+                      parentStyles.itemExameDetalhes
+                    } ${getPrintableClassName(
+                      !cornetosInferiores[narinaOption][
+                        option as keyof ICornetosInferioresItem
+                      ]
+                    )}`}
+                  >
+                    <input
+                      type="checkbox"
+                      value={option}
+                      checked={
+                        !!cornetosInferiores[narinaOption][
+                          option as keyof ICornetosInferioresItem
                         ]
-                      )}`}
-                    >
-                      <input
-                        type="checkbox"
-                        value={alteracao}
-                        checked={
-                          !!cornetosInferioresAlterado[narinaOption][
-                            alteracao as keyof ICornetosInferioresAlteradoItem
-                          ]
-                        }
-                        onChange={({ target: { value } }) =>
-                          setCornetosInferioresAlterado({
-                            ...cornetosInferioresAlterado,
-                            [narinaOption]: {
-                              ...cornetosInferioresAlterado[narinaOption],
-                              [value]:
-                                !cornetosInferioresAlterado[narinaOption][
-                                  value as keyof ICornetosInferioresAlteradoItem
-                                ],
-                            },
-                          })
-                        }
-                      />
-                      <label>{text}</label>
-                    </li>
-                  )
-                )}
-              </ul>
-            </div>
-          ))}
-        </ul>
-      )}
+                      }
+                      onChange={({ target: { value } }) =>
+                        setCornetosInferiores({
+                          ...cornetosInferiores,
+                          [narinaOption]: {
+                            ...cornetosInferiores[narinaOption],
+                            [value]:
+                              !cornetosInferiores[narinaOption][
+                                value as keyof ICornetosInferioresItem
+                              ],
+                          },
+                        })
+                      }
+                    />
+                    <label>{text}</label>
+                  </li>
+                )
+              )}
+            </ul>
+          </div>
+        ))}
+      </ul>
     </li>
   );
 };

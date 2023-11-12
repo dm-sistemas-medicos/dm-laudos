@@ -15,6 +15,7 @@ export const CavidadeNasal = () => (
     <ul className={parentStyles.itensExame}>
       <SeptoNasal />
       <hr className={parentStyles.separator} />
+      <CornetosMedios />
       <hr className={parentStyles.separator} />
       <CornetosInferiores />
       <hr className={parentStyles.separator} />

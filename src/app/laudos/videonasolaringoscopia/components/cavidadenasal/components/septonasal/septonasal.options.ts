@@ -2,7 +2,7 @@ export const septoNasalOptions = {
   options: [
     { value: "", text: "sem alterações" },
     { value: "cen", text: "centrado" },
-    { value: "des", text: "desvio" },
+    { value: "des", text: "desviado para" },
   ],
   des: {
     grauCottle: [

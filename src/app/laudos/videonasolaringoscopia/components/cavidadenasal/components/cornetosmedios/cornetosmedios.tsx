@@ -7,7 +7,7 @@ import { cavidadeNasalOptions } from "../../cavidadenasal.options";
 
 import parentStyles from "../../../../videonasolaringoscopia.module.css";
 
-interface ICornetosMediosAlteradoItem {
+interface ICornetosMediosItem {
   ntr: boolean;
   htr: boolean;
   glb: boolean;
@@ -15,8 +15,8 @@ interface ICornetosMediosAlteradoItem {
   src: boolean;
 }
 
-interface ICornetosMediosAlterado {
-  [key: string]: ICornetosMediosAlteradoItem;
+interface ICornetosMedios {
+  [key: string]: ICornetosMediosItem;
 }
 
 const defaultCornetosMedios = {
@@ -28,79 +28,63 @@ const defaultCornetosMedios = {
 };
 
 export const CornetosMedios = () => {
-  const [cornetosMedios, setCornetosMedios] = useState("");
-
-  const [cornetosMediosAlterado, setCornetosMediosAlterado] =
-    useState<ICornetosMediosAlterado>({
-      direita: { ...defaultCornetosMedios },
-      esquerda: { ...defaultCornetosMedios },
-    });
+  const [cornetosMedios, setCornetosMedios] = useState<ICornetosMedios>({
+    direita: { ...defaultCornetosMedios },
+    esquerda: { ...defaultCornetosMedios },
+  });
 
   const getPrintableClassName = (condition: boolean) =>
     condition ? parentStyles.nonPrintable : "";
 
   return (
     <li className={parentStyles.itemExame}>
-      <label>Cornetos inferiores</label>
-      <select
-        id="cornetosMedios"
-        value={cornetosMedios}
-        onChange={({ target: { value } }) => setCornetosMedios(value)}
-      >
-        {cornetosMediosOptions.options.map(({ value: option, text }, i) => (
-          <option key={i} value={option}>
-            {text}
-          </option>
-        ))}
-      </select>
-      {cornetosMedios === "alt" && (
-        <ul className={parentStyles.itensExameDetalhes}>
-          {cavidadeNasalOptions.narinas.map(({ value: narinaOption, text }) => (
-            <div key={narinaOption}>
-              <li>{text}</li>
-              <ul className={parentStyles.itensExameDetalhesInternos}>
-                {cornetosMediosOptions.alt.map(
-                  ({ value: alteracao, text }, i) => (
-                    <li
-                      key={i}
-                      className={`${
-                        parentStyles.itemExameDetalhes
-                      } ${getPrintableClassName(
-                        !cornetosMediosAlterado[narinaOption][
-                          alteracao as keyof ICornetosMediosAlteradoItem
+      <label>Cornetos médios</label>
+      <ul className={parentStyles.itensExameDetalhes}>
+        {cavidadeNasalOptions.narinas.map(({ value: narinaOption, text }) => (
+          <div key={narinaOption}>
+            <li>{text}</li>
+            <ul className={parentStyles.itensExameDetalhesInternos}>
+              {cornetosMediosOptions.options.map(
+                ({ value: option, text }, i) => (
+                  <li
+                    key={i}
+                    className={`${
+                      parentStyles.itemExameDetalhes
+                    } ${getPrintableClassName(
+                      !cornetosMedios[narinaOption][
+                        option as keyof ICornetosMediosItem
+                      ]
+                    )}`}
+                  >
+                    <input
+                      type="checkbox"
+                      value={option}
+                      checked={
+                        !!cornetosMedios[narinaOption][
+                          option as keyof ICornetosMediosItem
                         ]
-                      )}`}
-                    >
-                      <input
-                        type="checkbox"
-                        value={alteracao}
-                        checked={
-                          !!cornetosMediosAlterado[narinaOption][
-                            alteracao as keyof ICornetosMediosAlteradoItem
-                          ]
-                        }
-                        onChange={({ target: { value } }) =>
-                          setCornetosMediosAlterado({
-                            ...cornetosMediosAlterado,
-                            [narinaOption]: {
-                              ...cornetosMediosAlterado[narinaOption],
-                              [value]:
-                                !cornetosMediosAlterado[narinaOption][
-                                  value as keyof ICornetosMediosAlteradoItem
-                                ],
-                            },
-                          })
-                        }
-                      />
-                      <label>{text}</label>
-                    </li>
-                  )
-                )}
-              </ul>
-            </div>
-          ))}
-        </ul>
-      )}
+                      }
+                      onChange={({ target: { value } }) =>
+                        setCornetosMedios({
+                          ...cornetosMedios,
+                          [narinaOption]: {
+                            ...cornetosMedios[narinaOption],
+                            [value]:
+                              !cornetosMedios[narinaOption][
+                                value as keyof ICornetosMediosItem
+                              ],
+                          },
+                        })
+                      }
+                    />
+                    <label>{text}</label>
+                  </li>
+                )
+              )}
+            </ul>
+          </div>
+        ))}
+      </ul>
     </li>
   );
 };
