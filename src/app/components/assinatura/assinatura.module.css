@@ -1,0 +1,16 @@
+.assinatura {
+  margin: 0 0 12px;
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  font-family: monospace;
+  font-size: 12px;
+}
+
+.assinatura > img {
+  margin: 0 auto 12px;
+}
+
+.assinatura > p {
+  margin: 0;
+}

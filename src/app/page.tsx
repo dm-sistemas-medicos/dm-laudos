@@ -10,6 +10,7 @@ import DadosPaciente from "./components/dadospaciente/dadospaciente";
 import VideoNasoLaringoscopia from "./laudos/videonasolaringoscopia/videonasolaringoscopia";
 import DragDrop from "./components/dragdrop/dragdrop";
 import Preview from "./components/preview/preview";
+import Assinatura from "./components/assinatura/assinatura";
 
 export type ImagensType = string[];
 export type SetImagensType = Dispatch<SetStateAction<ImagensType>>;
@@ -61,12 +62,7 @@ const Page = () => {
           </section>
         )}
         <footer className={styles.footer}>
-          <Image
-            src={"/assinatura.png"}
-            width={75}
-            height={75}
-            alt="Assinatura"
-          />
+          <Assinatura />
           <hr />
           <p className={styles.dadosMedico}>
             Dra. Mariana Machoski, CRM/SC 35098, RQE/SC 23991 - Email:
