@@ -31,6 +31,15 @@ export const Page = () => {
         <Image src={"/exame.jpeg"} alt="" width={200} height={200} />
       </form>
     </aside>
+        {imagens.length > 4 && (
+          <section className={styles.section}>
+            <Preview
+              imagens={imagens.slice(4)}
+              width={270}
+              multiColumn={true}
+            />
+          </section>
+        )}
     <footer className={styles.footer}>
       <hr />
       <p className={styles.dadosMedico}>
