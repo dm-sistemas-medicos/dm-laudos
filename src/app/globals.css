@@ -1,6 +1,8 @@
+html,
 body {
   width: 21cm;
   height: 29.7cm;
+  font-family: sans-serif;
 }
 
 input,
