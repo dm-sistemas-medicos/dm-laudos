@@ -1,13 +1,14 @@
 .dragdropForm {
   position: relative;
   height: 80px;
+  padding: 12px 0;
   margin: 0 0 12px;
   display: flex;
   align-items: center;
   justify-content: center;
   border: dashed 1px #000;
   border-radius: 12px;
-  padding: 12px 0;
+  cursor: grab;
 
   @media print {
     display: none;
@@ -23,6 +24,7 @@
   align-items: center;
   justify-content: center;
   row-gap: 6px;
+  cursor: grab;
 }
 
 .dragdropLabelHidden {
@@ -35,8 +37,18 @@
 }
 
 .dragdropLabelButton {
+  padding: 8px 24px;
   display: flex;
   justify-content: center;
+  border-radius: 8px;
+  border: none;
+  background-color: #6161ff;
+  cursor: pointer;
+  color: #fff;
+}
+
+.dragdropLabelButton:hover {
+  background-color: #a0aec0;
 }
 
 .dropElement {
