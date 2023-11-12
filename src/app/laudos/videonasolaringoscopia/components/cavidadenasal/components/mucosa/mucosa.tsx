@@ -6,7 +6,7 @@ import { mucosaOptions } from "./mucosa.options";
 
 import parentStyles from "../../../../videonasolaringoscopia.module.css";
 
-export const Mucosa = () => {
+const Mucosa = () => {
   const [mucosa, setMucosa] = useState("");
 
   return (

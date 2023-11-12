@@ -4,7 +4,7 @@ import { useState } from "react";
 
 import parentStyles from "../../../../videonasolaringoscopia.module.css";
 
-export const OstiosTubarios = () => {
+const OstiosTubarios = () => {
   const [ostiostubarios, setOstiosTubarios] = useState(
     "visualidados bilateralmente e pérvios"
   );

@@ -4,7 +4,7 @@ import { useState } from "react";
 
 import parentStyles from "../../../../videonasolaringoscopia.module.css";
 
-export const BaseLingua = () => {
+const BaseLingua = () => {
   const [baseLingua, setBaseLingua] = useState(
     "valéculas e seios piriformes livres"
   );

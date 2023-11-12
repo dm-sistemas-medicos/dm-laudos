@@ -4,7 +4,7 @@ import { useState } from "react";
 
 import parentStyles from "../../../../videonasolaringoscopia.module.css";
 
-export const BordosLivres = () => {
+const BordosLivres = () => {
   const [bordosLivres, setBordosLivres] = useState("regulares, sem lesões");
 
   return (

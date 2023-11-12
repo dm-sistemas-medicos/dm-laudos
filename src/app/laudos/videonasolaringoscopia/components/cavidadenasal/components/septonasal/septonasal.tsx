@@ -28,7 +28,7 @@ const defaultSeptoNasalDesvio = {
   alt: false,
 };
 
-export const SeptoNasal = () => {
+const SeptoNasal = () => {
   const [septoNasal, setSeptoNasal] = useState("");
 
   const [septoNasalDesvio, setSeptoNasalDesvio] = useState<ISeptoNasalDesvio>({

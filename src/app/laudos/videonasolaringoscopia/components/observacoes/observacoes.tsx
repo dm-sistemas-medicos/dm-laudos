@@ -4,7 +4,7 @@ import { useState } from "react";
 
 import parentStyles from "../../videonasolaringoscopia.module.css";
 
-export const Observacoes = () => {
+const Observacoes = () => {
   const [observacoes, setObservacoes] = useState("");
 
   return (

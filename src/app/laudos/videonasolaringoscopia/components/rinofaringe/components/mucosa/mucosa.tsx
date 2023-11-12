@@ -4,7 +4,7 @@ import { useState } from "react";
 
 import parentStyles from "../../../../videonasolaringoscopia.module.css";
 
-export const Mucosa = () => {
+const Mucosa = () => {
   const [mucosa, setMucosa] = useState("normal");
 
   return (

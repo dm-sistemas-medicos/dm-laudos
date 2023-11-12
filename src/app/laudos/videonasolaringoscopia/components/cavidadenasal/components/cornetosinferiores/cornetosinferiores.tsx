@@ -30,7 +30,7 @@ const defaultCornetosInferiores = {
 const getPrintableClassName = (condition: boolean) =>
   condition ? parentStyles.nonPrintable : "";
 
-export const CornetosInferiores = () => {
+const CornetosInferiores = () => {
   const [cornetosInferiores, setCornetosInferiores] =
     useState<ICornetosInferiores>({
       direita: { ...defaultCornetosInferiores },

@@ -5,7 +5,7 @@ import { useState } from "react";
 import parentStyles from "../../videonasolaringoscopia.module.css";
 import styles from "./conclusao.module.css";
 
-export const Conclusao = () => {
+const Conclusao = () => {
   const [conclusao, setConclusao] = useState("");
 
   return (

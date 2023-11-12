@@ -4,7 +4,7 @@ import { useState } from "react";
 
 import parentStyles from "../../../../videonasolaringoscopia.module.css";
 
-export const FuncaoVelofaringea = () => {
+const FuncaoVelofaringea = () => {
   const [funcaovelofaringea, setFuncaoVelofaringea] = useState("preservada");
 
   return (

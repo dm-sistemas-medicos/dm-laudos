@@ -4,7 +4,7 @@ import { useState } from "react";
 
 import parentStyles from "../../../../videonasolaringoscopia.module.css";
 
-export const Coaptacao = () => {
+const Coaptacao = () => {
   const [coaptacao, setCoaptacao] = useState("normal");
 
   return (

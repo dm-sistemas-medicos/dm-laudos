@@ -4,7 +4,7 @@ import { useState } from "react";
 
 import parentStyles from "../../../../videonasolaringoscopia.module.css";
 
-export const Meatos = () => {
+const Meatos = () => {
   const [meatos, setMeatos] = useState("pérvios");
 
   return (

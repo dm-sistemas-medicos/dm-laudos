@@ -24,7 +24,7 @@ const ImagensContext = createContext<IImagensContext>({
   setImagens: () => {},
 });
 
-export const Page = () => {
+const Page = () => {
   const [imagens, setImagens] = useState<ImagensType>([]);
 
   return (

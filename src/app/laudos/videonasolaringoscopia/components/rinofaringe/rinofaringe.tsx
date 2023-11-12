@@ -9,7 +9,7 @@ import FuncaoVelofaringea from "./components/funcaovelofaringea/funcaovelofaring
 import Lesoes from "./components/lesoes/lesoes";
 import Observacoes from "../observacoes/observacoes";
 
-export const Rinofaringe = () => (
+const Rinofaringe = () => (
   <fieldset>
     <h2 className={parentStyles.tituloSecaoExame}>Rinofaringe</h2>
     <ul className={parentStyles.itensExame}>

@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 
 import styles from "./dadospaciente.module.css";
 
-export const DadosPaciente = () => {
+const DadosPaciente = () => {
   const hoje = new Date();
 
   const [nomePaciente, setNomePaciente] = useState("");

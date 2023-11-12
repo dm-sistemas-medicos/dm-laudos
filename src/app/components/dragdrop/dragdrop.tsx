@@ -10,7 +10,7 @@ type DragDropProps = {
   setImagens: SetImagensType;
 };
 
-export const DragDrop = ({ setImagens }: DragDropProps) => {
+const DragDrop = ({ setImagens }: DragDropProps) => {
   const [dragActive, setDragActive] = useState(false);
 
   const inputRef = useRef<HTMLInputElement>(null);

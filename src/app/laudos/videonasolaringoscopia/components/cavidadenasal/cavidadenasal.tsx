@@ -9,7 +9,7 @@ import Secrecao from "./components/secrecao/secrecao";
 import Mucosa from "./components/mucosa/mucosa";
 import Observacoes from "../observacoes/observacoes";
 
-export const CavidadeNasal = () => (
+const CavidadeNasal = () => (
   <fieldset>
     <h2 className={parentStyles.tituloSecaoExame}>Cavidade Nasal</h2>
     <ul className={parentStyles.itensExame}>

@@ -9,7 +9,7 @@ import Mucos from "./components/mucosa/mucosa";
 import Subglote from "./components/subglote/subglote";
 import Observacoes from "../observacoes/observacoes";
 
-export const Laringe = () => (
+const Laringe = () => (
   <fieldset>
     <h2 className={parentStyles.tituloSecaoExame}>Laringe</h2>
     <ul className={parentStyles.itensExame}>

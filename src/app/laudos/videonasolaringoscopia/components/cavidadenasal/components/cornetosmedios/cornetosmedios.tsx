@@ -27,7 +27,7 @@ const defaultCornetosMedios = {
   src: false,
 };
 
-export const CornetosMedios = () => {
+const CornetosMedios = () => {
   const [cornetosMedios, setCornetosMedios] = useState<ICornetosMedios>({
     direita: { ...defaultCornetosMedios },
     esquerda: { ...defaultCornetosMedios },

@@ -8,7 +8,7 @@ import Orofaringe from "./components/orofaringe/orofaringe";
 import Laringe from "./components/laringe/laringe";
 import Conclusao from "./components/conclusao/conclusao";
 
-export const VideoNasoLaringoscopia = () => (
+const VideoNasoLaringoscopia = () => (
   <>
     <h1 className={styles.tituloExame}>Videonasolaringoscopia</h1>
     <form>

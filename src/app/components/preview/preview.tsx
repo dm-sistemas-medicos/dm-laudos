@@ -10,7 +10,7 @@ type PreviewProps = {
   multiColumn: boolean;
 };
 
-export const Preview = ({ imagens, width, multiColumn }: PreviewProps) => (
+const Preview = ({ imagens, width, multiColumn }: PreviewProps) => (
   <div
     className={`${styles.preview} ${multiColumn ? styles.previewColumns : ""}`}
   >

@@ -6,7 +6,7 @@ import { secrecaoOptions } from "./secrecao.options";
 
 import parentStyles from "../../../../videonasolaringoscopia.module.css";
 
-export const Secrecao = () => {
+const Secrecao = () => {
   const [secrecao, setSecrecao] = useState("");
 
   return (

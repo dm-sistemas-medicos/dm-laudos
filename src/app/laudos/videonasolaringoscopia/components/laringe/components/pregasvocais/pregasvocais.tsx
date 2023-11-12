@@ -4,7 +4,7 @@ import { useState } from "react";
 
 import parentStyles from "../../../../videonasolaringoscopia.module.css";
 
-export const PregasVocais = () => {
+const PregasVocais = () => {
   const [pregasVocais, setPregasVocais] = useState(
     "com mobilidade preservada bilateralmente"
   );

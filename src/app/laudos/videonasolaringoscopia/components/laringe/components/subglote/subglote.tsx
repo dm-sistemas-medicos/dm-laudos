@@ -4,7 +4,7 @@ import { useState } from "react";
 
 import parentStyles from "../../../../videonasolaringoscopia.module.css";
 
-export const Subglote = () => {
+const Subglote = () => {
   const [subglote, setSubglote] = useState("livre, sem lesões");
 
   return (

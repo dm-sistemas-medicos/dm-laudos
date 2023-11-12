@@ -6,7 +6,7 @@ import Mucosa from "./components/mucosa/mucosa";
 import BaseLingua from "./components/baselingua/baselingua";
 import Observacoes from "../observacoes/observacoes";
 
-export const Orofaringe = () => (
+const Orofaringe = () => (
   <fieldset>
     <h2 className={parentStyles.tituloSecaoExame}>Orofaringe</h2>
     <ul className={parentStyles.itensExame}>
