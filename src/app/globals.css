@@ -12,6 +12,15 @@ select {
   border-width: 0 0 1px 0;
 }
 
+textarea {
+  padding: 2px 4px;
+  font-family: sans-serif;
+
+  @media print {
+    padding: 0;
+  }
+}
+
 input,
 textarea,
 select {
