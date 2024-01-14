@@ -8,7 +8,11 @@ const Observacoes = () => {
   const [observacoes, setObservacoes] = useState("");
 
   return (
-    <li className={parentStyles.itemExame}>
+    <li
+      className={`${parentStyles.itemExame} ${
+        !observacoes.length ? parentStyles.nonPrintable : ""
+      }`}
+    >
       <label>Observações</label>
       <textarea
         id="observacoes"
