@@ -12,11 +12,12 @@ select {
 }
 
 textarea {
-  padding: 2px 4px;
+  padding: 0px 2px;
   font-family: sans-serif;
+  resize: vertical;
 
   @media print {
-    padding: 0;
+    padding: 2px 0;
   }
 }
 
@@ -29,6 +30,7 @@ select {
     border: none;
     resize: none;
     appearance: none;
+    word-wrap: break-word;
   }
 }
 
