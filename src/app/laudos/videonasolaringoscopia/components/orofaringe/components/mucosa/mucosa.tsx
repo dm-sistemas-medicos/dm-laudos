@@ -10,9 +10,8 @@ const Mucosa = () => {
   return (
     <li className={parentStyles.itemExame}>
       <label>Orofaringe</label>
-      <input
+      <textarea
         id="mucosa"
-        type="text"
         value={mucosa}
         onChange={({ target: { value } }) => setMucosa(value)}
       />

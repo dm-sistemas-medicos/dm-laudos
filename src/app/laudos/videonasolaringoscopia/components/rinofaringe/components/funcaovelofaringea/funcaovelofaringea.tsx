@@ -10,9 +10,8 @@ const FuncaoVelofaringea = () => {
   return (
     <li className={parentStyles.itemExame}>
       <label>Função velofaringea</label>
-      <input
+      <textarea
         id="funcaovelofaringea"
-        type="text"
         value={funcaovelofaringea}
         onChange={({ target: { value } }) => setFuncaoVelofaringea(value)}
       />

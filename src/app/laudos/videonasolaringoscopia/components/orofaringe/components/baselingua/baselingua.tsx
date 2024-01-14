@@ -12,9 +12,8 @@ const BaseLingua = () => {
   return (
     <li className={parentStyles.itemExame}>
       <label>Base de língua</label>
-      <input
+      <textarea
         id="baseLingua"
-        type="text"
         value={baseLingua}
         onChange={({ target: { value } }) => setBaseLingua(value)}
       />

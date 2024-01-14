@@ -10,9 +10,8 @@ const BordosLivres = () => {
   return (
     <li className={parentStyles.itemExame}>
       <label>Bordos livres</label>
-      <input
+      <textarea
         id="bordosLivres"
-        type="text"
         value={bordosLivres}
         onChange={({ target: { value } }) => setBordosLivres(value)}
       />

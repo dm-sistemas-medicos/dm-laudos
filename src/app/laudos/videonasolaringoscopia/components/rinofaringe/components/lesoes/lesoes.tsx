@@ -10,10 +10,9 @@ const Lesoes = () => {
 
   return (
     <li className={parentStyles.itemExame}>
-      <input
+      <textarea
         className={styles.itemExameDouble}
         id="lesoes"
-        type="text"
         value={lesoes}
         onChange={({ target: { value } }) => setLesoes(value)}
       />
