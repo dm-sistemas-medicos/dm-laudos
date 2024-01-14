@@ -6,3 +6,7 @@
 .previewColumns {
   grid-template-columns: repeat(3, auto);
 }
+
+.previewImage {
+  object-fit: contain;
+}
