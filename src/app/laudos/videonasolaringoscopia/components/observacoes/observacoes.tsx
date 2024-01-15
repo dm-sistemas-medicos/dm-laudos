@@ -15,6 +15,7 @@ const Observacoes = () => {
     >
       <label>Observações</label>
       <textarea
+        rows="1"
         id="observacoes"
         value={observacoes}
         onChange={({ target: { value } }) => setObservacoes(value)}
