@@ -11,6 +11,7 @@ const Coaptacao = () => {
     <li className={parentStyles.itemExame}>
       <label>Coaptação</label>
       <textarea
+        rows={1}
         id="coaptacao"
         value={coaptacao}
         onChange={({ target: { value } }) => setCoaptacao(value)}

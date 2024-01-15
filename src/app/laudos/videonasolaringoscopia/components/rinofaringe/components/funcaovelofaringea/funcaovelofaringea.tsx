@@ -11,6 +11,7 @@ const FuncaoVelofaringea = () => {
     <li className={parentStyles.itemExame}>
       <label>Função velofaringea</label>
       <textarea
+        rows={1}
         id="funcaovelofaringea"
         value={funcaovelofaringea}
         onChange={({ target: { value } }) => setFuncaoVelofaringea(value)}

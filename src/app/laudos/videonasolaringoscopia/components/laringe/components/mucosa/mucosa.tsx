@@ -11,6 +11,7 @@ const Mucosa = () => {
     <li className={parentStyles.itemExame}>
       <label>Mucosa</label>
       <textarea
+        rows={1}
         id="mucosa"
         value={mucosa}
         onChange={({ target: { value } }) => setMucosa(value)}

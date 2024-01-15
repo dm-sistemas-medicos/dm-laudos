@@ -11,6 +11,7 @@ const Subglote = () => {
     <li className={parentStyles.itemExame}>
       <label>Subglote</label>
       <textarea
+        rows={1}
         id="subglote"
         value={subglote}
         onChange={({ target: { value } }) => setSubglote(value)}

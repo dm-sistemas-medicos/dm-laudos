@@ -13,6 +13,7 @@ const PregasVocais = () => {
     <li className={parentStyles.itemExame}>
       <label>Pregas vocais</label>
       <textarea
+        rows={1}
         id="pregasVocais"
         value={pregasVocais}
         onChange={({ target: { value } }) => setPregasVocais(value)}

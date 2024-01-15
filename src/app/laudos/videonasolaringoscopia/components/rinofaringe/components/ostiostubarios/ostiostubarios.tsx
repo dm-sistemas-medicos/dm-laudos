@@ -13,6 +13,7 @@ const OstiosTubarios = () => {
     <li className={parentStyles.itemExame}>
       <label>Óstios tubários</label>
       <textarea
+        rows={1}
         id="ostiostubarios"
         value={ostiostubarios}
         onChange={({ target: { value } }) => setOstiosTubarios(value)}

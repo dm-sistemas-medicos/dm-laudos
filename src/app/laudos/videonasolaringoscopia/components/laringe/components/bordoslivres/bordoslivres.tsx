@@ -11,6 +11,7 @@ const BordosLivres = () => {
     <li className={parentStyles.itemExame}>
       <label>Bordos livres</label>
       <textarea
+        rows={1}
         id="bordosLivres"
         value={bordosLivres}
         onChange={({ target: { value } }) => setBordosLivres(value)}
