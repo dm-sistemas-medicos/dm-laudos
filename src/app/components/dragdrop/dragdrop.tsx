@@ -43,9 +43,11 @@ const DragDrop = ({ setImagens }: DragDropProps) => {
     if (images) {
       const uploadedImages: ImagensType = [];
 
-      Array.from(images).forEach((image) => {
-        uploadedImages.push(URL.createObjectURL(image));
-      });
+      Array.from(images)
+        .reverse()
+        .forEach((image) => {
+          uploadedImages.push(URL.createObjectURL(image));
+        });
 
       setImagens(uploadedImages);
     }
