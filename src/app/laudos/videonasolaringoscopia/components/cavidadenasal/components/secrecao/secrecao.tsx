@@ -2,27 +2,20 @@
 
 import { useState } from "react";
 
-import { secrecaoOptions } from "./secrecao.options";
-
 import parentStyles from "../../../../videonasolaringoscopia.module.css";
 
 const Secrecao = () => {
-  const [secrecao, setSecrecao] = useState("");
+  const [secrecao, setSecrecao] = useState("aquosa");
 
   return (
     <li className={parentStyles.itemExame}>
       <label>Secreção</label>
-      <select
+      <textarea
+        rows={1}
         id="secrecao"
         value={secrecao}
         onChange={({ target: { value } }) => setSecrecao(value)}
-      >
-        {secrecaoOptions.options.map(({ value, text }, i) => (
-          <option key={i} value={value}>
-            {text}
-          </option>
-        ))}
-      </select>
+      />
     </li>
   );
 };
