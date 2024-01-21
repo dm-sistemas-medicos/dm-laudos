@@ -23,6 +23,10 @@
   align-items: start;
 }
 
+.itemExameDouble {
+  grid-column: span 2;
+}
+
 .itensExameDetalhes {
   padding: 0 0 0 24px;
   grid-column: span 2;
