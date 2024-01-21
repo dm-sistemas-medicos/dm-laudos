@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState, DragEvent, ChangeEvent } from "react";
+import { useRef, useState, DragEvent, ChangeEvent, useEffect } from "react";
 
 import { ImagensType, SetImagensType } from "@/app/page";
 
@@ -14,6 +14,19 @@ const DragDrop = ({ setImagens }: DragDropProps) => {
   const [dragActive, setDragActive] = useState(false);
 
   const inputRef = useRef<HTMLInputElement>(null);
+
+  useEffect(() => {
+    const handleDragEvents = (e: MouseEvent) => {
+      e.preventDefault();
+    };
+
+    window.addEventListener("dragover", handleDragEvents);
+    window.addEventListener("drop", handleDragEvents);
+    return () => {
+      window.removeEventListener("dragover", handleDragEvents);
+      window.removeEventListener("drop", handleDragEvents);
+    };
+  }, []);
 
   const handleDrag = (e: DragEvent<HTMLDivElement | HTMLFormElement>) => {
     e.preventDefault();
