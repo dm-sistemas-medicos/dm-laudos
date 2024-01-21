@@ -13,8 +13,8 @@ const Observacoes = () => {
         !observacoes.length ? parentStyles.nonPrintable : ""
       }`}
     >
-      <label>Observações</label>
       <textarea
+        className={parentStyles.itemExameDouble}
         rows={1}
         id="observacoes"
         value={observacoes}
