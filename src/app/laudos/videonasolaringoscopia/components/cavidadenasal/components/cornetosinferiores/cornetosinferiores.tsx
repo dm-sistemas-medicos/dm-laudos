@@ -9,7 +9,7 @@ const CornetosInferiores = () => {
 
   return (
     <li className={parentStyles.itemExame}>
-      <label>Cornetos médios</label>
+      <label>Cornetos inferiores</label>
       <textarea
         rows={1}
         id="cornetosMedios"
