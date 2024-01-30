@@ -13,6 +13,7 @@ const Lesoes = () => {
         className={parentStyles.itemExameDouble}
         rows={1}
         id="lesoes"
+        placeholder="Lesões"
         value={lesoes}
         onChange={({ target: { value } }) => setLesoes(value)}
       />
