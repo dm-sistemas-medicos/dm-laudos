@@ -2,26 +2,35 @@
 
 import parentStyles from "../../videonasolaringoscopia.module.css";
 
-import SeptoNasal from "./components/septonasal/septonasal";
-import CornetosInferiores from "./components/cornetosinferiores/cornetosinferiores";
-import CornetosMedios from "./components/cornetosmedios/cornetosmedios";
-import Secrecao from "./components/secrecao/secrecao";
-import Mucosa from "./components/mucosa/mucosa";
+import ExamItem from "../examitem/examitem";
 import Observacoes from "../observacoes/observacoes";
 
 const CavidadeNasal = () => (
   <fieldset>
     <h2 className={parentStyles.tituloSecaoExame}>Cavidade Nasal</h2>
     <ul className={parentStyles.itensExame}>
-      <SeptoNasal />
+      <ExamItem
+        id="septoNasal"
+        label="Septo nasal"
+        initialText="desvio para direita, com esporão ósseo associado, parcialmente obstrutivo"
+        rows={2}
+      />
       <hr className={parentStyles.separator} />
-      <CornetosMedios />
+      <ExamItem
+        id="cornetosMedios"
+        label="Cornetos médios"
+        initialText="normotróficos"
+      />
       <hr className={parentStyles.separator} />
-      <CornetosInferiores />
+      <ExamItem
+        id="cornetosInferiores"
+        label="Cornetos inferiores"
+        initialText="normotróficos"
+      />
       <hr className={parentStyles.separator} />
-      <Secrecao />
+      <ExamItem id="secrecao" label="Secreção" initialText="aquosa" />
       <hr className={parentStyles.separator} />
-      <Mucosa />
+      <ExamItem id="mucosa" label="Mucosa" initialText="pálida" />
       <hr className={parentStyles.separator} />
       <Observacoes />
     </ul>
