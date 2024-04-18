@@ -2,26 +2,30 @@
 
 import parentStyles from "../../videonasolaringoscopia.module.css";
 
-import Mucosa from "./components/mucosa/mucosa";
-import Meatos from "./components/meatos/meatos";
-import OstiosTubarios from "./components/ostiostubarios/ostiostubarios";
-import FuncaoVelofaringea from "./components/funcaovelofaringea/funcaovelofaringea";
-import Lesoes from "./components/lesoes/lesoes";
+import ExamItem from "../examitem/examitem";
 import Observacoes from "../observacoes/observacoes";
 
 const Rinofaringe = () => (
   <fieldset>
     <h2 className={parentStyles.tituloSecaoExame}>Rinofaringe</h2>
     <ul className={parentStyles.itensExame}>
-      <Mucosa />
+      <ExamItem id="mucosa" label="Mucosa" initialText="normal" />
       <hr className={parentStyles.separator} />
-      <Meatos />
+      <ExamItem id="meatos" label="Meatos" initialText="pérvios" />
       <hr className={parentStyles.separator} />
-      <OstiosTubarios />
+      <ExamItem
+        id="ostiostubarios"
+        label="Óstios tubários"
+        initialText="visualidados bilateralmente e pérvios"
+      />
       <hr className={parentStyles.separator} />
-      <FuncaoVelofaringea />
+      <ExamItem
+        id="funcaovelofaringea"
+        label="Função velofaringea"
+        initialText="preservada"
+      />
       <hr className={parentStyles.separator} />
-      <Lesoes />
+      <ExamItem id="lesoes" initialText="Ausência de lesões" />
       <hr className={parentStyles.separator} />
       <Observacoes />
     </ul>
