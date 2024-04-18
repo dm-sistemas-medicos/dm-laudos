@@ -6,18 +6,19 @@ import parentStyles from "../../videonasolaringoscopia.module.css";
 
 type ExamItemProps = {
   id: string;
-  label: string;
   initialText: string;
+  label?: string;
   rows?: number;
 };
 
-const ExamItem = ({ id, label, initialText, rows }: ExamItemProps) => {
+const ExamItem = ({ id, initialText, label, rows }: ExamItemProps) => {
   const [text, setText] = useState(initialText);
 
   return (
     <li className={parentStyles.itemExame}>
-      <label>{label}</label>
+      {label && <label>{label}</label>}
       <textarea
+        className={!label ? parentStyles.itemExameDouble : ""}
         id={id}
         rows={rows || 1}
         value={text}
