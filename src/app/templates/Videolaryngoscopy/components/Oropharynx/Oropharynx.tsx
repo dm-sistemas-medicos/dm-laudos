@@ -11,7 +11,7 @@ const Oropharynx = () => (
     <ul className={parentStyles["exam-item-list"]}>
       <ExamItem
         id="oropharynx-oropharynx"
-        label="Oropharynx"
+        label="Orofaringe"
         initialText="e hipofaringe com mucosa normal"
       />
       <ExamItem
