@@ -49,7 +49,7 @@ const Page = () => {
           <DragAndDrop setImagens={setImagens} />
           <Preview
             imagens={imagens.length <= 4 ? imagens : imagens.slice(0, 4)}
-            width={300}
+            width={256}
             multiColumn={false}
           />
         </aside>
@@ -57,7 +57,7 @@ const Page = () => {
           <section className={styles.section}>
             <Preview
               imagens={imagens.slice(4)}
-              width={270}
+              width={256}
               multiColumn={true}
             />
           </section>
