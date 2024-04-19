@@ -49,7 +49,7 @@ const DadosPaciente = () => {
   return (
     <form className={styles.dadosPaciente}>
       <div className={styles.dadoPaciente}>
-        <label>Nome:</label>
+        <label htmlFor="nomePaciente">Nome:</label>
         <input
           className={styles.dadoPacienteInput}
           id="nomePaciente"
@@ -59,7 +59,7 @@ const DadosPaciente = () => {
         />
       </div>
       <div className={styles.dadoPaciente}>
-        <label>Prontuário:</label>
+        <label htmlFor="numeroProntuario">Prontuário:</label>
         <input
           className={`${styles.dadoPacienteInput} ${styles.dadoPacienteInputSmall}`}
           id="numeroProntuario"
@@ -70,7 +70,7 @@ const DadosPaciente = () => {
         />
       </div>
       <div className={styles.dadoPaciente}>
-        <label>Data:</label>
+        <label htmlFor="dataLaudo">Data:</label>
         <input
           className={`${styles.dadoPacienteInput} ${styles.dadoPacienteInputMedium}`}
           id="dataLaudo"
@@ -80,7 +80,7 @@ const DadosPaciente = () => {
         />
       </div>
       <div className={styles.dadoPaciente}>
-        <label>Solicitante:</label>
+        <label htmlFor="nomeSolicitante">Solicitante:</label>
         <input
           className={styles.dadoPacienteInput}
           id="nomeSolicitante"
@@ -90,7 +90,7 @@ const DadosPaciente = () => {
         />
       </div>
       <div className={`${styles.dadoPaciente} ${styles.dadoPacienteExtra}`}>
-        <label>Nascimento:</label>
+        <label htmlFor="dataNascimento">Nascimento:</label>
         <input
           className={`${styles.dadoPacienteInput} ${styles.dadoPacienteInputMedium}`}
           id="dataNascimento"
@@ -101,7 +101,7 @@ const DadosPaciente = () => {
         <span>{tempoVida}</span>
       </div>
       <div className={styles.dadoPaciente}>
-        <label>Operador:</label>
+        <label htmlFor="nomeOperador">Operador:</label>
         <input
           className={styles.dadoPacienteInput}
           id="nomeOperador"
@@ -111,7 +111,7 @@ const DadosPaciente = () => {
         />
       </div>
       <div className={`${styles.dadoPaciente} ${styles.dadoPacienteExtra}`}>
-        <label>Convênio:</label>
+        <label htmlFor="nomeConvenio">Convênio:</label>
         <input
           className={`${styles.dadoPacienteInput} ${styles.dadoPacienteInputFull}`}
           id="nomeConvenio"

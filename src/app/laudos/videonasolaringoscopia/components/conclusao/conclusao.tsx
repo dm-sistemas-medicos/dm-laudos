@@ -19,6 +19,7 @@ const Conclusao = () => {
             id="conclusao"
             value={conclusao}
             onChange={({ target: { value } }) => setConclusao(value)}
+            aria-label="Conclusão"
           />
         </li>
       </ul>

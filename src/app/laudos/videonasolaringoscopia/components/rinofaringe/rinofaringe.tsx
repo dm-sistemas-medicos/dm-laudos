@@ -21,7 +21,11 @@ const Rinofaringe = () => (
         label="Função velofaringea"
         initialText="preservada"
       />
-      <ExamItem id="rinofaringe-lesoes" initialText="Ausência de lesões" />
+      <ExamItem
+        id="rinofaringe-lesoes"
+        initialText="Ausência de lesões"
+        ariaLabel="Lesões"
+      />
       <Observacoes parentId="rinofaringe" />
     </ul>
   </fieldset>
