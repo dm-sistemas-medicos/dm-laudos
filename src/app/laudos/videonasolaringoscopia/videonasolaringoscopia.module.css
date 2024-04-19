@@ -1,11 +1,13 @@
 .examTitle {
   margin: 0;
   text-transform: uppercase;
+  font-size: 20px;
 }
 
 .examSectionTitle {
   margin: 0;
   text-transform: uppercase;
+  font-size: 18px;
 }
 
 .examItemList {
@@ -16,11 +18,27 @@
 }
 
 .examItem {
+  position: relative;
+  margin: 0 0 9px;
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 4px;
   justify-content: start;
   align-items: start;
+
+  @media print {
+    margin: 0;
+  }
+}
+
+.examItem:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -9px;
+  left: 0;
+  height: 1px;
+  background-color: #000;
 }
 
 .examItemDouble {
@@ -28,12 +46,6 @@
 }
 
 .nonPrintable {
-  @media print {
-    display: none;
-  }
-}
-
-.separator {
   @media print {
     display: none;
   }

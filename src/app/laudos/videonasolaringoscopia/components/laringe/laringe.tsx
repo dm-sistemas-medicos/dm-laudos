@@ -14,27 +14,22 @@ const Laringe = () => (
         label="Pregas vocais"
         initialText="com mobilidade preservada bilateralmente"
       />
-      <hr className={parentStyles.separator} />
       <ExamItem
         id="laringe-bordosLivres"
         label="Bordos livres"
         initialText="regulares, sem lesões"
       />
-      <hr className={parentStyles.separator} />
       <ExamItem id="laringe-coaptacao" label="Coaptação" initialText="normal" />
-      <hr className={parentStyles.separator} />
       <ExamItem
         id="laringe-mucosa"
         label="Mucosa"
         initialText="com hiperemia e edema leve"
       />
-      <hr className={parentStyles.separator} />
       <ExamItem
         id="laringe-subglote"
         label="Subglote"
         initialText="livre, sem lesões"
       />
-      <hr className={parentStyles.separator} />
       <Observacoes parentId="laringe" />
     </ul>
   </fieldset>

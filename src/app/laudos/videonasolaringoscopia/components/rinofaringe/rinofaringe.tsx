@@ -10,23 +10,18 @@ const Rinofaringe = () => (
     <h2 className={parentStyles.examSectionTitle}>Rinofaringe</h2>
     <ul className={parentStyles.examItemList}>
       <ExamItem id="rinofaringe-mucosa" label="Mucosa" initialText="normal" />
-      <hr className={parentStyles.separator} />
       <ExamItem id="rinofaringe-meatos" label="Meatos" initialText="pérvios" />
-      <hr className={parentStyles.separator} />
       <ExamItem
         id="rinofaringe-ostiostubarios"
         label="Óstios tubários"
         initialText="visualidados bilateralmente e pérvios"
       />
-      <hr className={parentStyles.separator} />
       <ExamItem
         id="rinofaringe-funcaovelofaringea"
         label="Função velofaringea"
         initialText="preservada"
       />
-      <hr className={parentStyles.separator} />
       <ExamItem id="rinofaringe-lesoes" initialText="Ausência de lesões" />
-      <hr className={parentStyles.separator} />
       <Observacoes parentId="rinofaringe" />
     </ul>
   </fieldset>

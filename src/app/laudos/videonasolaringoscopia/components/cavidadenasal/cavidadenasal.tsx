@@ -15,27 +15,23 @@ const CavidadeNasal = () => (
         initialText="desvio para direita, com esporão ósseo associado, parcialmente obstrutivo"
         rows={2}
       />
-      <hr className={parentStyles.separator} />
       <ExamItem
         id="cavidadeNasal-cornetosMedios"
         label="Cornetos médios"
         initialText="normotróficos"
       />
-      <hr className={parentStyles.separator} />
       <ExamItem
         id="cavidadeNasal-cornetosInferiores"
         label="Cornetos inferiores"
         initialText="normotróficos"
       />
-      <hr className={parentStyles.separator} />
       <ExamItem
         id="cavidadeNasal-secrecao"
         label="Secreção"
         initialText="aquosa"
       />
-      <hr className={parentStyles.separator} />
       <ExamItem id="cavidadeNasal-mucosa" label="Mucosa" initialText="pálida" />
-      <hr className={parentStyles.separator} />
+
       <Observacoes parentId="cavidadeNasal" />
     </ul>
   </fieldset>
