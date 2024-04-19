@@ -4,7 +4,11 @@ import { useState } from "react";
 
 import parentStyles from "../../videonasolaringoscopia.module.css";
 
-const Observacoes = () => {
+type ObservacoesProps = {
+  parentId?: string;
+};
+
+const Observacoes = ({ parentId }: ObservacoesProps) => {
   const [observacoes, setObservacoes] = useState("");
 
   return (
@@ -16,7 +20,7 @@ const Observacoes = () => {
       <textarea
         className={parentStyles.itemExameDouble}
         rows={1}
-        id="observacoes"
+        id={`${parentId ? `${parentId}-` : ""}observacoes`}
         placeholder="Observações"
         value={observacoes}
         onChange={({ target: { value } }) => setObservacoes(value)}

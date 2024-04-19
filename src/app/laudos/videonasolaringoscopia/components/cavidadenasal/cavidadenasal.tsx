@@ -6,33 +6,37 @@ import ExamItem from "../examitem/examitem";
 import Observacoes from "../observacoes/observacoes";
 
 const CavidadeNasal = () => (
-  <fieldset>
+  <fieldset id="cavidadeNasal">
     <h2 className={parentStyles.tituloSecaoExame}>Cavidade Nasal</h2>
     <ul className={parentStyles.itensExame}>
       <ExamItem
-        id="septoNasal"
+        id="cavidadeNasal-septoNasal"
         label="Septo nasal"
         initialText="desvio para direita, com esporão ósseo associado, parcialmente obstrutivo"
         rows={2}
       />
       <hr className={parentStyles.separator} />
       <ExamItem
-        id="cornetosMedios"
+        id="cavidadeNasal-cornetosMedios"
         label="Cornetos médios"
         initialText="normotróficos"
       />
       <hr className={parentStyles.separator} />
       <ExamItem
-        id="cornetosInferiores"
+        id="cavidadeNasal-cornetosInferiores"
         label="Cornetos inferiores"
         initialText="normotróficos"
       />
       <hr className={parentStyles.separator} />
-      <ExamItem id="secrecao" label="Secreção" initialText="aquosa" />
+      <ExamItem
+        id="cavidadeNasal-secrecao"
+        label="Secreção"
+        initialText="aquosa"
+      />
       <hr className={parentStyles.separator} />
-      <ExamItem id="mucosa" label="Mucosa" initialText="pálida" />
+      <ExamItem id="cavidadeNasal-mucosa" label="Mucosa" initialText="pálida" />
       <hr className={parentStyles.separator} />
-      <Observacoes />
+      <Observacoes parentId="cavidadeNasal" />
     </ul>
   </fieldset>
 );

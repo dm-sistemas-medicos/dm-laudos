@@ -6,28 +6,28 @@ import ExamItem from "../examitem/examitem";
 import Observacoes from "../observacoes/observacoes";
 
 const Rinofaringe = () => (
-  <fieldset>
+  <fieldset id="rinofaringe">
     <h2 className={parentStyles.tituloSecaoExame}>Rinofaringe</h2>
     <ul className={parentStyles.itensExame}>
-      <ExamItem id="mucosa" label="Mucosa" initialText="normal" />
+      <ExamItem id="rinofaringe-mucosa" label="Mucosa" initialText="normal" />
       <hr className={parentStyles.separator} />
-      <ExamItem id="meatos" label="Meatos" initialText="pérvios" />
+      <ExamItem id="rinofaringe-meatos" label="Meatos" initialText="pérvios" />
       <hr className={parentStyles.separator} />
       <ExamItem
-        id="ostiostubarios"
+        id="rinofaringe-ostiostubarios"
         label="Óstios tubários"
         initialText="visualidados bilateralmente e pérvios"
       />
       <hr className={parentStyles.separator} />
       <ExamItem
-        id="funcaovelofaringea"
+        id="rinofaringe-funcaovelofaringea"
         label="Função velofaringea"
         initialText="preservada"
       />
       <hr className={parentStyles.separator} />
-      <ExamItem id="lesoes" initialText="Ausência de lesões" />
+      <ExamItem id="rinofaringe-lesoes" initialText="Ausência de lesões" />
       <hr className={parentStyles.separator} />
-      <Observacoes />
+      <Observacoes parentId="rinofaringe" />
     </ul>
   </fieldset>
 );

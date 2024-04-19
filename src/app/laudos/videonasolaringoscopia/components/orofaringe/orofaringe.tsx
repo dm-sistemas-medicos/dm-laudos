@@ -6,28 +6,28 @@ import ExamItem from "../examitem/examitem";
 import Observacoes from "../observacoes/observacoes";
 
 const Orofaringe = () => (
-  <fieldset>
+  <fieldset id="orofaringe">
     <h2 className={parentStyles.tituloSecaoExame}>Orofaringe</h2>
     <ul className={parentStyles.itensExame}>
       <ExamItem
-        id="orofaringe"
+        id="orofaringe-orofaringe"
         label="Orofaringe"
         initialText="e hipofaringe com mucosa normal"
       />
       <hr className={parentStyles.separator} />
       <ExamItem
-        id="baseLingua"
+        id="orofaringe-baseLingua"
         label="Base da língua"
         initialText="sem alterações"
       />
       <hr className={parentStyles.separator} />
       <ExamItem
-        id="valeculas"
+        id="orofaringe-valeculas"
         label="Valéculas e seios piriformes"
         initialText="livres"
       />
       <hr className={parentStyles.separator} />
-      <Observacoes />
+      <Observacoes parentId="orofaringe" />
     </ul>
   </fieldset>
 );
