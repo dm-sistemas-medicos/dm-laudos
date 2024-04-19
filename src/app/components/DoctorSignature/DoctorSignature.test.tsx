@@ -2,11 +2,11 @@ import "@testing-library/jest-dom";
 
 import { render, screen } from "@testing-library/react";
 
-import Signature from "./signature";
+import DoctorSignature from "./DoctorSignature";
 
-describe("Signature component", () => {
+describe("DoctorSignature component", () => {
   beforeEach(() => {
-    render(<Signature />);
+    render(<DoctorSignature />);
   });
 
   it("renders the image", () => {

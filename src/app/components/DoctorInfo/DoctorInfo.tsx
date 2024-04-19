@@ -1,12 +1,12 @@
 "use client";
 
-import styles from "./dadosmedico.module.scss";
+import styles from "./DoctorInfo.module.scss";
 
-const DadosMedico = () => (
-  <p className={styles.dadosMedico}>
+const DoctorInfo = () => (
+  <p className={styles["doctor-info"]}>
     Dra. Mariana Machoski, CRM/SC 35098, RQE/SC 23991 - Email:
     marianamachoskilo@gmail.com - Instagram: @marimachoski
   </p>
 );
 
-export default DadosMedico;
+export default DoctorInfo;

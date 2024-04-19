@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-import parentStyles from "../../videonasolaringoscopia.module.scss";
+import parentStyles from "../../Videolaryngoscopy.module.scss";
 
 type ExamItemProps = {
   id: string;
@@ -22,10 +22,10 @@ const ExamItem = ({
   const [text, setText] = useState(initialText);
 
   return (
-    <li className={parentStyles.examItem}>
+    <li className={parentStyles["exam-item"]}>
       {label && <label htmlFor={id}>{label}</label>}
       <textarea
-        className={!label ? parentStyles.examItemDouble : ""}
+        className={!label ? parentStyles["exam-item-double"] : ""}
         id={id}
         rows={rows || 1}
         value={text}

@@ -4,7 +4,7 @@ import { useRef, useState, DragEvent, ChangeEvent, useEffect } from "react";
 
 import { ImagensType, SetImagensType } from "@/app/page";
 
-import styles from "./draganddrop.module.scss";
+import styles from "./DragAndDrop.module.scss";
 
 type DragAndDropProps = {
   setImagens: SetImagensType;
@@ -75,12 +75,12 @@ const DragAndDrop = ({ setImagens }: DragAndDropProps) => {
   return (
     <form
       id="dragAndDrop"
-      className={styles.dragAndDrop}
+      className={styles["drag-and-drop"]}
       onDragEnter={handleDrag}
       onSubmit={(e) => e.preventDefault()}
     >
       <input
-        id="dragdrogInput"
+        id="drag-and-drop-input"
         ref={inputRef}
         type="file"
         multiple={true}
@@ -89,10 +89,10 @@ const DragAndDrop = ({ setImagens }: DragAndDropProps) => {
       />
       <label
         id="dragAndDropLabel"
-        className={`${styles.dragAndDropLabel} ${
-          dragActive ? styles.dragAndDropLabelHidden : ""
+        className={`${styles["drag-and-drop-label"]} ${
+          dragActive ? styles["drag-and-drop-label-hidden"] : ""
         }`}
-        htmlFor="dragdrogInput"
+        htmlFor="drag-and-drop-input"
       >
         <p>Arraste as imagens aqui</p>
         <p>OU</p>
@@ -102,7 +102,7 @@ const DragAndDrop = ({ setImagens }: DragAndDropProps) => {
         <div
           draggable={true}
           id="dropArea"
-          className={styles.dropArea}
+          className={styles["drop-area"]}
           onDragEnter={handleDrag}
           onDragLeave={handleDrag}
           onDragOver={handleDrag}

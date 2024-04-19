@@ -6,12 +6,12 @@ import Image from "next/image";
 
 import styles from "./page.module.scss";
 
-import DadosPaciente from "./components/dadospaciente/dadospaciente";
-import VideoNasoLaringoscopia from "./laudos/videonasolaringoscopia/videonasolaringoscopia";
-import DragAndDrop from "./components/draganddrop/draganddrop";
-import Preview from "./components/preview/preview";
-import Signature from "./components/signature/signature";
-import DadosMedico from "./components/dadosmedico/dadosmedico";
+import PatientInfo from "./components/PatientInfo/PatientInfo";
+import Videolaryngoscopy from "./templates/Videolaryngoscopy/Videolaryngoscopy";
+import DragAndDrop from "./components/DragAndDrop/DragAndDrop";
+import Preview from "./components/Preview/Preview";
+import DoctorSignature from "./components/DoctorSignature/DoctorSignature";
+import DoctorInfo from "./components/DoctorInfo/DoctorInfo";
 
 export type ImagensType = string[];
 export type SetImagensType = Dispatch<SetStateAction<ImagensType>>;
@@ -40,10 +40,10 @@ const Page = () => {
             height={123}
             priority={true}
           />
-          <DadosPaciente />
+          <PatientInfo />
         </header>
         <main className={styles.main}>
-          <VideoNasoLaringoscopia />
+          <Videolaryngoscopy />
         </main>
         <aside className={styles.aside}>
           <DragAndDrop setImagens={setImagens} />
@@ -63,9 +63,9 @@ const Page = () => {
           </section>
         )}
         <footer className={styles.footer}>
-          <Signature />
+          <DoctorSignature />
           <hr />
-          <DadosMedico />
+          <DoctorInfo />
         </footer>
       </section>
     </ImagensContext.Provider>

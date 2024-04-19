@@ -1,4 +1,4 @@
-.dragAndDrop {
+.drag-and-drop {
   position: relative;
   height: 80px;
   padding: 12px 0;
@@ -19,7 +19,7 @@
   }
 }
 
-.dragAndDropLabel {
+.drag-and-drop-label {
   display: grid;
   align-items: center;
   justify-content: center;
@@ -47,11 +47,11 @@
   }
 }
 
-.dragAndDropLabelHidden {
+.drag-and-drop-label-hidden {
   display: none;
 }
 
-.dropArea {
+.drop-area {
   position: absolute;
   top: 0;
   right: 0;

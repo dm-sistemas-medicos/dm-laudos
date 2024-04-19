@@ -1,23 +1,23 @@
-.examTitle {
+.exam-title {
   margin: 0;
   text-transform: uppercase;
   font-size: 20px;
 }
 
-.examSectionTitle {
+.exam-section-title {
   margin: 0;
   text-transform: uppercase;
   font-size: 18px;
 }
 
-.examItemList {
+.exam-item-list {
   margin: 6px 0 0;
   padding: 0;
   display: grid;
   row-gap: 8px;
 }
 
-.examItem {
+.exam-item {
   position: relative;
   margin: 0 0 9px;
   display: grid;
@@ -41,11 +41,11 @@
   }
 }
 
-.examItemDouble {
+.exam-item-double {
   grid-column: span 2;
 }
 
-.nonPrintable {
+.non-printable {
   @media print {
     display: none;
   }

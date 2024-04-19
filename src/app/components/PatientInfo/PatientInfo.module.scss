@@ -1,4 +1,4 @@
-.dadosPaciente {
+.patient-info {
   padding: 4px;
   display: grid;
   grid-template-columns: 1fr auto auto;
@@ -19,19 +19,19 @@
   }
 }
 
-.dadoPacienteExtra {
+.extra-info {
   grid-column: span 2;
   grid-template-columns: auto auto 1fr;
 }
 
-.dadoPacienteInputSmall {
+.small-input {
   width: 48px;
 }
 
-.dadoPacienteInputMedium {
+.medium-input {
   width: 96px;
 }
 
-.dadoPacienteInputFull {
+.full-input {
   grid-column: span 2;
 }
