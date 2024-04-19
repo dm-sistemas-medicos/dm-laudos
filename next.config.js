@@ -12,6 +12,8 @@ const cspHeader = `
     upgrade-insecure-requests;
 `;
 
+const path = require("path");
+
 module.exports = {
   async headers() {
     return [
@@ -25,5 +27,8 @@ module.exports = {
         ],
       },
     ];
+  },
+  sassOptions: {
+    includePaths: [path.join(__dirname, "styles")],
   },
 };
