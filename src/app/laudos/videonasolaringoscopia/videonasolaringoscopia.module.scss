@@ -26,19 +26,19 @@
   justify-content: start;
   align-items: start;
 
+  &:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: -9px;
+    left: 0;
+    height: 1px;
+    background-color: #000;
+  }
+
   @media print {
     margin: 0;
   }
-}
-
-.examItem:not(:last-child)::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  bottom: -9px;
-  left: 0;
-  height: 1px;
-  background-color: #000;
 }
 
 .examItemDouble {

@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 
-import styles from "./signature.module.css";
+import styles from "./signature.module.scss";
 
 const Signature = () => (
   <div className={styles.signature}>

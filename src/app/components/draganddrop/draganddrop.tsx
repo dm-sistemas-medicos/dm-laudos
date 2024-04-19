@@ -4,13 +4,13 @@ import { useRef, useState, DragEvent, ChangeEvent, useEffect } from "react";
 
 import { ImagensType, SetImagensType } from "@/app/page";
 
-import styles from "./dragdrop.module.css";
+import styles from "./draganddrop.module.scss";
 
-type DragDropProps = {
+type DragAndDropProps = {
   setImagens: SetImagensType;
 };
 
-const DragDrop = ({ setImagens }: DragDropProps) => {
+const DragAndDrop = ({ setImagens }: DragAndDropProps) => {
   const [dragActive, setDragActive] = useState(false);
 
   const inputRef = useRef<HTMLInputElement>(null);
@@ -74,14 +74,13 @@ const DragDrop = ({ setImagens }: DragDropProps) => {
 
   return (
     <form
-      id="dragdropForm"
-      className={styles.dragdropForm}
+      id="dragAndDrop"
+      className={styles.dragAndDrop}
       onDragEnter={handleDrag}
       onSubmit={(e) => e.preventDefault()}
     >
       <input
         id="dragdrogInput"
-        className={styles.dragdrogInput}
         ref={inputRef}
         type="file"
         multiple={true}
@@ -89,33 +88,31 @@ const DragDrop = ({ setImagens }: DragDropProps) => {
         accept="image/*"
       />
       <label
-        id="dragdropLabel"
-        className={`${styles.dragdropLabel} ${
-          dragActive ? styles.dragdropLabelHidden : ""
+        id="dragAndDropLabel"
+        className={`${styles.dragAndDropLabel} ${
+          dragActive ? styles.dragAndDropLabelHidden : ""
         }`}
         htmlFor="dragdrogInput"
       >
-        <p className={styles.dragdropLabelText}>Arraste as imagens aqui</p>
-        <p className={styles.dragdropLabelText}>OU</p>
-        <button className={styles.dragdropLabelButton} onClick={onButtonClick}>
-          Selecione as imagens
-        </button>
+        <p>Arraste as imagens aqui</p>
+        <p>OU</p>
+        <button onClick={onButtonClick}>Selecione as imagens</button>
       </label>
       {dragActive && (
         <div
           draggable={true}
-          id="dropElement"
-          className={styles.dropElement}
+          id="dropArea"
+          className={styles.dropArea}
           onDragEnter={handleDrag}
           onDragLeave={handleDrag}
           onDragOver={handleDrag}
           onDrop={handleDrop}
         >
-          <p className={styles.dragdropLabelText}>Solte as imagens aqui</p>
+          <p>Solte as imagens aqui</p>
         </div>
       )}
     </form>
   );
 };
 
-export default DragDrop;
+export default DragAndDrop;

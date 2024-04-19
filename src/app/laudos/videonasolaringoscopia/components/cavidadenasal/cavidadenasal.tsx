@@ -1,6 +1,6 @@
 "use client";
 
-import parentStyles from "../../videonasolaringoscopia.module.css";
+import parentStyles from "../../videonasolaringoscopia.module.scss";
 
 import ExamItem from "../examitem/examitem";
 import Observacoes from "../observacoes/observacoes";

@@ -4,11 +4,11 @@ import { Dispatch, SetStateAction, createContext, useState, FC } from "react";
 
 import Image from "next/image";
 
-import styles from "./page.module.css";
+import styles from "./page.module.scss";
 
 import DadosPaciente from "./components/dadospaciente/dadospaciente";
 import VideoNasoLaringoscopia from "./laudos/videonasolaringoscopia/videonasolaringoscopia";
-import DragDrop from "./components/dragdrop/dragdrop";
+import DragAndDrop from "./components/draganddrop/draganddrop";
 import Preview from "./components/preview/preview";
 import Signature from "./components/signature/signature";
 import DadosMedico from "./components/dadosmedico/dadosmedico";
@@ -46,7 +46,7 @@ const Page = () => {
           <VideoNasoLaringoscopia />
         </main>
         <aside className={styles.aside}>
-          <DragDrop setImagens={setImagens} />
+          <DragAndDrop setImagens={setImagens} />
           <Preview
             imagens={imagens.length <= 4 ? imagens : imagens.slice(0, 4)}
             width={300}

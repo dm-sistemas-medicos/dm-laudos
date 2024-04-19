@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-import styles from "./dadospaciente.module.css";
+import styles from "./dadospaciente.module.scss";
 
 const DadosPaciente = () => {
   const hoje = new Date();
@@ -48,17 +48,16 @@ const DadosPaciente = () => {
 
   return (
     <form className={styles.dadosPaciente}>
-      <div className={styles.dadoPaciente}>
+      <div>
         <label htmlFor="nomePaciente">Nome:</label>
         <input
-          className={styles.dadoPacienteInput}
           id="nomePaciente"
           type="text"
           value={nomePaciente}
           onChange={({ target: { value } }) => setNomePaciente(value)}
         />
       </div>
-      <div className={styles.dadoPaciente}>
+      <div>
         <label htmlFor="numeroProntuario">Prontuário:</label>
         <input
           className={`${styles.dadoPacienteInput} ${styles.dadoPacienteInputSmall}`}
@@ -69,7 +68,7 @@ const DadosPaciente = () => {
           onChange={({ target: { value } }) => setNumeroProntuario(value)}
         />
       </div>
-      <div className={styles.dadoPaciente}>
+      <div>
         <label htmlFor="dataLaudo">Data:</label>
         <input
           className={`${styles.dadoPacienteInput} ${styles.dadoPacienteInputMedium}`}
@@ -79,10 +78,9 @@ const DadosPaciente = () => {
           onChange={({ target: { value } }) => setDataLaudo(value)}
         />
       </div>
-      <div className={styles.dadoPaciente}>
+      <div>
         <label htmlFor="nomeSolicitante">Solicitante:</label>
         <input
-          className={styles.dadoPacienteInput}
           id="nomeSolicitante"
           type="text"
           value={nomeSolicitante}
@@ -100,10 +98,9 @@ const DadosPaciente = () => {
         />
         <span>{tempoVida}</span>
       </div>
-      <div className={styles.dadoPaciente}>
+      <div>
         <label htmlFor="nomeOperador">Operador:</label>
         <input
-          className={styles.dadoPacienteInput}
           id="nomeOperador"
           type="text"
           value={nomeOperador}

@@ -2,8 +2,7 @@
 
 import { useState } from "react";
 
-import parentStyles from "../../videonasolaringoscopia.module.css";
-import styles from "./conclusao.module.css";
+import parentStyles from "../../videonasolaringoscopia.module.scss";
 
 const Conclusao = () => {
   const [conclusao, setConclusao] = useState("");
@@ -14,7 +13,7 @@ const Conclusao = () => {
       <ul className={parentStyles.examItemList}>
         <li className={parentStyles.examItem}>
           <textarea
-            className={styles.examItemDouble}
+            className={parentStyles.examItemDouble}
             rows={5}
             id="conclusao"
             value={conclusao}

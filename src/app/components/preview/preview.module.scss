@@ -1,12 +1,12 @@
 .preview {
   display: grid;
   gap: 6px;
+
+  & > img {
+    object-fit: contain;
+  }
 }
 
 .previewColumns {
   grid-template-columns: repeat(3, auto);
-}
-
-.previewImage {
-  object-fit: contain;
 }

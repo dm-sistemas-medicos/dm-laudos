@@ -1,6 +1,6 @@
 "use client";
 
-import styles from "./dadosmedico.module.css";
+import styles from "./dadosmedico.module.scss";
 
 const DadosMedico = () => (
   <p className={styles.dadosMedico}>

@@ -1,6 +1,6 @@
 "use client";
 
-import styles from "./videonasolaringoscopia.module.css";
+import styles from "./videonasolaringoscopia.module.scss";
 
 import CavidadeNasal from "./components/cavidadenasal/cavidadenasal";
 import Rinofaringe from "./components/rinofaringe/rinofaringe";

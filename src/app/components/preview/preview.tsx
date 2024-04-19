@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 
-import styles from "./preview.module.css";
+import styles from "./preview.module.scss";
 
 type PreviewProps = {
   imagens: string[];
@@ -16,7 +16,6 @@ const Preview = ({ imagens, width, multiColumn }: PreviewProps) => (
   >
     {imagens.map((image, i) => (
       <Image
-        className={styles.previewImage}
         key={i}
         src={image}
         width={width}

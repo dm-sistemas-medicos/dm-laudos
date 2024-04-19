@@ -15,6 +15,12 @@
 
 .main {
   grid-area: main;
+
+  fieldset {
+    margin: 12px 0 0;
+    padding: 0;
+    border: none;
+  }
 }
 
 .aside {
@@ -28,4 +34,9 @@
 .footer {
   grid-area: footer;
   display: grid;
+
+  hr {
+    width: 100%;
+    margin: 0;
+  }
 }

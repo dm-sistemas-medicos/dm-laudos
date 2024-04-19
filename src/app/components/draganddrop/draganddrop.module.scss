@@ -1,4 +1,4 @@
-.dragdropForm {
+.dragAndDrop {
   position: relative;
   height: 80px;
   padding: 12px 0;
@@ -10,48 +10,48 @@
   border-radius: 12px;
   cursor: grab;
 
+  & > input {
+    display: none;
+  }
+
   @media print {
     display: none;
   }
 }
 
-.dragdrogInput {
-  display: none;
-}
-
-.dragdropLabel {
+.dragAndDropLabel {
   display: grid;
   align-items: center;
   justify-content: center;
   row-gap: 6px;
   cursor: grab;
+
+  & > p {
+    margin: 0;
+    text-align: center;
+  }
+
+  & > button {
+    padding: 8px 24px;
+    display: flex;
+    justify-content: center;
+    border-radius: 8px;
+    border: none;
+    background-color: #6161ff;
+    cursor: pointer;
+    color: #fff;
+
+    &:hover {
+      background-color: #a0aec0;
+    }
+  }
 }
 
-.dragdropLabelHidden {
+.dragAndDropLabelHidden {
   display: none;
 }
 
-.dragdropLabelText {
-  margin: 0;
-  text-align: center;
-}
-
-.dragdropLabelButton {
-  padding: 8px 24px;
-  display: flex;
-  justify-content: center;
-  border-radius: 8px;
-  border: none;
-  background-color: #6161ff;
-  cursor: pointer;
-  color: #fff;
-}
-
-.dragdropLabelButton:hover {
-  background-color: #a0aec0;
-}
-
-.dropElement {
+.dropArea {
   position: absolute;
   top: 0;
   right: 0;
