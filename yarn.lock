@@ -246,7 +246,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:20.12.7":
+"@types/node@npm:^20.12.7":
   version: 20.12.7
   resolution: "@types/node@npm:20.12.7"
   dependencies:
@@ -262,7 +262,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:18.2.25":
+"@types/react-dom@npm:^18.2.25":
   version: 18.2.25
   resolution: "@types/react-dom@npm:18.2.25"
   dependencies:
@@ -271,7 +271,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:18.2.79":
+"@types/react@npm:*, @types/react@npm:^18.2.79":
   version: 18.2.79
   resolution: "@types/react@npm:18.2.79"
   dependencies:
@@ -816,15 +816,15 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "dm-laudos@workspace:."
   dependencies:
-    "@types/node": 20.12.7
-    "@types/react": 18.2.79
-    "@types/react-dom": 18.2.25
-    eslint: 9.0.0
-    eslint-config-next: 14.2.2
-    next: 14.2.2
-    react: 18.2.0
-    react-dom: 18.2.0
-    typescript: 5.4.5
+    "@types/node": ^20.12.7
+    "@types/react": ^18.2.79
+    "@types/react-dom": ^18.2.25
+    eslint: ^9.0.0
+    eslint-config-next: ^14.2.2
+    next: ^14.2.2
+    react: ^18.2.0
+    react-dom: ^18.2.0
+    typescript: ^5.4.5
   languageName: unknown
   linkType: soft
 
@@ -1007,7 +1007,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-next@npm:14.2.2":
+"eslint-config-next@npm:^14.2.2":
   version: 14.2.2
   resolution: "eslint-config-next@npm:14.2.2"
   dependencies:
@@ -1185,7 +1185,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:9.0.0":
+"eslint@npm:^9.0.0":
   version: 9.0.0
   resolution: "eslint@npm:9.0.0"
   dependencies:
@@ -2111,7 +2111,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next@npm:14.2.2":
+"next@npm:^14.2.2":
   version: 14.2.2
   resolution: "next@npm:14.2.2"
   dependencies:
@@ -2401,7 +2401,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-dom@npm:18.2.0":
+"react-dom@npm:^18.2.0":
   version: 18.2.0
   resolution: "react-dom@npm:18.2.0"
   dependencies:
@@ -2420,7 +2420,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:18.2.0":
+"react@npm:^18.2.0":
   version: 18.2.0
   resolution: "react@npm:18.2.0"
   dependencies:
@@ -2931,7 +2931,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:5.4.5":
+"typescript@npm:^5.4.5":
   version: 5.4.5
   resolution: "typescript@npm:5.4.5"
   bin:
@@ -2941,7 +2941,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@5.4.5#~builtin<compat/typescript>":
+"typescript@patch:typescript@^5.4.5#~builtin<compat/typescript>":
   version: 5.4.5
   resolution: "typescript@patch:typescript@npm%3A5.4.5#~builtin<compat/typescript>::version=5.4.5&hash=bda367"
   bin:
