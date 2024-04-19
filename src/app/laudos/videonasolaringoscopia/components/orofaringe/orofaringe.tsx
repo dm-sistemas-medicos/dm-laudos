@@ -2,17 +2,30 @@
 
 import parentStyles from "../../videonasolaringoscopia.module.css";
 
-import Mucosa from "./components/mucosa/mucosa";
-import BaseLingua from "./components/baselingua/baselingua";
+import ExamItem from "../examitem/examitem";
 import Observacoes from "../observacoes/observacoes";
 
 const Orofaringe = () => (
   <fieldset>
     <h2 className={parentStyles.tituloSecaoExame}>Orofaringe</h2>
     <ul className={parentStyles.itensExame}>
-      <Mucosa />
+      <ExamItem
+        id="orofaringe"
+        label="Orofaringe"
+        initialText="e hipofaringe com mucosa normal"
+      />
       <hr className={parentStyles.separator} />
-      <BaseLingua />
+      <ExamItem
+        id="baseLingua"
+        label="Base da língua"
+        initialText="sem alterações"
+      />
+      <hr className={parentStyles.separator} />
+      <ExamItem
+        id="valeculas"
+        label="Valéculas e seios piriformes"
+        initialText="livres"
+      />
       <hr className={parentStyles.separator} />
       <Observacoes />
     </ul>
