@@ -1,4 +1,4 @@
-.assinatura {
+.signature {
   margin: 0 0 12px;
   display: grid;
   justify-content: center;
@@ -7,10 +7,10 @@
   font-size: 12px;
 }
 
-.assinatura > img {
+.signature > img {
   margin: 0 auto 12px;
 }
 
-.assinatura > p {
+.signature > p {
   margin: 0;
 }

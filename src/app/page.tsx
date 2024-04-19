@@ -10,7 +10,7 @@ import DadosPaciente from "./components/dadospaciente/dadospaciente";
 import VideoNasoLaringoscopia from "./laudos/videonasolaringoscopia/videonasolaringoscopia";
 import DragDrop from "./components/dragdrop/dragdrop";
 import Preview from "./components/preview/preview";
-import Assinatura from "./components/assinatura/assinatura";
+import Signature from "./components/signature/signature";
 import DadosMedico from "./components/dadosmedico/dadosmedico";
 
 export type ImagensType = string[];
@@ -63,7 +63,7 @@ const Page = () => {
           </section>
         )}
         <footer className={styles.footer}>
-          <Assinatura />
+          <Signature />
           <hr />
           <DadosMedico />
         </footer>

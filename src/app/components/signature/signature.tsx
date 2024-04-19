@@ -2,10 +2,10 @@
 
 import Image from "next/image";
 
-import styles from "./assinatura.module.css";
+import styles from "./signature.module.css";
 
-const Assinatura = () => (
-  <div className={styles.assinatura}>
+const Signature = () => (
+  <div className={styles.signature}>
     <Image src={"/assinatura.png"} width={75} height={75} alt="Assinatura" />
     <p>Dra. Mariana Carolina C. Machoski</p>
     <p>Médica Otorrinolaringologista</p>
@@ -13,4 +13,4 @@ const Assinatura = () => (
   </div>
 );
 
-export default Assinatura;
+export default Signature;
