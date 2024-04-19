@@ -1,21 +1,21 @@
-.tituloExame {
+.examTitle {
   margin: 0;
   text-transform: uppercase;
 }
 
-.tituloSecaoExame {
+.examSectionTitle {
   margin: 0;
   text-transform: uppercase;
 }
 
-.itensExame {
+.examItemList {
   margin: 6px 0 0;
   padding: 0;
   display: grid;
   row-gap: 8px;
 }
 
-.itemExame {
+.examItem {
   display: grid;
   grid-template-columns: auto 1fr;
   gap: 4px;
@@ -23,7 +23,7 @@
   align-items: start;
 }
 
-.itemExameDouble {
+.examItemDouble {
   grid-column: span 2;
 }
 

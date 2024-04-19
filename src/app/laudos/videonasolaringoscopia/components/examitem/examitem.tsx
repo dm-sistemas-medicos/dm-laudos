@@ -15,10 +15,10 @@ const ExamItem = ({ id, initialText, label, rows }: ExamItemProps) => {
   const [text, setText] = useState(initialText);
 
   return (
-    <li className={parentStyles.itemExame}>
+    <li className={parentStyles.examItem}>
       {label && <label>{label}</label>}
       <textarea
-        className={!label ? parentStyles.itemExameDouble : ""}
+        className={!label ? parentStyles.examItemDouble : ""}
         id={id}
         rows={rows || 1}
         value={text}

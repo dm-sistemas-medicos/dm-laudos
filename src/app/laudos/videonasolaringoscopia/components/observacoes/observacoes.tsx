@@ -13,12 +13,12 @@ const Observacoes = ({ parentId }: ObservacoesProps) => {
 
   return (
     <li
-      className={`${parentStyles.itemExame} ${
+      className={`${parentStyles.examItem} ${
         !observacoes.length ? parentStyles.nonPrintable : ""
       }`}
     >
       <textarea
-        className={parentStyles.itemExameDouble}
+        className={parentStyles.examItemDouble}
         rows={1}
         id={`${parentId ? `${parentId}-` : ""}observacoes`}
         placeholder="Observações"

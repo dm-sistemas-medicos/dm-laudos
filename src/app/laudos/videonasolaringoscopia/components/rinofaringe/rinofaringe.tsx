@@ -7,8 +7,8 @@ import Observacoes from "../observacoes/observacoes";
 
 const Rinofaringe = () => (
   <fieldset id="rinofaringe">
-    <h2 className={parentStyles.tituloSecaoExame}>Rinofaringe</h2>
-    <ul className={parentStyles.itensExame}>
+    <h2 className={parentStyles.examSectionTitle}>Rinofaringe</h2>
+    <ul className={parentStyles.examItemList}>
       <ExamItem id="rinofaringe-mucosa" label="Mucosa" initialText="normal" />
       <hr className={parentStyles.separator} />
       <ExamItem id="rinofaringe-meatos" label="Meatos" initialText="pérvios" />

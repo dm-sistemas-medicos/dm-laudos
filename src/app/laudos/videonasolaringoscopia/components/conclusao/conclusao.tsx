@@ -10,11 +10,11 @@ const Conclusao = () => {
 
   return (
     <fieldset>
-      <h2 className={parentStyles.tituloSecaoExame}>Conclusão</h2>
-      <ul className={parentStyles.itensExame}>
-        <li className={parentStyles.itemExame}>
+      <h2 className={parentStyles.examSectionTitle}>Conclusão</h2>
+      <ul className={parentStyles.examItemList}>
+        <li className={parentStyles.examItem}>
           <textarea
-            className={styles.itemExameDouble}
+            className={styles.examItemDouble}
             rows={5}
             id="conclusao"
             value={conclusao}

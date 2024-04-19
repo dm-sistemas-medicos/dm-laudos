@@ -10,7 +10,7 @@ import Conclusao from "./components/conclusao/conclusao";
 
 const VideoNasoLaringoscopia = () => (
   <>
-    <h1 className={styles.tituloExame}>Videonasolaringoscopia</h1>
+    <h1 className={styles.examTitle}>Videonasolaringoscopia</h1>
     <form>
       <CavidadeNasal />
       <Rinofaringe />
