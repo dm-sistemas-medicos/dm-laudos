@@ -11,6 +11,7 @@ import VideoNasoLaringoscopia from "./laudos/videonasolaringoscopia/videonasolar
 import DragDrop from "./components/dragdrop/dragdrop";
 import Preview from "./components/preview/preview";
 import Assinatura from "./components/assinatura/assinatura";
+import DadosMedico from "./components/dadosmedico/dadosmedico";
 
 export type ImagensType = string[];
 export type SetImagensType = Dispatch<SetStateAction<ImagensType>>;
@@ -64,10 +65,7 @@ const Page = () => {
         <footer className={styles.footer}>
           <Assinatura />
           <hr />
-          <p className={styles.dadosMedico}>
-            Dra. Mariana Machoski, CRM/SC 35098, RQE/SC 23991 - Email:
-            marianamachoskilo@gmail.com - Instagram: @marimachoski
-          </p>
+          <DadosMedico />
         </footer>
       </section>
     </ImagensContext.Provider>

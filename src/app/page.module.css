@@ -29,8 +29,3 @@
   grid-area: footer;
   display: grid;
 }
-
-.dadosMedico {
-  font-size: 13px;
-  text-align: center;
-}
