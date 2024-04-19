@@ -2,26 +2,38 @@
 
 import parentStyles from "../../videonasolaringoscopia.module.css";
 
-import PregasVocais from "./components/pregasvocais/pregasvocais";
-import BordosLivres from "./components/bordoslivres/bordoslivres";
-import Coaptacao from "./components/coaptacao/coaptacao";
-import Mucos from "./components/mucosa/mucosa";
-import Subglote from "./components/subglote/subglote";
+import ExamItem from "../examitem/examitem";
 import Observacoes from "../observacoes/observacoes";
 
 const Laringe = () => (
   <fieldset>
     <h2 className={parentStyles.tituloSecaoExame}>Laringe</h2>
     <ul className={parentStyles.itensExame}>
-      <PregasVocais />
+      <ExamItem
+        id="pregasVocais"
+        label="Pregas vocais"
+        initialText="com mobilidade preservada bilateralmente"
+      />
       <hr className={parentStyles.separator} />
-      <BordosLivres />
+      <ExamItem
+        id="bordosLivres"
+        label="Bordos livres"
+        initialText="regulares, sem lesões"
+      />
       <hr className={parentStyles.separator} />
-      <Coaptacao />
+      <ExamItem id="coaptacao" label="Coaptação" initialText="normal" />
       <hr className={parentStyles.separator} />
-      <Mucos />
+      <ExamItem
+        id="mucosa"
+        label="Mucosa"
+        initialText="com hiperemia e edema leve"
+      />
       <hr className={parentStyles.separator} />
-      <Subglote />
+      <ExamItem
+        id="subglote"
+        label="Subglote"
+        initialText="livre, sem lesões"
+      />
       <hr className={parentStyles.separator} />
       <Observacoes />
     </ul>
