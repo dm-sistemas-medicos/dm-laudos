@@ -12,7 +12,7 @@ const NasalCavity = () => (
       <ExamItem
         id="nasal-cavity-nasal-septum"
         label="Septo nasal"
-        initialText="desvio para direita, com esporão ósseo associado, parcialmente obstrutivo"
+        initialText="com desvio para direita, com esporão ósseo associado, parcialmente obstrutivo"
         rows={2}
       />
       <ExamItem
@@ -23,7 +23,7 @@ const NasalCavity = () => (
       <ExamItem
         id="nasal-cavity-inferior-turbinates"
         label="Cornetos inferiores"
-        initialText="normotróficos"
+        initialText="hipertróficos"
       />
       <ExamItem
         id="nasal-cavity-secretion"
