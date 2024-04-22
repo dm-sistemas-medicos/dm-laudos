@@ -18,16 +18,3 @@
     }
   }
 }
-
-.extra-info {
-  grid-column: span 2;
-  grid-template-columns: auto auto 1fr;
-}
-
-.medium-input {
-  width: 96px;
-}
-
-.full-input {
-  grid-column: span 2;
-}
