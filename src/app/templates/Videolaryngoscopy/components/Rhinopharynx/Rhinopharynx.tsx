@@ -5,7 +5,7 @@ import parentStyles from "../../Videolaryngoscopy.module.scss";
 import ExamItem from "../ExamItem/ExamItem";
 import Comments from "../Comments/Comments";
 
-const Rrhinopharynx = () => (
+const Rhinopharynx = () => (
   <fieldset id="rhinopharynx">
     <h2 className={parentStyles["exam-section-title"]}>Rinofaringe</h2>
     <ul className={parentStyles["exam-item-list"]}>
@@ -31,4 +31,4 @@ const Rrhinopharynx = () => (
   </fieldset>
 );
 
-export default Rrhinopharynx;
+export default Rhinopharynx;
