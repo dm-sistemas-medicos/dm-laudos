@@ -7,6 +7,7 @@ const createJestConfig = nextJest({
 const config = {
   coverageProvider: "v8",
   testEnvironment: "jsdom",
+  collectCoverageFrom: ["src/**/*.{ts,tsx}"],
 };
 
 module.exports = createJestConfig(config);
