@@ -7,22 +7,31 @@ import styles from "./TextInput.module.scss";
 type TextInputProps = {
   id: string;
   label: string;
-  inputSize?: "small";
+  hasDoubleContainer?: boolean;
+  isSmallInput?: boolean;
   initialInfo?: string;
 };
 
-const TextInput = ({ id, label, inputSize, initialInfo }: TextInputProps) => {
-  const [info, setInfo] = useState(initialInfo);
+const TextInput = ({
+  id,
+  label,
+  hasDoubleContainer = false,
+  isSmallInput = false,
+  initialInfo,
+}: TextInputProps) => {
+  const [text, setText] = useState(initialInfo);
 
   return (
-    <div>
+    <div
+      className={hasDoubleContainer ? styles["double-container"] : undefined}
+    >
       <label htmlFor={id}>{label}:</label>
       <input
         id={id}
-        className={inputSize ? styles[`${inputSize}-input`] : undefined}
+        className={isSmallInput ? styles["small-input"] : undefined}
         type="text"
-        value={info}
-        onChange={({ target: { value } }) => setInfo(value)}
+        value={text}
+        onChange={({ target: { value } }) => setText(value)}
       />
     </div>
   );

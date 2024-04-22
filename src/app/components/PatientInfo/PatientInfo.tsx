@@ -44,7 +44,7 @@ const PatientInfo = () => {
       <TextInput
         id="medicalRecordNumber"
         label="Prontuário"
-        inputSize="small"
+        isSmallInput={true}
       />
       <div>
         <label htmlFor="medicalReportDate">Data:</label>
