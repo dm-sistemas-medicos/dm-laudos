@@ -9,6 +9,12 @@ describe("NasalCavity component", () => {
     render(<NasalCavity />);
   });
 
+  it("renders the component", () => {
+    const nasalCavity = screen.getByTestId("nasal-cavity");
+
+    expect(nasalCavity).toBeInTheDocument();
+  });
+
   it("renders the section title", () => {
     const sectionTitle = screen.getByText("Cavidade Nasal", { selector: "h2" });
 

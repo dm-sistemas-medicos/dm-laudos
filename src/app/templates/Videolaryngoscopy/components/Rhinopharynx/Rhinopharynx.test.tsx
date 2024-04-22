@@ -9,6 +9,12 @@ describe("Rhinopharynx component", () => {
     render(<Rhinopharynx />);
   });
 
+  it("renders the component", () => {
+    const rhinopharynx = screen.getByTestId("rhinopharynx");
+
+    expect(rhinopharynx).toBeInTheDocument();
+  });
+
   it("renders the section title", () => {
     const sectionTitle = screen.getByText("Rinofaringe", { selector: "h2" });
 

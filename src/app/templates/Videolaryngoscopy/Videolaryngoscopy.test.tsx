@@ -18,32 +18,32 @@ describe("Videolaryngoscopy component", () => {
   });
 
   it("renders the NasalCavity section", () => {
-    const sectionTitle = screen.getByText("Cavidade Nasal", { selector: "h2" });
+    const nasalCavity = screen.getByTestId("nasal-cavity");
 
-    expect(sectionTitle).toBeInTheDocument();
+    expect(nasalCavity).toBeInTheDocument();
   });
 
   it("renders the Rhinopharynx section", () => {
-    const sectionTitle = screen.getByText("Rinofaringe", { selector: "h2" });
+    const rhinopharynx = screen.getByTestId("rhinopharynx");
 
-    expect(sectionTitle).toBeInTheDocument();
+    expect(rhinopharynx).toBeInTheDocument();
   });
 
   it("renders the Oropharynx section", () => {
-    const sectionTitle = screen.getByText("Orofaringe", { selector: "h2" });
+    const oropharynx = screen.getByTestId("oropharynx");
 
-    expect(sectionTitle).toBeInTheDocument();
+    expect(oropharynx).toBeInTheDocument();
   });
 
   it("renders the Larynx section", () => {
-    const sectionTitle = screen.getByText("Laringe", { selector: "h2" });
+    const larynx = screen.getByTestId("larynx");
 
-    expect(sectionTitle).toBeInTheDocument();
+    expect(larynx).toBeInTheDocument();
   });
 
   it("renders the Conclusion section", () => {
-    const sectionTitle = screen.getByText("Conclusão", { selector: "h2" });
+    const conclusion = screen.getByTestId("conclusion");
 
-    expect(sectionTitle).toBeInTheDocument();
+    expect(conclusion).toBeInTheDocument();
   });
 });

@@ -8,7 +8,7 @@ const Conclusion = () => {
   const [conclusion, setConclusion] = useState("");
 
   return (
-    <fieldset>
+    <fieldset data-testid="conclusion">
       <h2 className={parentStyles["exam-section-title"]}>Conclusão</h2>
       <ul className={parentStyles["exam-item-list"]}>
         <li className={parentStyles["exam-item"]}>

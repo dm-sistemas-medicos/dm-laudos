@@ -9,6 +9,12 @@ describe("Larynx component", () => {
     render(<Larynx />);
   });
 
+  it("renders the component", () => {
+    const larynx = screen.getByTestId("larynx");
+
+    expect(larynx).toBeInTheDocument();
+  });
+
   it("renders the section title", () => {
     const sectionTitle = screen.getByText("Laringe", { selector: "h2" });
 
