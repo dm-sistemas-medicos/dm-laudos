@@ -2,16 +2,16 @@
 
 import { useState } from "react";
 
-import styles from "./InfoInput.module.scss";
+import styles from "./TextInput.module.scss";
 
-type InfoInputProps = {
+type TextInputProps = {
   id: string;
   label: string;
   inputSize?: "small";
   initialInfo?: string;
 };
 
-const InfoInput = ({ id, label, inputSize, initialInfo }: InfoInputProps) => {
+const TextInput = ({ id, label, inputSize, initialInfo }: TextInputProps) => {
   const [info, setInfo] = useState(initialInfo);
 
   return (
@@ -28,4 +28,4 @@ const InfoInput = ({ id, label, inputSize, initialInfo }: InfoInputProps) => {
   );
 };
 
-export default InfoInput;
+export default TextInput;

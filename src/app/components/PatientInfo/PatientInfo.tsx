@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 
-import InfoInput from "./components/InfoInput/InfoInput";
+import TextInput from "./components/TextInput/TextInput";
 
 import styles from "./PatientInfo.module.scss";
 
@@ -40,8 +40,8 @@ const PatientInfo = () => {
 
   return (
     <form className={styles["patient-info"]}>
-      <InfoInput id="name" label="Nome" />
-      <InfoInput
+      <TextInput id="name" label="Nome" />
+      <TextInput
         id="medicalRecordNumber"
         label="Prontuário"
         inputSize="small"
@@ -56,7 +56,7 @@ const PatientInfo = () => {
           onChange={({ target: { value } }) => setMedicalReportDate(value)}
         />
       </div>
-      <InfoInput
+      <TextInput
         id="requesterName"
         label="Solicitante"
         initialInfo="DRA MARIANA MACHOSKI"
@@ -72,7 +72,7 @@ const PatientInfo = () => {
         />
         <span>{lifetime}</span>
       </div>
-      <InfoInput
+      <TextInput
         id="operatorName"
         label="Operador"
         initialInfo="DRA MARIANA MACHOSKI"
