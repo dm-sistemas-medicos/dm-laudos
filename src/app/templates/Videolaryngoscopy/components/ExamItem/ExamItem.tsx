@@ -22,7 +22,7 @@ const ExamItem = ({
   const [text, setText] = useState(initialText);
 
   return (
-    <li className={parentStyles["exam-item"]}>
+    <li className={parentStyles["exam-item"]} data-testid={id}>
       {label && <label htmlFor={id}>{label}</label>}
       <textarea
         className={!label ? parentStyles["exam-item-double"] : ""}
