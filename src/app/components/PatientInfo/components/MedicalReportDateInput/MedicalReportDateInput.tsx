@@ -13,10 +13,11 @@ const MedicalReportDateInput = ({
   medicalReportDate,
   setMedicalReportDate,
 }: MedicalReportDateInputProps) => (
-  <div>
-    <label htmlFor="medicalReportDate">Data:</label>
+  <div data-testid="medical-report-date-container">
+    <label htmlFor="medical-report-date">Data:</label>
     <input
-      id="medicalReportDate"
+      data-testid="medical-report-date"
+      id="medical-report-date"
       className={styles.input}
       type="date"
       value={medicalReportDate}
