@@ -24,10 +24,12 @@ const TextInput = ({
   return (
     <div
       className={hasDoubleContainer ? styles["double-container"] : undefined}
+      data-testid={`${id}-container`}
     >
       <label htmlFor={id}>{label}:</label>
       <input
         id={id}
+        data-testid={id}
         className={isSmallInput ? styles["small-input"] : undefined}
         type="text"
         value={text}
