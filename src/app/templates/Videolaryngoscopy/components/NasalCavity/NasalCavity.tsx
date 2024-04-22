@@ -31,7 +31,6 @@ const NasalCavity = () => (
         initialText="aquosa"
       />
       <ExamItem id="nasal-cavity-mucosa" label="Mucosa" initialText="pálida" />
-
       <Comments parentId="nasal-cavity" />
     </ul>
   </fieldset>
