@@ -17,7 +17,6 @@ describe("NasalCavity component", () => {
 
   it("renders the nasal-septum item", () => {
     const nasalSeptum = screen.getByTestId("nasal-cavity-nasal-septum");
-
     const label = within(nasalSeptum).getByLabelText("Septo nasal");
 
     const textarea = within(nasalSeptum).getByDisplayValue(
@@ -35,6 +34,7 @@ describe("NasalCavity component", () => {
     );
 
     const label = within(middleTurbinates).getByLabelText("Cornetos médios");
+
     const textarea =
       within(middleTurbinates).getByDisplayValue("normotróficos");
 
@@ -51,6 +51,7 @@ describe("NasalCavity component", () => {
     const label = within(inferiorTurbinates).getByLabelText(
       "Cornetos inferiores"
     );
+
     const textarea =
       within(inferiorTurbinates).getByDisplayValue("hipertróficos");
 
@@ -61,7 +62,6 @@ describe("NasalCavity component", () => {
 
   it("renders the secretion item", () => {
     const secretion = screen.getByTestId("nasal-cavity-secretion");
-
     const label = within(secretion).getByLabelText("Secreção");
     const textarea = within(secretion).getByDisplayValue("aquosa");
 
@@ -72,7 +72,6 @@ describe("NasalCavity component", () => {
 
   it("renders the mucosa item", () => {
     const mucosa = screen.getByTestId("nasal-cavity-mucosa");
-
     const label = within(mucosa).getByLabelText("Mucosa");
     const textarea = within(mucosa).getByDisplayValue("pálida");
 
