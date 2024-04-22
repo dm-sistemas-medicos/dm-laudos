@@ -5,17 +5,17 @@ import { fireEvent, render, screen } from "@testing-library/react";
 import Comments from "./Comments";
 
 describe("Comments component", () => {
-  beforeEach(() => {
-    render(<Comments />);
-  });
-
   it("renders the component", () => {
+    render(<Comments />);
+
     const comments = screen.getByTestId("comments-container");
 
     expect(comments).toBeInTheDocument();
   });
 
   it("renders the component with the correct placeholder", () => {
+    render(<Comments />);
+
     const comments = screen.getByPlaceholderText("Observações");
 
     expect(comments).toBeInTheDocument();
@@ -30,6 +30,8 @@ describe("Comments component", () => {
   });
 
   it("it should changes the value", () => {
+    render(<Comments />);
+
     const textarea = screen.getByPlaceholderText("Observações");
 
     fireEvent.change(textarea, { target: { value: "test text" } });
@@ -38,6 +40,8 @@ describe("Comments component", () => {
   });
 
   it("it should have the correct style classes", () => {
+    render(<Comments />);
+
     const comments = screen.getByTestId("comments-container");
     const textarea = screen.getByTestId("comments");
 
