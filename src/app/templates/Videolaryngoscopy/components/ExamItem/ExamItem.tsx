@@ -22,12 +22,12 @@ const ExamItem = ({
   const [text, setText] = useState(initialText);
 
   return (
-    <li className={parentStyles["exam-item"]} data-testid={id}>
+    <li className={parentStyles["exam-item"]} data-testid={`${id}-container`}>
       {label && <label htmlFor={id}>{label}</label>}
       <textarea
         id={id}
-        data-testid={`${id}-textarea`}
-        className={!label ? parentStyles["exam-item-double"] : ""}
+        data-testid={id}
+        className={!label ? parentStyles["exam-item-double"] : undefined}
         rows={rows || 1}
         value={text}
         onChange={({ target: { value } }) => setText(value)}

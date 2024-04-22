@@ -6,7 +6,7 @@ import ExamItem from "../ExamItem/ExamItem";
 import Comments from "../Comments/Comments";
 
 const Larynx = () => (
-  <fieldset data-testid="larynx">
+  <fieldset data-testid="larynx-container">
     <h2 className={parentStyles["exam-section-title"]}>Laringe</h2>
     <ul className={parentStyles["exam-item-list"]}>
       <ExamItem

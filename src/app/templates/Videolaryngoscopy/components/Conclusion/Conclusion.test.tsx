@@ -10,7 +10,7 @@ describe("Conclusion component", () => {
   });
 
   it("renders the component", () => {
-    const conclusion = screen.getByTestId("conclusion");
+    const conclusion = screen.getByTestId("conclusion-container");
 
     expect(conclusion).toBeInTheDocument();
   });
@@ -22,7 +22,7 @@ describe("Conclusion component", () => {
   });
 
   test("it should changes the value", () => {
-    const textarea = screen.getByTestId("conclusion-textarea");
+    const textarea = screen.getByTestId("conclusion");
 
     fireEvent.change(textarea, { target: { value: "test text" } });
 

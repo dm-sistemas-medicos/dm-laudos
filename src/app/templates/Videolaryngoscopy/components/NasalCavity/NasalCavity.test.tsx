@@ -10,7 +10,7 @@ describe("NasalCavity component", () => {
   });
 
   it("renders the component", () => {
-    const nasalCavity = screen.getByTestId("nasal-cavity");
+    const nasalCavity = screen.getByTestId("nasal-cavity-container");
 
     expect(nasalCavity).toBeInTheDocument();
   });
@@ -22,7 +22,10 @@ describe("NasalCavity component", () => {
   });
 
   it("renders the nasal-septum item", () => {
-    const nasalSeptum = screen.getByTestId("nasal-cavity-nasal-septum");
+    const nasalSeptum = screen.getByTestId(
+      "nasal-cavity-nasal-septum-container"
+    );
+
     const label = within(nasalSeptum).getByLabelText("Septo nasal");
 
     const textarea = within(nasalSeptum).getByDisplayValue(
@@ -36,7 +39,7 @@ describe("NasalCavity component", () => {
 
   it("renders the middle-turbinates item", () => {
     const middleTurbinates = screen.getByTestId(
-      "nasal-cavity-middle-turbinates"
+      "nasal-cavity-middle-turbinates-container"
     );
 
     const label = within(middleTurbinates).getByLabelText("Cornetos médios");
@@ -51,7 +54,7 @@ describe("NasalCavity component", () => {
 
   it("renders the inferior-turbinates item", () => {
     const inferiorTurbinates = screen.getByTestId(
-      "nasal-cavity-inferior-turbinates"
+      "nasal-cavity-inferior-turbinates-container"
     );
 
     const label = within(inferiorTurbinates).getByLabelText(
@@ -67,7 +70,7 @@ describe("NasalCavity component", () => {
   });
 
   it("renders the secretion item", () => {
-    const secretion = screen.getByTestId("nasal-cavity-secretion");
+    const secretion = screen.getByTestId("nasal-cavity-secretion-container");
     const label = within(secretion).getByLabelText("Secreção");
     const textarea = within(secretion).getByDisplayValue("aquosa");
 
@@ -77,7 +80,7 @@ describe("NasalCavity component", () => {
   });
 
   it("renders the mucosa item", () => {
-    const mucosa = screen.getByTestId("nasal-cavity-mucosa");
+    const mucosa = screen.getByTestId("nasal-cavity-mucosa-container");
     const label = within(mucosa).getByLabelText("Mucosa");
     const textarea = within(mucosa).getByDisplayValue("pálida");
 
@@ -87,7 +90,7 @@ describe("NasalCavity component", () => {
   });
 
   it("renders the Comments item", () => {
-    const comments = screen.getByPlaceholderText("Observações");
+    const comments = screen.getByTestId("nasal-cavity-comments-container");
 
     expect(comments).toBeInTheDocument();
   });

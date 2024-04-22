@@ -10,7 +10,7 @@ describe("Larynx component", () => {
   });
 
   it("renders the component", () => {
-    const larynx = screen.getByTestId("larynx");
+    const larynx = screen.getByTestId("larynx-container");
 
     expect(larynx).toBeInTheDocument();
   });
@@ -22,7 +22,7 @@ describe("Larynx component", () => {
   });
 
   it("renders the vocal-folds item", () => {
-    const vocalFolds = screen.getByTestId("larynx-vocal-folds");
+    const vocalFolds = screen.getByTestId("larynx-vocal-folds-container");
     const label = within(vocalFolds).getByLabelText("Pregas vocais");
 
     const textarea = within(vocalFolds).getByDisplayValue(
@@ -35,7 +35,7 @@ describe("Larynx component", () => {
   });
 
   it("renders the free-edges item", () => {
-    const freeEdges = screen.getByTestId("larynx-free-edges");
+    const freeEdges = screen.getByTestId("larynx-free-edges-container");
     const label = within(freeEdges).getByLabelText("Bordos livres");
     const textarea = within(freeEdges).getByDisplayValue(
       "regulares, sem lesões"
@@ -47,7 +47,7 @@ describe("Larynx component", () => {
   });
 
   it("renders the coaptation item", () => {
-    const coaptation = screen.getByTestId("larynx-coaptation");
+    const coaptation = screen.getByTestId("larynx-coaptation-container");
     const label = within(coaptation).getByLabelText("Coaptação");
     const textarea = within(coaptation).getByDisplayValue("normal");
 
@@ -57,7 +57,7 @@ describe("Larynx component", () => {
   });
 
   it("renders the mucosa item", () => {
-    const mucosa = screen.getByTestId("larynx-mucosa");
+    const mucosa = screen.getByTestId("larynx-mucosa-container");
     const label = within(mucosa).getByLabelText("Mucosa");
 
     const textarea = within(mucosa).getByDisplayValue(
@@ -70,7 +70,7 @@ describe("Larynx component", () => {
   });
 
   it("renders the subglottis item", () => {
-    const subglottis = screen.getByTestId("larynx-subglottis");
+    const subglottis = screen.getByTestId("larynx-subglottis-container");
     const label = within(subglottis).getByLabelText("Subglote");
     const textarea = within(subglottis).getByDisplayValue("livre, sem lesões");
 
@@ -80,7 +80,7 @@ describe("Larynx component", () => {
   });
 
   it("renders the Comments item", () => {
-    const comments = screen.getByPlaceholderText("Observações");
+    const comments = screen.getByTestId("larynx-comments-container");
 
     expect(comments).toBeInTheDocument();
   });

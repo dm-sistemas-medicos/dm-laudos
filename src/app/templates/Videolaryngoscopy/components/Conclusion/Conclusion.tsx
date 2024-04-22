@@ -8,13 +8,13 @@ const Conclusion = () => {
   const [conclusion, setConclusion] = useState("");
 
   return (
-    <fieldset data-testid="conclusion">
+    <fieldset data-testid="conclusion-container">
       <h2 className={parentStyles["exam-section-title"]}>Conclusão</h2>
       <ul className={parentStyles["exam-item-list"]}>
         <li className={parentStyles["exam-item"]}>
           <textarea
             id="conclusion"
-            data-testid="conclusion-textarea"
+            data-testid="conclusion"
             className={parentStyles["exam-item-double"]}
             rows={5}
             value={conclusion}

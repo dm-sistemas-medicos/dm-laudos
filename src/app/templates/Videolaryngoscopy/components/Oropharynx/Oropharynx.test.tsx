@@ -10,7 +10,7 @@ describe("Oropharynx component", () => {
   });
 
   it("renders the component", () => {
-    const oropharynx = screen.getByTestId("oropharynx");
+    const oropharynx = screen.getByTestId("oropharynx-container");
 
     expect(oropharynx).toBeInTheDocument();
   });
@@ -22,7 +22,7 @@ describe("Oropharynx component", () => {
   });
 
   it("renders the oropharynx item", () => {
-    const oropharynx = screen.getByTestId("oropharynx-oropharynx");
+    const oropharynx = screen.getByTestId("oropharynx-oropharynx-container");
     const label = within(oropharynx).getByLabelText("Orofaringe");
 
     const textarea = within(oropharynx).getByDisplayValue(
@@ -35,7 +35,10 @@ describe("Oropharynx component", () => {
   });
 
   it("renders the base-of-tongue item", () => {
-    const baseOfTongue = screen.getByTestId("oropharynx-base-of-tongue");
+    const baseOfTongue = screen.getByTestId(
+      "oropharynx-base-of-tongue-container"
+    );
+
     const label = within(baseOfTongue).getByLabelText("Base da língua");
     const textarea = within(baseOfTongue).getByDisplayValue("sem alterações");
 
@@ -46,7 +49,7 @@ describe("Oropharynx component", () => {
 
   it("renders the vallecula-pyriform-sinuses item", () => {
     const valleculaPyriformSinuses = screen.getByTestId(
-      "oropharynx-vallecula-pyriform-sinuses"
+      "oropharynx-vallecula-pyriform-sinuses-container"
     );
 
     const label = within(valleculaPyriformSinuses).getByLabelText(
@@ -63,7 +66,7 @@ describe("Oropharynx component", () => {
   });
 
   it("renders the Comments item", () => {
-    const comments = screen.getByPlaceholderText("Observações");
+    const comments = screen.getByTestId("oropharynx-comments-container");
 
     expect(comments).toBeInTheDocument();
   });

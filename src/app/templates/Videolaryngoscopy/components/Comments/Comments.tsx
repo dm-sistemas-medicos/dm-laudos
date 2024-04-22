@@ -16,11 +16,11 @@ const Comments = ({ parentId }: CommentsProps) => {
       className={`${parentStyles["exam-item"]} ${
         !comments.length ? parentStyles["non-printable"] : ""
       }`}
-      data-testid={`${parentId ? `${parentId}-` : ""}comments`}
+      data-testid={`${parentId ? `${parentId}-` : ""}comments-container`}
     >
       <textarea
         id={`${parentId ? `${parentId}-` : ""}comments`}
-        data-testid={`${parentId ? `${parentId}-` : ""}comments-textarea`}
+        data-testid={`${parentId ? `${parentId}-` : ""}comments`}
         className={parentStyles["exam-item-double"]}
         rows={1}
         placeholder="Observações"

@@ -10,7 +10,7 @@ describe("Rhinopharynx component", () => {
   });
 
   it("renders the component", () => {
-    const rhinopharynx = screen.getByTestId("rhinopharynx");
+    const rhinopharynx = screen.getByTestId("rhinopharynx-container");
 
     expect(rhinopharynx).toBeInTheDocument();
   });
@@ -22,7 +22,7 @@ describe("Rhinopharynx component", () => {
   });
 
   it("renders the mucosa item", () => {
-    const mucosa = screen.getByTestId("rhinopharynx-mucosa");
+    const mucosa = screen.getByTestId("rhinopharynx-mucosa-container");
     const label = within(mucosa).getByLabelText("Mucosa");
     const textarea = within(mucosa).getByDisplayValue("normal");
 
@@ -32,7 +32,7 @@ describe("Rhinopharynx component", () => {
   });
 
   it("renders the meatus item", () => {
-    const meatus = screen.getByTestId("rhinopharynx-meatus");
+    const meatus = screen.getByTestId("rhinopharynx-meatus-container");
     const label = within(meatus).getByLabelText("Meatos");
     const textarea = within(meatus).getByDisplayValue("pérvios");
 
@@ -42,7 +42,7 @@ describe("Rhinopharynx component", () => {
   });
 
   it("renders the tubal-ostia item", () => {
-    const tubalOstia = screen.getByTestId("rhinopharynx-tubal-ostia");
+    const tubalOstia = screen.getByTestId("rhinopharynx-tubal-ostia-container");
     const label = within(tubalOstia).getByLabelText("Óstios tubários");
 
     const textarea = within(tubalOstia).getByDisplayValue(
@@ -56,7 +56,7 @@ describe("Rhinopharynx component", () => {
 
   it("renders the velopharyngeal-function item", () => {
     const velopharyngealFunction = screen.getByTestId(
-      "rhinopharynx-velopharyngeal-function"
+      "rhinopharynx-velopharyngeal-function-container"
     );
 
     const label = within(velopharyngealFunction).getByLabelText(
@@ -73,7 +73,7 @@ describe("Rhinopharynx component", () => {
   });
 
   it("renders the injuries item", () => {
-    const injuries = screen.getByTestId("rhinopharynx-injuries");
+    const injuries = screen.getByTestId("rhinopharynx-injuries-container");
     const textarea = within(injuries).getByDisplayValue("Ausência de lesões");
 
     expect(injuries).toBeInTheDocument();
@@ -81,7 +81,7 @@ describe("Rhinopharynx component", () => {
   });
 
   it("renders the Comments item", () => {
-    const comments = screen.getByPlaceholderText("Observações");
+    const comments = screen.getByTestId("rhinopharynx-comments-container");
 
     expect(comments).toBeInTheDocument();
   });

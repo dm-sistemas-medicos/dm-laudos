@@ -10,7 +10,7 @@ describe("Comments component", () => {
   });
 
   it("renders the component", () => {
-    const comments = screen.getByTestId("comments");
+    const comments = screen.getByTestId("comments-container");
 
     expect(comments).toBeInTheDocument();
   });
@@ -24,7 +24,7 @@ describe("Comments component", () => {
   it("renders the component with parentId", () => {
     render(<Comments parentId="test" />);
 
-    const comments = screen.getByTestId("test-comments");
+    const comments = screen.getByTestId("test-comments-container");
 
     expect(comments).toBeInTheDocument();
   });
@@ -38,8 +38,8 @@ describe("Comments component", () => {
   });
 
   test("it should have the correct style classes", () => {
-    const comments = screen.getByTestId("comments");
-    const textarea = screen.getByTestId("comments-textarea");
+    const comments = screen.getByTestId("comments-container");
+    const textarea = screen.getByTestId("comments");
 
     expect(comments).toHaveClass("exam-item");
     expect(comments).toHaveClass("non-printable");
