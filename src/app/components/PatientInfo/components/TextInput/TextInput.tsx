@@ -17,7 +17,7 @@ const TextInput = ({
   label,
   hasDoubleContainer = false,
   isSmallInput = false,
-  initialInfo,
+  initialInfo = "",
 }: TextInputProps) => {
   const [text, setText] = useState(initialInfo);
 
