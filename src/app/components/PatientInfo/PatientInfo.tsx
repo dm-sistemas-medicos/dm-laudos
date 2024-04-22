@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 import TextInput from "./components/TextInput/TextInput";
 
 import styles from "./PatientInfo.module.scss";
+import MedicalReportDateInput from "./components/MedicalReportDateInput/MedicalReportDateInput";
 
 const today = new Date();
 
@@ -46,16 +47,10 @@ const PatientInfo = () => {
         label="Prontuário"
         isSmallInput={true}
       />
-      <div>
-        <label htmlFor="medicalReportDate">Data:</label>
-        <input
-          className={styles["medium-input"]}
-          id="medicalReportDate"
-          type="date"
-          value={medicalReportDate}
-          onChange={({ target: { value } }) => setMedicalReportDate(value)}
-        />
-      </div>
+      <MedicalReportDateInput
+        medicalReportDate={medicalReportDate}
+        setMedicalReportDate={setMedicalReportDate}
+      />
       <TextInput
         id="requesterName"
         label="Solicitante"
