@@ -13,9 +13,10 @@ const Conclusion = () => {
       <ul className={parentStyles["exam-item-list"]}>
         <li className={parentStyles["exam-item"]}>
           <textarea
+            id="conclusion"
+            data-testid="conclusion-textarea"
             className={parentStyles["exam-item-double"]}
             rows={5}
-            id="conclusion"
             value={conclusion}
             onChange={({ target: { value } }) => setConclusion(value)}
             aria-label="Conclusão"
