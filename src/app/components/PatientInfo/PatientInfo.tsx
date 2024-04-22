@@ -77,16 +77,11 @@ const PatientInfo = () => {
         label="Operador"
         initialInfo="DRA MARIANA MACHOSKI"
       />
-      <div className={styles["extra-info"]}>
-        <label htmlFor="medicalInsuranceName">Convênio:</label>
-        <input
-          className={styles["full-input"]}
+      <TextInput
           id="medicalInsuranceName"
-          type="text"
-          value={medicalInsuranceName}
-          onChange={({ target: { value } }) => setMedicalInsuranceName(value)}
+        label="Convênio"
+        hasDoubleContainer={true}
         />
-      </div>
     </form>
   );
 };
