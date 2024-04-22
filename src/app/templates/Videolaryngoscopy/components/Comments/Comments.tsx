@@ -14,8 +14,9 @@ const Comments = ({ parentId }: CommentsProps) => {
   return (
     <li
       className={`${parentStyles["exam-item"]} ${
-        !comments.length ? parentStyles.nonPrintable : ""
+        !comments.length ? parentStyles["non-printable"] : ""
       }`}
+      data-testid={`${parentId ? `${parentId}-` : ""}comments`}
     >
       <textarea
         className={parentStyles["exam-item-double"]}
