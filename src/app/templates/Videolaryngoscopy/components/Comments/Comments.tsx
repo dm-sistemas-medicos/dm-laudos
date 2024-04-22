@@ -19,9 +19,10 @@ const Comments = ({ parentId }: CommentsProps) => {
       data-testid={`${parentId ? `${parentId}-` : ""}comments`}
     >
       <textarea
+        id={`${parentId ? `${parentId}-` : ""}comments`}
+        data-testid={`${parentId ? `${parentId}-` : ""}comments-textarea`}
         className={parentStyles["exam-item-double"]}
         rows={1}
-        id={`${parentId ? `${parentId}-` : ""}comments`}
         placeholder="Observações"
         value={comments}
         onChange={({ target: { value } }) => setComments(value)}
