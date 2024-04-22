@@ -1,10 +1,12 @@
 "use client";
 
+import { Dispatch, SetStateAction } from "react";
+
 import styles from "./MedicalReportDateInput.module.scss";
 
 type MedicalReportDateInputProps = {
   medicalReportDate: string;
-  setMedicalReportDate: (value: string) => void;
+  setMedicalReportDate: Dispatch<SetStateAction<string>>;
 };
 
 const MedicalReportDateInput = ({
