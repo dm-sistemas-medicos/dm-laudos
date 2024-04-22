@@ -25,8 +25,9 @@ const ExamItem = ({
     <li className={parentStyles["exam-item"]} data-testid={id}>
       {label && <label htmlFor={id}>{label}</label>}
       <textarea
-        className={!label ? parentStyles["exam-item-double"] : ""}
         id={id}
+        data-testid={`${id}-textarea`}
+        className={!label ? parentStyles["exam-item-double"] : ""}
         rows={rows || 1}
         value={text}
         onChange={({ target: { value } }) => setText(value)}
