@@ -10,7 +10,7 @@ describe("NasalCavity component", () => {
   });
 
   it("renders the section title", () => {
-    const sectionTitle = screen.getByText("Cavidade Nasal");
+    const sectionTitle = screen.getByText("Cavidade Nasal", { selector: "h2" });
 
     expect(sectionTitle).toBeInTheDocument();
   });

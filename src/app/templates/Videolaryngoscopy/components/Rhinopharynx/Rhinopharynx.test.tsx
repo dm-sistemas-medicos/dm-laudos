@@ -10,7 +10,7 @@ describe("Rhinopharynx component", () => {
   });
 
   it("renders the section title", () => {
-    const sectionTitle = screen.getByText("Rinofaringe");
+    const sectionTitle = screen.getByText("Rinofaringe", { selector: "h2" });
 
     expect(sectionTitle).toBeInTheDocument();
   });
