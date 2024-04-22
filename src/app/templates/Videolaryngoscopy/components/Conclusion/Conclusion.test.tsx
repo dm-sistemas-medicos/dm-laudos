@@ -21,7 +21,7 @@ describe("Conclusion component", () => {
     expect(sectionTitle).toBeInTheDocument();
   });
 
-  test("it should changes the value", () => {
+  it("it should changes the value", () => {
     const textarea = screen.getByTestId("conclusion");
 
     fireEvent.change(textarea, { target: { value: "test text" } });
