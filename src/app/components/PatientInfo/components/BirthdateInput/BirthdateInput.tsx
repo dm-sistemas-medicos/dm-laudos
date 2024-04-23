@@ -33,16 +33,17 @@ const BirthdateInput = ({ medicalReportDate }: BirthdateInputProps) => {
   }, [medicalReportDate, birthdate]);
 
   return (
-    <div className={styles.container}>
+    <div className={styles.container} data-testid="birthdate-input-container">
       <label htmlFor="birthdate">Nascimento:</label>
       <input
-        className={styles.input}
         id="birthdate"
+        data-testid="birthdate-input"
+        className={styles.input}
         type="date"
         value={birthdate}
         onChange={({ target: { value } }) => setBirthdate(value)}
       />
-      <span>{lifetime}</span>
+      <span data-testid="lifetime-span">{lifetime}</span>
     </div>
   );
 };
