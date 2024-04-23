@@ -13,24 +13,24 @@ import Preview from "./components/Preview/Preview";
 import DoctorSignature from "./components/DoctorSignature/DoctorSignature";
 import DoctorInfo from "./components/DoctorInfo/DoctorInfo";
 
-export type ImagensType = string[];
-export type SetImagensType = Dispatch<SetStateAction<ImagensType>>;
+export type ImagesType = string[];
+export type SetImagesType = Dispatch<SetStateAction<ImagesType>>;
 
-interface IImagensContext {
-  imagens: ImagensType;
-  setImagens: SetImagensType;
+interface IImagesContext {
+  images: ImagesType;
+  setImages: SetImagesType;
 }
 
-const ImagensContext = createContext<IImagensContext>({
-  imagens: [],
-  setImagens: () => {},
+const ImagesContext = createContext<IImagesContext>({
+  images: [],
+  setImages: () => {},
 });
 
 const Page = () => {
-  const [imagens, setImagens] = useState<ImagensType>([]);
+  const [images, setImages] = useState<ImagesType>([]);
 
   return (
-    <ImagensContext.Provider value={{ imagens, setImagens }}>
+    <ImagesContext.Provider value={{ images, setImages }}>
       <section className={styles.page}>
         <header className={styles.header}>
           <Image
@@ -46,20 +46,16 @@ const Page = () => {
           <Videolaryngoscopy />
         </main>
         <aside className={styles.aside}>
-          <DragAndDrop setImagens={setImagens} />
+          <DragAndDrop setImages={setImages} />
           <Preview
-            imagens={imagens.length <= 4 ? imagens : imagens.slice(0, 4)}
+            images={images.length <= 4 ? images : images.slice(0, 4)}
             width={256}
             multiColumn={false}
           />
         </aside>
-        {imagens.length > 4 && (
+        {images.length > 4 && (
           <section className={styles.section}>
-            <Preview
-              imagens={imagens.slice(4)}
-              width={256}
-              multiColumn={true}
-            />
+            <Preview images={images.slice(4)} width={256} multiColumn={true} />
           </section>
         )}
         <footer className={styles.footer}>
@@ -68,7 +64,7 @@ const Page = () => {
           <DoctorInfo />
         </footer>
       </section>
-    </ImagensContext.Provider>
+    </ImagesContext.Provider>
   );
 };
 

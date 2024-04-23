@@ -5,18 +5,18 @@ import Image from "next/image";
 import styles from "./Preview.module.scss";
 
 type PreviewProps = {
-  imagens: string[];
+  images: string[];
   width: number;
   multiColumn: boolean;
 };
 
-const Preview = ({ imagens, width, multiColumn }: PreviewProps) => (
+const Preview = ({ images, width, multiColumn }: PreviewProps) => (
   <div
     className={`${styles.preview} ${
       multiColumn ? styles["preview-columns"] : ""
     }`}
   >
-    {imagens.map((image, i) => (
+    {images.map((image, i) => (
       <Image
         key={i}
         src={image}

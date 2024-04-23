@@ -2,15 +2,15 @@
 
 import { useRef, useState, DragEvent, ChangeEvent, useEffect } from "react";
 
-import { ImagensType, SetImagensType } from "@/app/page";
+import { ImagesType, SetImagesType } from "@/app/page";
 
 import styles from "./DragAndDrop.module.scss";
 
 type DragAndDropProps = {
-  setImagens: SetImagensType;
+  setImages: SetImagesType;
 };
 
-const DragAndDrop = ({ setImagens }: DragAndDropProps) => {
+const DragAndDrop = ({ setImages }: DragAndDropProps) => {
   const [dragActive, setDragActive] = useState(false);
 
   const inputRef = useRef<HTMLInputElement>(null);
@@ -41,7 +41,7 @@ const DragAndDrop = ({ setImagens }: DragAndDropProps) => {
 
   const handleImagesUpload = (images: FileList | null) => {
     if (images) {
-      const uploadedImages: ImagensType = [];
+      const uploadedImages: ImagesType = [];
 
       Array.from(images)
         .reverse()
@@ -49,7 +49,7 @@ const DragAndDrop = ({ setImagens }: DragAndDropProps) => {
           uploadedImages.push(URL.createObjectURL(image));
         });
 
-      setImagens(uploadedImages);
+      setImages(uploadedImages);
     }
   };
 
