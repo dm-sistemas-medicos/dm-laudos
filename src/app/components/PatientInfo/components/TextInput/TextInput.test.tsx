@@ -33,7 +33,7 @@ describe("TextInput component", () => {
     expect(input).toHaveClass("small-input");
   });
 
-  it("it should changes the value", () => {
+  it("should changes the value", () => {
     render(<TextInput id="test-input" label="Test label" />);
 
     const input = screen.getByTestId("test-input");

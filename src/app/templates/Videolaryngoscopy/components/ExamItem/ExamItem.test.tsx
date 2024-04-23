@@ -80,7 +80,7 @@ describe("ExamItem component", () => {
     expect(textarea).toHaveAttribute("rows", "1");
   });
 
-  it("it should changes the value", () => {
+  it("should changes the value", () => {
     render(<ExamItem id="test-input" initialText="test initial text" />);
 
     const textarea = screen.getByTestId("test-input");

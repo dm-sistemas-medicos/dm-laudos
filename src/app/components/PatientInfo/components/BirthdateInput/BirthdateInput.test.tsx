@@ -21,7 +21,7 @@ describe("BirthdateInput component", () => {
     expect(lifetime).toHaveTextContent("");
   });
 
-  it("it should changes the value", () => {
+  it("should changes the value", () => {
     render(<BirthdateInput medicalReportDate="" />);
 
     const input = screen.getByTestId("birthdate-input");

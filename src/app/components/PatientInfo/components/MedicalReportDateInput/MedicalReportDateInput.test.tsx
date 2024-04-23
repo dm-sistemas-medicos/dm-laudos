@@ -22,7 +22,7 @@ describe("MedicalReportDateInput component", () => {
     expect(medicalReportDateInput).toBeInTheDocument();
   });
 
-  it("it should changes the value", () => {
+  it("should changes the value", () => {
     const setMedicalReportDate = jest.fn();
 
     render(

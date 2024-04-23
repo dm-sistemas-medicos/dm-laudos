@@ -29,7 +29,7 @@ describe("Comments component", () => {
     expect(comments).toBeInTheDocument();
   });
 
-  it("it should changes the value", () => {
+  it("should changes the value", () => {
     render(<Comments />);
 
     const textarea = screen.getByPlaceholderText("Observações");
@@ -39,7 +39,7 @@ describe("Comments component", () => {
     expect(textarea).toHaveValue("test text");
   });
 
-  it("it should have the correct style classes", () => {
+  it("should have the correct style classes", () => {
     render(<Comments />);
 
     const comments = screen.getByTestId("comments-container");
