@@ -22,6 +22,7 @@ const DragAndDrop = ({ setImages }: DragAndDropProps) => {
 
     window.addEventListener("dragover", handleDragEvents);
     window.addEventListener("drop", handleDragEvents);
+
     return () => {
       window.removeEventListener("dragover", handleDragEvents);
       window.removeEventListener("drop", handleDragEvents);
@@ -65,7 +66,9 @@ const DragAndDrop = ({ setImages }: DragAndDropProps) => {
   const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
     e.preventDefault();
 
+    if (e.target.files?.length) {
     handleImagesUpload(e.target.files);
+    }
   };
 
   const onButtonClick = () => {
