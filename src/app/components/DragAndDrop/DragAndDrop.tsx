@@ -67,7 +67,7 @@ const DragAndDrop = ({ setImages }: DragAndDropProps) => {
     e.preventDefault();
 
     if (e.target.files?.length) {
-    handleImagesUpload(e.target.files);
+      handleImagesUpload(e.target.files);
     }
   };
 
@@ -77,13 +77,13 @@ const DragAndDrop = ({ setImages }: DragAndDropProps) => {
 
   return (
     <form
-      id="dragAndDrop"
+      data-testid="drag-and-drop-container"
       className={styles["drag-and-drop"]}
       onDragEnter={handleDrag}
       onSubmit={(e) => e.preventDefault()}
     >
       <input
-        id="drag-and-drop-input"
+        data-testid="drag-and-drop-input"
         ref={inputRef}
         type="file"
         multiple={true}
@@ -91,7 +91,7 @@ const DragAndDrop = ({ setImages }: DragAndDropProps) => {
         accept="image/*"
       />
       <label
-        id="dragAndDropLabel"
+        data-testid="drag-and-drop-label"
         className={`${styles["drag-and-drop-label"]} ${
           dragActive ? styles["drag-and-drop-label-hidden"] : ""
         }`}
@@ -103,10 +103,9 @@ const DragAndDrop = ({ setImages }: DragAndDropProps) => {
       </label>
       {dragActive && (
         <div
-          draggable={true}
-          id="dropArea"
+          data-testid="drop-area"
           className={styles["drop-area"]}
-          onDragEnter={handleDrag}
+          draggable={true}
           onDragLeave={handleDrag}
           onDragOver={handleDrag}
           onDrop={handleDrop}
