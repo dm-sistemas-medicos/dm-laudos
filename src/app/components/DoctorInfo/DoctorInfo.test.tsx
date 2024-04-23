@@ -15,9 +15,11 @@ describe("DoctorInfo component", () => {
     expect(doctorInfo).toBeInTheDocument();
   });
 
-  it("renders the doctor name", () => {
-    const doctorName = screen.getByText("Dra. Mariana Carolina C. Machoski");
+  it("renders the correct doctor info", () => {
+    const doctorInfo = screen.getByText(
+      "Dra. Mariana Machoski, CRM/SC 35098, RQE/SC 23991 - Email: marianamachoskilo@gmail.com - Instagram: @marimachoski"
+    );
 
-    expect(doctorName).toBeInTheDocument();
+    expect(doctorInfo).toBeInTheDocument();
   });
 });
