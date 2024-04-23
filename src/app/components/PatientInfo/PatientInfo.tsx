@@ -22,7 +22,7 @@ const PatientInfo = () => {
     >
       <TextInput id="name" label="Nome" />
       <TextInput
-        id="medicalRecordNumber"
+        id="medical-record-number"
         label="Prontuário"
         isSmallInput={true}
       />
@@ -31,18 +31,18 @@ const PatientInfo = () => {
         setMedicalReportDate={setMedicalReportDate}
       />
       <TextInput
-        id="requesterName"
+        id="requester-name"
         label="Solicitante"
         initialInfo="DRA MARIANA MACHOSKI"
       />
       <BirthdateInput medicalReportDate={medicalReportDate} />
       <TextInput
-        id="operatorName"
+        id="operator-name"
         label="Operador"
         initialInfo="DRA MARIANA MACHOSKI"
       />
       <TextInput
-        id="medicalInsuranceName"
+        id="medical-insurance-name"
         label="Convênio"
         hasDoubleContainer={true}
       />

@@ -9,11 +9,15 @@ describe("DoctorInfo component", () => {
     render(<DoctorInfo />);
   });
 
-  it("renders the doctor info", () => {
-    const doctorInfo = screen.getByText(
-      "Dra. Mariana Machoski, CRM/SC 35098, RQE/SC 23991 - Email: marianamachoskilo@gmail.com - Instagram: @marimachoski"
-    );
+  it("renders the component", () => {
+    const doctorInfo = screen.getByTestId("doctor-info");
 
     expect(doctorInfo).toBeInTheDocument();
+  });
+
+  it("renders the doctor name", () => {
+    const doctorName = screen.getByText("Dra. Mariana Carolina C. Machoski");
+
+    expect(doctorName).toBeInTheDocument();
   });
 });

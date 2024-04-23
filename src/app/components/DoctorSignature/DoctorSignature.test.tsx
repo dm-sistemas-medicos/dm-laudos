@@ -9,6 +9,12 @@ describe("DoctorSignature component", () => {
     render(<DoctorSignature />);
   });
 
+  it("renders the component", () => {
+    const DoctorSignature = screen.getByTestId("doctor-signature-container");
+
+    expect(DoctorSignature).toBeInTheDocument();
+  });
+
   it("renders the image", () => {
     const image = screen.getByAltText("Assinatura");
 
