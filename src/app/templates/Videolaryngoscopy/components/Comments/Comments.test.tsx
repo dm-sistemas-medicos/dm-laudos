@@ -16,9 +16,9 @@ describe("Comments component", () => {
   it("renders the component with the correct placeholder", () => {
     render(<Comments />);
 
-    const comments = screen.getByPlaceholderText("Observações");
+    const textarea = screen.getByPlaceholderText("Observações");
 
-    expect(comments).toBeInTheDocument();
+    expect(textarea).toBeInTheDocument();
   });
 
   it("renders the component with parentId", () => {
