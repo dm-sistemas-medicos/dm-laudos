@@ -15,6 +15,7 @@ const Preview = ({ images, width, multiColumn }: PreviewProps) => (
     className={`${styles.preview} ${
       multiColumn ? styles["preview-columns"] : ""
     }`}
+    data-testid="preview-container"
   >
     {images.map((image, i) => (
       <Image
