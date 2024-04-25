@@ -26,6 +26,8 @@ const ImagesContext = createContext<IImagesContext>({
   setImages: () => {},
 });
 
+const MAX_ASIDE_IMAGES = 3;
+
 const Page = () => {
   const [images, setImages] = useState<ImagesType>([]);
 
@@ -43,19 +45,27 @@ const Page = () => {
           <PatientInfo />
         </header>
         <main className={styles.main}>
-          <Videolaryngoscopy />
+          <Videonasolaryngoscopy />
         </main>
         <aside className={styles.aside}>
           <DragAndDrop setImages={setImages} />
           <Preview
-            images={images.length <= 4 ? images : images.slice(0, 4)}
+            images={
+              images.length <= MAX_ASIDE_IMAGES
+                ? images
+                : images.slice(0, MAX_ASIDE_IMAGES)
+            }
             width={256}
             multiColumn={false}
           />
         </aside>
-        {images.length > 4 && (
+        {images.length > MAX_ASIDE_IMAGES && (
           <section className={styles.section}>
-            <Preview images={images.slice(4)} width={256} multiColumn={true} />
+            <Preview
+              images={images.slice(MAX_ASIDE_IMAGES)}
+              width={256}
+              multiColumn={true}
+            />
           </section>
         )}
         <footer className={styles.footer}>
