@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-import parentStyles from "../../Videolaryngoscopy.module.scss";
+import parentStyles from "../../exams/exams.module.scss";
 
 type ExamItemProps = {
   id: string;

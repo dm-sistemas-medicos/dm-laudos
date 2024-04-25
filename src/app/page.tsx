@@ -7,7 +7,7 @@ import Image from "next/image";
 import styles from "./page.module.scss";
 
 import PatientInfo from "./components/PatientInfo/PatientInfo";
-import Videolaryngoscopy from "./templates/Videolaryngoscopy/Videolaryngoscopy";
+import Videonasolaryngoscopy from "./templates/exams/Videonasolaryngoscopy/Videonasolaryngoscopy";
 import DragAndDrop from "./components/DragAndDrop/DragAndDrop";
 import Preview from "./components/Preview/Preview";
 import DoctorSignature from "./components/DoctorSignature/DoctorSignature";

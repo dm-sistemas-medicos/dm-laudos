@@ -1,9 +1,9 @@
 "use client";
 
-import parentStyles from "../../Videolaryngoscopy.module.scss";
-
 import ExamItem from "../ExamItem/ExamItem";
 import Comments from "../Comments/Comments";
+
+import parentStyles from "../../exams/exams.module.scss";
 
 const Larynx = () => (
   <fieldset data-testid="larynx-container">

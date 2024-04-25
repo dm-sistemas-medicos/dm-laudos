@@ -2,11 +2,11 @@ import "@testing-library/jest-dom";
 
 import { render, screen } from "@testing-library/react";
 
-import Videolaryngoscopy from "./Videolaryngoscopy";
+import Videonasolaryngoscopy from "./Videonasolaryngoscopy";
 
-describe("Videolaryngoscopy component", () => {
+describe("Videonasolaryngoscopy component", () => {
   beforeEach(() => {
-    render(<Videolaryngoscopy />);
+    render(<Videonasolaryngoscopy />);
   });
 
   it("renders the title", () => {
