@@ -4,6 +4,8 @@ import { render, screen } from "@testing-library/react";
 
 import DoctorSignature from "./DoctorSignature";
 
+import userInfo from "../../../users/mariana-machoski/user-info.json";
+
 describe("DoctorSignature component", () => {
   beforeEach(() => {
     render(<DoctorSignature />);
@@ -22,21 +24,19 @@ describe("DoctorSignature component", () => {
   });
 
   it("renders the doctor name", () => {
-    const doctorName = screen.getByText("Dra. Mariana Carolina C. Machoski");
+    const doctorName = screen.getByText(userInfo.signature[0]);
 
     expect(doctorName).toBeInTheDocument();
   });
 
   it("renders the doctor speciality", () => {
-    const doctorSpeciality = screen.getByText("Médica Otorrinolaringologista");
+    const doctorSpeciality = screen.getByText(userInfo.signature[1]);
 
     expect(doctorSpeciality).toBeInTheDocument();
   });
 
   it("renders the doctor registration numbers", () => {
-    const doctorRegistrationNumbers = screen.getByText(
-      "CRM-SC 35.098 | RQE 23.991"
-    );
+    const doctorRegistrationNumbers = screen.getByText(userInfo.signature[2]);
 
     expect(doctorRegistrationNumbers).toBeInTheDocument();
   });

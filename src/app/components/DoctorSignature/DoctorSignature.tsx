@@ -2,6 +2,8 @@
 
 import Image from "next/image";
 
+import userInfo from "../../../users/mariana-machoski/user-info.json";
+
 import styles from "./DoctorSignature.module.scss";
 
 const DoctorSignature = () => (
@@ -10,9 +12,9 @@ const DoctorSignature = () => (
     data-testid="doctor-signature-container"
   >
     <Image src={"/assinatura.png"} width={75} height={75} alt="Assinatura" />
-    <p>Dra. Mariana Carolina C. Machoski</p>
-    <p>Médica Otorrinolaringologista</p>
-    <p>CRM-SC 35.098 | RQE 23.991</p>
+    {userInfo.signature.map((text, i) => (
+      <p key={i}>{text}</p>
+    ))}
   </div>
 );
 

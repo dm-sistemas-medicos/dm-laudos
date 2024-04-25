@@ -6,6 +6,8 @@ import TextInput from "./components/TextInput/TextInput";
 import BirthdateInput from "./components/BirthdateInput/BirthdateInput";
 import MedicalReportDateInput from "./components/MedicalReportDateInput/MedicalReportDateInput";
 
+import userInfo from "../../../users/mariana-machoski/user-info.json";
+
 import styles from "./PatientInfo.module.scss";
 
 const today = new Date();
@@ -33,13 +35,13 @@ const PatientInfo = () => {
       <TextInput
         id="requester-name"
         label="Solicitante"
-        initialInfo="DRA MARIANA MACHOSKI"
+        initialInfo={userInfo.defaultRequester}
       />
       <BirthdateInput medicalReportDate={medicalReportDate} />
       <TextInput
         id="operator-name"
         label="Operador"
-        initialInfo="DRA MARIANA MACHOSKI"
+        initialInfo={userInfo.defaultOperator}
       />
       <TextInput
         id="medical-insurance-name"

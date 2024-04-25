@@ -4,6 +4,8 @@ import { render, screen } from "@testing-library/react";
 
 import DoctorInfo from "./DoctorInfo";
 
+import userInfo from "../../../users/mariana-machoski/user-info.json";
+
 describe("DoctorInfo component", () => {
   beforeEach(() => {
     render(<DoctorInfo />);
@@ -17,7 +19,7 @@ describe("DoctorInfo component", () => {
 
   it("renders the correct doctor info", () => {
     const doctorInfo = screen.getByText(
-      "Dra. Mariana Machoski, CRM/SC 35098, RQE/SC 23991 - Email: marianamachoskilo@gmail.com - Instagram: @marimachoski"
+      `${userInfo.name}, ${userInfo.crm}, ${userInfo.rqe} - Email: ${userInfo.email} - Instagram: ${userInfo.instagram}`
     );
 
     expect(doctorInfo).toBeInTheDocument();
