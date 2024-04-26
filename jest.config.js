@@ -9,15 +9,16 @@ const config = {
   testEnvironment: "jsdom",
   collectCoverageFrom: [
     "src/**/*.{ts,tsx}",
+    "!src/app/contexts/*",
     "!src/**/layout.tsx",
     "!src/**/page.tsx",
   ],
   coverageThreshold: {
     global: {
-      statements: 85.71,
-      branches: 97.91,
-      lines: 85.71,
-      functions: 71.42,
+      statements: 95.78,
+      branches: 100,
+      functions: 76.19,
+      lines: 95.78,
     },
   },
 };
