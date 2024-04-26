@@ -1,8 +1,9 @@
 import Image from "next/image";
 
-import styles from "./Preview.module.scss";
 import { useContext } from "react";
 import { ImagesContext } from "@/app/contexts/images-context";
+
+import styles from "./Preview.module.scss";
 
 type PreviewProps = {
   aside: boolean;
