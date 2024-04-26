@@ -2,15 +2,17 @@
 
 import { createContext, Dispatch, SetStateAction, useState } from "react";
 
-import DragAndDrop from "../../components/DragAndDrop/DragAndDrop";
-import Preview from "../../components/Preview/Preview";
-import NasalCavity from "../../components/NasalCavity/NasalCavity";
-import Rhinopharynx from "../../components/Rhinopharynx/Rhinopharynx";
-import Conclusion from "../../components/Conclusion/Conclusion";
+import DragAndDrop from "../components/DragAndDrop/DragAndDrop";
+import Preview from "../components/Preview/Preview";
+import NasalCavity from "../components/NasalCavity/NasalCavity";
+import Rhinopharynx from "../components/Rhinopharynx/Rhinopharynx";
+import Oropharynx from "../components/Oropharynx/Oropharynx";
+import Larynx from "../components/Larynx/Larynx";
+import Conclusion from "../components/Conclusion/Conclusion";
 
-import styles from "../exams.module.scss";
+import styles from "../templates.module.scss";
 
-const MAX_ASIDE_IMAGES = 3;
+const MAX_ASIDE_IMAGES = 5;
 
 type ImagesType = string[];
 type SetImagesType = Dispatch<SetStateAction<ImagesType>>;
@@ -25,16 +27,18 @@ const ImagesContext = createContext<IImagesContext>({
   setImages: () => {},
 });
 
-const Videonasoscopy = () => {
+const Videonasolaryngoscopy = () => {
   const [images, setImages] = useState<ImagesType>([]);
 
   return (
     <ImagesContext.Provider value={{ images, setImages }}>
       <main className={styles.main}>
-        <h1 className={styles["exam-title"]}>Videonasoscopia</h1>
+        <h1 className={styles["exam-title"]}>Videonasolaringoscopia</h1>
         <form>
           <NasalCavity />
           <Rhinopharynx />
+          <Oropharynx />
+          <Larynx />
           <Conclusion />
         </form>
       </main>
@@ -63,4 +67,4 @@ const Videonasoscopy = () => {
   );
 };
 
-export default Videonasoscopy;
+export default Videonasolaryngoscopy;
