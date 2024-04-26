@@ -1,25 +1,19 @@
 "use client";
 
-import styles from "./page.module.scss";
+import Link from "next/link";
 
+import styles from "./page.module.scss";
 import DoctorLogo from "./components/DoctorLogo/DoctorLogo";
-import PatientInfo from "./components/PatientInfo/PatientInfo";
-import Videonasolaryngoscopy from "./templates/exams/Videonasolaryngoscopy/Videonasolaryngoscopy";
-import DoctorSignature from "./components/DoctorSignature/DoctorSignature";
-import DoctorInfo from "./components/DoctorInfo/DoctorInfo";
 
 const Page = () => (
   <section className={styles.page}>
-    <header className={styles.header}>
-      <DoctorLogo />
-      <PatientInfo />
-    </header>
-    <Videonasolaryngoscopy />
-    <footer className={styles.footer}>
-      <DoctorSignature />
-      <hr />
-      <DoctorInfo />
-    </footer>
+    <DoctorLogo />
+    <Link className={styles.button} href="/templates/videonasolaringoscopia">
+      VIDEONASOLARINGOSCOPIA
+    </Link>
+    <Link className={styles.button} href="/templates/videonasoscopia">
+      VIDEONASOSCOPIA
+    </Link>
   </section>
 );
 

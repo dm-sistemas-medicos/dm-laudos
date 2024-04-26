@@ -1,3 +1,18 @@
+.page {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas:
+    "header header"
+    "main aside"
+    "section section"
+    "footer footer";
+  grid-gap: 24px;
+}
+
+.header {
+  grid-area: header;
+}
+
 .main {
   grid-area: main;
 
@@ -53,6 +68,12 @@
   .exam-item-double {
     grid-column: span 2;
   }
+
+  .non-printable {
+    @media print {
+      display: none;
+    }
+  }
 }
 
 .aside {
@@ -63,8 +84,12 @@
   grid-area: section;
 }
 
-.non-printable {
-  @media print {
-    display: none;
+.footer {
+  grid-area: footer;
+  display: grid;
+
+  hr {
+    width: 100%;
+    margin: 0;
   }
 }

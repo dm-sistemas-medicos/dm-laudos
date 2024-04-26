@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-import parentStyles from "../../exams/exams.module.scss";
+import parentStyles from "../../layout.module.scss";
 
 const Conclusion = () => {
   const [conclusion, setConclusion] = useState("");

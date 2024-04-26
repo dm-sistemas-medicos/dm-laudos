@@ -10,7 +10,7 @@ import Oropharynx from "../components/Oropharynx/Oropharynx";
 import Larynx from "../components/Larynx/Larynx";
 import Conclusion from "../components/Conclusion/Conclusion";
 
-import styles from "../templates.module.scss";
+import styles from "../layout.module.scss";
 
 const MAX_ASIDE_IMAGES = 5;
 

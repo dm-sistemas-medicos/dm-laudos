@@ -8,7 +8,7 @@ import NasalCavity from "../components/NasalCavity/NasalCavity";
 import Rhinopharynx from "../components/Rhinopharynx/Rhinopharynx";
 import Conclusion from "../components/Conclusion/Conclusion";
 
-import styles from "../templates.module.scss";
+import styles from "../layout.module.scss";
 
 const MAX_ASIDE_IMAGES = 3;
 
