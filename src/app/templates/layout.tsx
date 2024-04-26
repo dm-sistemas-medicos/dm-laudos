@@ -1,7 +1,12 @@
-import DoctorInfo from "../components/DoctorInfo/DoctorInfo";
+import { ImagesProvider } from "../contexts/images-context";
+
 import DoctorLogo from "../components/DoctorLogo/DoctorLogo";
+import DoctorInfo from "../components/DoctorInfo/DoctorInfo";
+import AsideImages from "./components/AsideImages/AsideImages";
+import SectionImages from "./components/SectionImages/SectionImages";
 import DoctorSignature from "../components/DoctorSignature/DoctorSignature";
 import PatientInfo from "../components/PatientInfo/PatientInfo";
+import DragAndDrop from "./components/DragAndDrop/DragAndDrop";
 
 import styles from "./layout.module.scss";
 
@@ -11,7 +16,16 @@ const Layout = ({ children }: { children: React.ReactNode }) => (
       <DoctorLogo />
       <PatientInfo />
     </header>
-    {children}
+    <ImagesProvider>
+      <main className={styles.main}>{children}</main>
+      <aside className={styles.aside}>
+        <DragAndDrop />
+        <AsideImages />
+      </aside>
+      <section className={styles.section}>
+        <SectionImages />
+      </section>
+    </ImagesProvider>
     <footer className={styles.footer}>
       <DoctorSignature />
       <hr />

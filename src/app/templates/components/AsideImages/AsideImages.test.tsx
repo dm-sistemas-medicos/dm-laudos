@@ -4,13 +4,13 @@ import { render, screen } from "@testing-library/react";
 
 import { ImagesContext } from "@/app/contexts/images-context";
 
-import Preview from "./Preview";
+import AsideImages from "./AsideImages";
 
-describe("Preview component", () => {
+describe("AsideImages component", () => {
   it("renders the component", () => {
-    render(<Preview aside={true} maxAsideImages={3} />);
+    render(<AsideImages />);
 
-    const preview = screen.getByTestId("preview-container");
+    const preview = screen.getByTestId("aside-images-container");
 
     expect(preview).toBeInTheDocument();
   });
@@ -19,11 +19,13 @@ describe("Preview component", () => {
     render(
       <ImagesContext.Provider
         value={{
+          maxAsideImages: 2,
+          setMaxAsideImages: jest.fn(),
           images: ["blob://img1.jpg", "blob://img2.jpg"],
           setImages: jest.fn(),
         }}
       >
-        <Preview aside={true} maxAsideImages={2} />
+        <AsideImages />
       </ImagesContext.Provider>
     );
 
@@ -38,11 +40,13 @@ describe("Preview component", () => {
     render(
       <ImagesContext.Provider
         value={{
+          maxAsideImages: 2,
+          setMaxAsideImages: jest.fn(),
           images: ["blob://img1.jpg", "blob://img2.jpg", "blob://img3.jpg"],
           setImages: jest.fn(),
         }}
       >
-        <Preview aside={true} maxAsideImages={2} />
+        <AsideImages />
       </ImagesContext.Provider>
     );
 
@@ -51,23 +55,5 @@ describe("Preview component", () => {
 
     expect(img1).toBeInTheDocument();
     expect(img2).toBeInTheDocument();
-  });
-
-  it("renders the component with some images and multiColumn layout", () => {
-    render(
-      <ImagesContext.Provider
-        value={{
-          images: ["blob://img1.jpg", "blob://img2.jpg"],
-          setImages: jest.fn(),
-        }}
-      >
-        <Preview aside={false} maxAsideImages={2} />
-      </ImagesContext.Provider>
-    );
-
-    const preview = screen.getByTestId("preview-container");
-
-    expect(preview).toBeInTheDocument();
-    expect(preview).toHaveClass("preview-columns");
   });
 });

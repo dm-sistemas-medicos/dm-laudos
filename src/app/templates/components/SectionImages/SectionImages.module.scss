@@ -1,0 +1,5 @@
+.section-images {
+  display: grid;
+  gap: 6px;
+  grid-template-columns: repeat(3, auto);
+}
