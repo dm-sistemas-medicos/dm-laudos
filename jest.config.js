@@ -20,6 +20,7 @@ const config = {
       functions: 71.42,
     },
   },
+  maxConcurrency: 4,
 };
 
 module.exports = createJestConfig(config);
