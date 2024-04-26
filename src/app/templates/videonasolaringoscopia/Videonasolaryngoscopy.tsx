@@ -3,11 +3,11 @@
 import { useContext, useEffect } from "react";
 import { AsideImagesContext } from "@/app/contexts/aside-images-context";
 
-import NasalCavity from "../components/NasalCavity/NasalCavity";
-import Rhinopharynx from "../components/Rhinopharynx/Rhinopharynx";
-import Oropharynx from "../components/Oropharynx/Oropharynx";
-import Larynx from "../components/Larynx/Larynx";
-import Conclusion from "../components/Conclusion/Conclusion";
+import NasalCavity from "../components/form/NasalCavity/NasalCavity";
+import Rhinopharynx from "../components/form/Rhinopharynx/Rhinopharynx";
+import Oropharynx from "../components/form/Oropharynx/Oropharynx";
+import Larynx from "../components/form/Larynx/Larynx";
+import Conclusion from "../components/form/Conclusion/Conclusion";
 
 import styles from "../layout.module.scss";
 

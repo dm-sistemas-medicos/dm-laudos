@@ -1,8 +1,8 @@
 "use client";
 
-import NasalCavity from "../components/NasalCavity/NasalCavity";
-import Rhinopharynx from "../components/Rhinopharynx/Rhinopharynx";
-import Conclusion from "../components/Conclusion/Conclusion";
+import NasalCavity from "../components/form/NasalCavity/NasalCavity";
+import Rhinopharynx from "../components/form/Rhinopharynx/Rhinopharynx";
+import Conclusion from "../components/form/Conclusion/Conclusion";
 
 import styles from "../layout.module.scss";
 

@@ -3,11 +3,11 @@ import { AsideImagesProvider } from "../contexts/aside-images-context";
 
 import DoctorLogo from "../components/DoctorLogo/DoctorLogo";
 import DoctorInfo from "../components/DoctorInfo/DoctorInfo";
-import AsideImages from "./components/AsideImages/AsideImages";
-import SectionImages from "./components/SectionImages/SectionImages";
+import DragAndDrop from "./components/images/DragAndDrop/DragAndDrop";
+import AsideImages from "./components/images/AsideImages/AsideImages";
+import SectionImages from "./components/images/SectionImages/SectionImages";
 import DoctorSignature from "../components/DoctorSignature/DoctorSignature";
 import PatientInfo from "../components/PatientInfo/PatientInfo";
-import DragAndDrop from "./components/DragAndDrop/DragAndDrop";
 
 import styles from "./layout.module.scss";
 
