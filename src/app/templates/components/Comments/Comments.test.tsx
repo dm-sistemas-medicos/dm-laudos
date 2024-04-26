@@ -21,14 +21,6 @@ describe("Comments component", () => {
     expect(textarea).toBeInTheDocument();
   });
 
-  it("renders the component with parentId", () => {
-    render(<Comments parentId="test" />);
-
-    const comments = screen.getByTestId("test-comments-container");
-
-    expect(comments).toBeInTheDocument();
-  });
-
   it("should changes the value", () => {
     render(<Comments />);
 
@@ -40,10 +32,10 @@ describe("Comments component", () => {
   });
 
   it("should have the correct style classes", () => {
-    render(<Comments />);
+    render(<Comments parentId="test" />);
 
-    const comments = screen.getByTestId("comments-container");
-    const textarea = screen.getByTestId("comments");
+    const comments = screen.getByTestId("test-comments-container");
+    const textarea = screen.getByTestId("test-comments");
 
     expect(comments).toHaveClass("exam-item");
     expect(comments).toHaveClass("non-printable");
