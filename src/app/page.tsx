@@ -6,6 +6,7 @@ import Image from "next/image";
 
 import styles from "./page.module.scss";
 
+import DoctorLogo from "./components/DoctorLogo/DoctorLogo";
 import PatientInfo from "./components/PatientInfo/PatientInfo";
 import Videonasolaryngoscopy from "./templates/exams/Videonasolaryngoscopy/Videonasolaryngoscopy";
 import DragAndDrop from "./components/DragAndDrop/DragAndDrop";
@@ -35,13 +36,7 @@ const Page = () => {
     <ImagesContext.Provider value={{ images, setImages }}>
       <section className={styles.page}>
         <header className={styles.header}>
-          <Image
-            src={"/logo.png"}
-            alt=""
-            width={400}
-            height={123}
-            priority={true}
-          />
+      <DoctorLogo />
           <PatientInfo />
         </header>
         <main className={styles.main}>
