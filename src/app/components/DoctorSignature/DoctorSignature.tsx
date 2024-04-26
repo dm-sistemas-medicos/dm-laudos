@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import userInfo from "../../../users/mariana-machoski/user-info.json";
+import userInfo from "@/users/mariana-machoski/user-info.json";
 
 import styles from "./DoctorSignature.module.scss";
 

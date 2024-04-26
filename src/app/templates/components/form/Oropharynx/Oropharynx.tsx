@@ -1,7 +1,7 @@
 import ExamItem from "../ExamItem/ExamItem";
 import Comments from "../Comments/Comments";
 
-import parentStyles from "../../layout.module.scss";
+import parentStyles from "@/app/templates/layout.module.scss";
 
 const Oropharynx = () => (
   <fieldset data-testid="oropharynx-container">

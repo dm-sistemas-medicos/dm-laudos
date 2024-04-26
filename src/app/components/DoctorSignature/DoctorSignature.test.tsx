@@ -4,7 +4,7 @@ import { render, screen } from "@testing-library/react";
 
 import DoctorSignature from "./DoctorSignature";
 
-import userInfo from "../../../users/mariana-machoski/user-info.json";
+import userInfo from "@/users/mariana-machoski/user-info.json";
 
 describe("DoctorSignature component", () => {
   beforeEach(() => {

@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import parentStyles from "../../layout.module.scss";
+import parentStyles from "@/app/templates/layout.module.scss";
 
 const Conclusion = () => {
   const [conclusion, setConclusion] = useState("");

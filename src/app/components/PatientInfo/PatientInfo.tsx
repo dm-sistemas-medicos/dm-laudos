@@ -6,7 +6,7 @@ import TextInput from "./components/TextInput/TextInput";
 import BirthdateInput from "./components/BirthdateInput/BirthdateInput";
 import MedicalReportDateInput from "./components/MedicalReportDateInput/MedicalReportDateInput";
 
-import userInfo from "../../../users/mariana-machoski/user-info.json";
+import userInfo from "@/users/mariana-machoski/user-info.json";
 
 import styles from "./PatientInfo.module.scss";
 
