@@ -1,5 +1,3 @@
-"use client";
-
 import { useState } from "react";
 
 import parentStyles from "../../layout.module.scss";

@@ -1,5 +1,3 @@
-"use client";
-
 import ExamItem from "../ExamItem/ExamItem";
 import Comments from "../Comments/Comments";
 

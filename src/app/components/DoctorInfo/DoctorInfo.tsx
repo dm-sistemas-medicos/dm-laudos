@@ -1,5 +1,3 @@
-"use client";
-
 import userInfo from "../../../users/mariana-machoski/user-info.json";
 
 import styles from "./DoctorInfo.module.scss";
