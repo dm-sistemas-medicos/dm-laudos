@@ -37,6 +37,8 @@ describe("DragAndDrop component", () => {
   });
 
   it("should handle drop-area dragover event", () => {
+    render(<DragAndDrop />);
+
     const dragAndDrop = screen.getByTestId("drag-and-drop-container");
 
     fireEvent.dragEnter(dragAndDrop);
