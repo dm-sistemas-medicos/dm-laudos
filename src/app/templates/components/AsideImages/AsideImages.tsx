@@ -4,13 +4,15 @@ import Image from "next/image";
 
 import { useContext } from "react";
 import { ImagesContext } from "@/app/contexts/images-context";
+import { AsideImagesContext } from "@/app/contexts/aside-images-context";
 
 import styles from "./AsideImages.module.scss";
 
 const width = 256;
 
 const AsideImages = () => {
-  const { maxAsideImages, images } = useContext(ImagesContext);
+  const { maxAsideImages } = useContext(AsideImagesContext);
+  const { images } = useContext(ImagesContext);
 
   const asideImages =
     images.length <= maxAsideImages ? images : images.slice(0, maxAsideImages);

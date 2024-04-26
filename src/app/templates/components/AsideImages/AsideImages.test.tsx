@@ -3,6 +3,7 @@ import "@testing-library/jest-dom";
 import { render, screen } from "@testing-library/react";
 
 import { ImagesContext } from "@/app/contexts/images-context";
+import { AsideImagesContext } from "@/app/contexts/aside-images-context";
 
 import AsideImages from "./AsideImages";
 
@@ -19,13 +20,15 @@ describe("AsideImages component", () => {
     render(
       <ImagesContext.Provider
         value={{
-          maxAsideImages: 2,
-          setMaxAsideImages: jest.fn(),
           images: ["blob://img1.jpg", "blob://img2.jpg"],
           setImages: jest.fn(),
         }}
       >
-        <AsideImages />
+        <AsideImagesContext.Provider
+          value={{ maxAsideImages: 2, setMaxAsideImages: jest.fn() }}
+        >
+          <AsideImages />
+        </AsideImagesContext.Provider>
       </ImagesContext.Provider>
     );
 
@@ -40,13 +43,15 @@ describe("AsideImages component", () => {
     render(
       <ImagesContext.Provider
         value={{
-          maxAsideImages: 2,
-          setMaxAsideImages: jest.fn(),
           images: ["blob://img1.jpg", "blob://img2.jpg", "blob://img3.jpg"],
           setImages: jest.fn(),
         }}
       >
-        <AsideImages />
+        <AsideImagesContext.Provider
+          value={{ maxAsideImages: 2, setMaxAsideImages: jest.fn() }}
+        >
+          <AsideImages />
+        </AsideImagesContext.Provider>
       </ImagesContext.Provider>
     );
 

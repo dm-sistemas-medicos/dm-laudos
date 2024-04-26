@@ -6,7 +6,7 @@
     "dev": "next dev",
     "lint": "next lint",
     "test": "jest",
-    "coverage": "jest --coverage --no-cache",
+    "coverage": "jest --coverage",
     "build": "next build",
     "start": "next start"
   },

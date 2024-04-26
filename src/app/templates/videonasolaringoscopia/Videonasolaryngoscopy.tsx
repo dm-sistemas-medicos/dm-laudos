@@ -1,7 +1,7 @@
 "use client";
 
 import { useContext, useEffect } from "react";
-import { ImagesContext } from "@/app/contexts/images-context";
+import { AsideImagesContext } from "@/app/contexts/aside-images-context";
 
 import NasalCavity from "../components/NasalCavity/NasalCavity";
 import Rhinopharynx from "../components/Rhinopharynx/Rhinopharynx";
@@ -12,7 +12,7 @@ import Conclusion from "../components/Conclusion/Conclusion";
 import styles from "../layout.module.scss";
 
 const Videonasolaryngoscopy = () => {
-  const { setMaxAsideImages } = useContext(ImagesContext);
+  const { setMaxAsideImages } = useContext(AsideImagesContext);
 
   useEffect(() => {
     setMaxAsideImages(4);

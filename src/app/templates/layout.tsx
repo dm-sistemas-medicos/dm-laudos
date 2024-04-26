@@ -1,4 +1,5 @@
 import { ImagesProvider } from "../contexts/images-context";
+import { AsideImagesProvider } from "../contexts/aside-images-context";
 
 import DoctorLogo from "../components/DoctorLogo/DoctorLogo";
 import DoctorInfo from "../components/DoctorInfo/DoctorInfo";
@@ -18,13 +19,15 @@ const Layout = ({ children }: { children: React.ReactNode }) => (
     </header>
     <ImagesProvider>
       <main className={styles.main}>{children}</main>
-      <aside className={styles.aside}>
-        <DragAndDrop />
-        <AsideImages />
-      </aside>
-      <section className={styles.section}>
-        <SectionImages />
-      </section>
+      <AsideImagesProvider>
+        <aside className={styles.aside}>
+          <DragAndDrop />
+          <AsideImages />
+        </aside>
+        <section className={styles.section}>
+          <SectionImages />
+        </section>
+      </AsideImagesProvider>
     </ImagesProvider>
     <footer className={styles.footer}>
       <DoctorSignature />
