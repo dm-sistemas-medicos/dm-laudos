@@ -21,12 +21,12 @@ type AsideImagesProviderProps = {
 };
 
 export const AsideImagesContext = createContext<IAsideImagesContext>({
-  maxAsideImages: 3,
+  maxAsideImages: 4,
   setMaxAsideImages: () => {},
 });
 
 export const AsideImagesProvider = ({ children }: AsideImagesProviderProps) => {
-  const [maxAsideImages, setMaxAsideImages] = useState<MaxAsideImagesType>(3);
+  const [maxAsideImages, setMaxAsideImages] = useState<MaxAsideImagesType>(4);
 
   return (
     <AsideImagesContext.Provider value={{ maxAsideImages, setMaxAsideImages }}>
