@@ -13,24 +13,6 @@
   grid-area: header;
 }
 
-.main {
-  grid-area: main;
-
-  fieldset {
-    margin: 12px 0 0;
-    padding: 0;
-    border: none;
-  }
-}
-
-.aside {
-  grid-area: aside;
-}
-
-.section {
-  grid-area: section;
-}
-
 .footer {
   grid-area: footer;
   display: grid;

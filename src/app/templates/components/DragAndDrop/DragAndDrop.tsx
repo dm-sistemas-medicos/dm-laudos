@@ -1,13 +1,19 @@
 "use client";
 
-import { useRef, useState, DragEvent, ChangeEvent, useEffect } from "react";
-
-import { ImagesType, SetImagesType } from "@/app/page";
+import {
+  useRef,
+  useState,
+  DragEvent,
+  ChangeEvent,
+  useEffect,
+  Dispatch,
+  SetStateAction,
+} from "react";
 
 import styles from "./DragAndDrop.module.scss";
 
 type DragAndDropProps = {
-  setImages: SetImagesType;
+  setImages: Dispatch<SetStateAction<string[]>>;
 };
 
 const DragAndDrop = ({ setImages }: DragAndDropProps) => {
@@ -42,7 +48,7 @@ const DragAndDrop = ({ setImages }: DragAndDropProps) => {
 
   const handleImagesUpload = (images: FileList | null) => {
     if (images) {
-      const uploadedImages: ImagesType = [];
+      const uploadedImages: string[] = [];
 
       Array.from(images)
         .reverse()

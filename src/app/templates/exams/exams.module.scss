@@ -1,48 +1,66 @@
-.exam-title {
-  margin: 0;
-  text-transform: uppercase;
-  font-size: 20px;
-}
+.main {
+  grid-area: main;
 
-.exam-section-title {
-  margin: 0;
-  text-transform: uppercase;
-  font-size: 18px;
-}
-
-.exam-item-list {
-  margin: 6px 0 0;
-  padding: 0;
-  display: grid;
-  row-gap: 8px;
-}
-
-.exam-item {
-  position: relative;
-  margin: 0 0 9px;
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 4px;
-  justify-content: start;
-  align-items: start;
-
-  &:not(:last-child)::after {
-    content: "";
-    position: absolute;
-    right: 0;
-    bottom: -9px;
-    left: 0;
-    height: 1px;
-    background-color: #000;
+  fieldset {
+    margin: 12px 0 0;
+    padding: 0;
+    border: none;
   }
 
-  @media print {
+  .exam-title {
     margin: 0;
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+
+  .exam-section-title {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 18px;
+  }
+
+  .exam-item-list {
+    margin: 6px 0 0;
+    padding: 0;
+    display: grid;
+    row-gap: 8px;
+  }
+
+  .exam-item {
+    position: relative;
+    margin: 0 0 9px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 4px;
+    justify-content: start;
+    align-items: start;
+
+    &:not(:last-child)::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      bottom: -9px;
+      left: 0;
+      height: 1px;
+      background-color: #000;
+    }
+
+    @media print {
+      margin: 0;
+    }
+  }
+
+  .exam-item-double {
+    grid-column: span 2;
   }
 }
 
-.exam-item-double {
-  grid-column: span 2;
+.aside {
+  grid-area: aside;
+}
+
+.section {
+  grid-area: section;
 }
 
 .non-printable {
