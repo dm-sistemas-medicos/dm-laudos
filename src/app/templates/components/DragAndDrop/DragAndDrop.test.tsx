@@ -6,7 +6,7 @@ import DragAndDrop from "./DragAndDrop";
 
 describe("DragAndDrop component", () => {
   it("renders the component", () => {
-    render(<DragAndDrop setImages={jest.fn()} />);
+    render(<DragAndDrop />);
 
     const dragAndDrop = screen.getByTestId("drag-and-drop-container");
 
@@ -14,7 +14,7 @@ describe("DragAndDrop component", () => {
   });
 
   it("should handle form dragenter event", () => {
-    render(<DragAndDrop setImages={jest.fn()} />);
+    render(<DragAndDrop />);
 
     const dragAndDrop = screen.getByTestId("drag-and-drop-container");
 
@@ -26,7 +26,7 @@ describe("DragAndDrop component", () => {
   });
 
   it("should prevent the default form submit event handler", () => {
-    render(<DragAndDrop setImages={jest.fn()} />);
+    render(<DragAndDrop />);
 
     const dragAndDrop = screen.getByTestId("drag-and-drop-container");
     const submitEvent = createEvent.submit(dragAndDrop);
@@ -37,8 +37,6 @@ describe("DragAndDrop component", () => {
   });
 
   it("should handle drop-area dragover event", () => {
-    render(<DragAndDrop setImages={jest.fn()} />);
-
     const dragAndDrop = screen.getByTestId("drag-and-drop-container");
 
     fireEvent.dragEnter(dragAndDrop);
@@ -53,7 +51,7 @@ describe("DragAndDrop component", () => {
   });
 
   it("should handle drop-area dragleave event", () => {
-    render(<DragAndDrop setImages={jest.fn()} />);
+    render(<DragAndDrop />);
 
     const dragAndDrop = screen.getByTestId("drag-and-drop-container");
 
@@ -71,7 +69,7 @@ describe("DragAndDrop component", () => {
   it("should prevent the default dragover and drop event handlers", () => {
     jest.spyOn(window, "addEventListener").mockImplementationOnce(() => {});
 
-    const { unmount } = render(<DragAndDrop setImages={jest.fn()} />);
+    const { unmount } = render(<DragAndDrop />);
 
     expect(window.addEventListener).toHaveBeenNthCalledWith(
       1,

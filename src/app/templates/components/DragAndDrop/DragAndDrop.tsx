@@ -4,17 +4,15 @@ import {
   DragEvent,
   ChangeEvent,
   useEffect,
-  Dispatch,
-  SetStateAction,
+  useContext,
 } from "react";
 
 import styles from "./DragAndDrop.module.scss";
+import { ImagesContext } from "@/app/contexts/images-context";
 
-type DragAndDropProps = {
-  setImages: Dispatch<SetStateAction<string[]>>;
-};
+const DragAndDrop = () => {
+  const { setImages } = useContext(ImagesContext);
 
-const DragAndDrop = ({ setImages }: DragAndDropProps) => {
   const [dragActive, setDragActive] = useState(false);
 
   const inputRef = useRef<HTMLInputElement>(null);
