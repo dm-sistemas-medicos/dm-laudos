@@ -8,8 +8,6 @@ import { AsideImagesContext } from "@/app/contexts/aside-images-context";
 
 import styles from "./AsideImages.module.scss";
 
-const width = 256;
-
 const AsideImages = () => {
   const { maxAsideImages } = useContext(AsideImagesContext);
   const { images } = useContext(ImagesContext);
@@ -23,13 +21,9 @@ const AsideImages = () => {
       data-testid="aside-images-container"
     >
       {asideImages.map((image, i) => (
-        <Image
-          key={i}
-          src={image}
-          width={256}
-          height={width * 0.75}
-          alt={`Imagem ${i + 1}`}
-        />
+        <div key={i}>
+          <Image fill src={image} alt={`Imagem ${i + 1}`} />
+        </div>
       ))}
     </div>
   );

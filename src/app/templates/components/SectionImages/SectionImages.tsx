@@ -8,8 +8,6 @@ import { AsideImagesContext } from "@/app/contexts/aside-images-context";
 
 import styles from "./SectionImages.module.scss";
 
-const width = 256;
-
 const SectionImages = () => {
   const { maxAsideImages } = useContext(AsideImagesContext);
   const { images } = useContext(ImagesContext);
@@ -18,17 +16,15 @@ const SectionImages = () => {
 
   return (
     <div
-      className={styles["section-images"]}
+      className={`${styles["section-images"]} ${
+        images.length > maxAsideImages ? styles["page-break"] : ""
+      }`}
       data-testid="section-images-container"
     >
       {sectionImages.map((image, i) => (
-        <Image
-          key={i}
-          src={image}
-          width={256}
-          height={width * 0.75}
-          alt={`Imagem ${i + maxAsideImages + 1}`}
-        />
+        <div key={i}>
+          <Image fill src={image} alt={`Imagem ${i + 1}`} />
+        </div>
       ))}
     </div>
   );
