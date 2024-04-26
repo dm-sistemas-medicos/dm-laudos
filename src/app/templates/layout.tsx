@@ -18,8 +18,8 @@ const Layout = ({ children }: { children: React.ReactNode }) => (
       <PatientInfo />
     </header>
     <ImagesProvider>
-      <main className={styles.main}>{children}</main>
       <AsideImagesProvider>
+        <main className={styles.main}>{children}</main>
         <aside className={styles.aside}>
           <DragAndDrop />
           <AsideImages />
