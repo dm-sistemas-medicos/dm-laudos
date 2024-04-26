@@ -1185,22 +1185,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:^18.0.0, @types/react-dom@npm:^18.2.25":
-  version: 18.2.25
-  resolution: "@types/react-dom@npm:18.2.25"
+"@types/react-dom@npm:^18.0.0, @types/react-dom@npm:^18.3.0":
+  version: 18.3.0
+  resolution: "@types/react-dom@npm:18.3.0"
   dependencies:
     "@types/react": "*"
-  checksum: 85f9278d6456c6cdc76da6806a33b472588cdd029b08dde32e8b5636b25a3eae529b4ac2e08c848a3d7ca44e4e97ee9a3df406c96fa0768de935c8eed6e07590
+  checksum: a0cd9b1b815a6abd2a367a9eabdd8df8dd8f13f95897b2f9e1359ea3ac6619f957c1432ece004af7d95e2a7caddbba19faa045f831f32d6263483fc5404a7596
   languageName: node
   linkType: hard
 
-"@types/react@npm:*, @types/react@npm:^18.2.79":
-  version: 18.2.79
-  resolution: "@types/react@npm:18.2.79"
+"@types/react@npm:*, @types/react@npm:^18.3.0":
+  version: 18.3.0
+  resolution: "@types/react@npm:18.3.0"
   dependencies:
     "@types/prop-types": "*"
     csstype: ^3.0.2
-  checksum: 85aa96e0e88725c84d8fc5f04f10a4da6a1f507dde33557ac9cc211414756867721264bfefd9e02bae1288ce2905351d949b652b931e734ea24519ee5c625138
+  checksum: 6addfffcf6220157217fd1487d831b41e725e170887a83bd4379e00b67c553dbb7b283c5f4555102f56536539f1f712635d27e27f377d17c2c0f171b66bc2f2d
   languageName: node
   linkType: hard
 
@@ -2274,8 +2274,8 @@ __metadata:
     "@testing-library/react": ^15.0.4
     "@types/jest": ^29.5.12
     "@types/node": ^20.12.7
-    "@types/react": ^18.2.79
-    "@types/react-dom": ^18.2.25
+    "@types/react": ^18.3.0
+    "@types/react-dom": ^18.3.0
     eslint: ^8.57.0
     eslint-config-next: ^14.2.3
     eslint-config-prettier: ^8.10.0
@@ -2338,9 +2338,9 @@ __metadata:
   linkType: hard
 
 "electron-to-chromium@npm:^1.4.668":
-  version: 1.4.748
-  resolution: "electron-to-chromium@npm:1.4.748"
-  checksum: ffd29b36b698923e3d5f839f735cba3436569f85246099a8df8ad933f8d3fa0c2187de71f99c8f9c6f0bd6d5cb49b7058cd8b702fd8573b2d3c835e7939446e2
+  version: 1.4.749
+  resolution: "electron-to-chromium@npm:1.4.749"
+  checksum: 30bffd43cf198c3b71afa0696da6ce37b31dad789419580d90cd086bb935b4894c6aa153a1dd37d8d379c845a1a8b3abe6aba89e0dc71082d0f032fb7351a045
   languageName: node
   linkType: hard
 
