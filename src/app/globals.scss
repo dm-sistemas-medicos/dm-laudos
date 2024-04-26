@@ -33,3 +33,7 @@ select {
     word-wrap: break-word;
   }
 }
+
+img {
+  object-fit: contain;
+}
