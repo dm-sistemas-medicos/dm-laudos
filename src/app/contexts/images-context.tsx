@@ -20,12 +20,9 @@ type ImagesProviderProps = {
   children: ReactNode;
 };
 
-export const ImagesContext = createContext<IImagesContext>({
-  images: [],
-  setImages: () => {},
-});
+export const ImagesContext = createContext<IImagesContext | null>(null);
 
-const ImagesProvider = ({ children }: ImagesProviderProps) => {
+export const ImagesProvider = ({ children }: ImagesProviderProps) => {
   const [images, setImages] = useState<ImagesType>([]);
 
   return (
@@ -34,5 +31,3 @@ const ImagesProvider = ({ children }: ImagesProviderProps) => {
     </ImagesContext.Provider>
   );
 };
-
-export default ImagesProvider;
