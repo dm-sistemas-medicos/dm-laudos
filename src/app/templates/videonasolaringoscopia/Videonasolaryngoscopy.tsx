@@ -15,7 +15,7 @@ const Videonasolaryngoscopy = () => {
   const { setMaxAsideImages } = useContext(AsideImagesContext);
 
   useEffect(() => {
-    setMaxAsideImages(4);
+    setMaxAsideImages(5);
   }, [setMaxAsideImages]);
 
   return (

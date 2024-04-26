@@ -23,7 +23,7 @@ const SectionImages = () => {
     >
       {sectionImages.map((image, i) => (
         <div key={i}>
-          <Image fill src={image} alt={`Imagem ${i + 1}`} />
+          <Image fill src={image} alt={`Imagem ${i + maxAsideImages + 1}`} />
         </div>
       ))}
     </div>
