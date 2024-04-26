@@ -1,6 +1,6 @@
 "use client";
 
-import ImagesProvider from "@/app/contexts/images-context";
+import { ImagesProvider } from "@/app/contexts/images-context";
 
 import DragAndDrop from "../components/DragAndDrop/DragAndDrop";
 import Preview from "../components/Preview/Preview";
