@@ -10,7 +10,7 @@ describe("Videonasoscopy component", () => {
   });
 
   it("renders the title", () => {
-    const title = screen.getByText("Videonasoscopia", {
+    const title = screen.getByText("Videonasoescopia", {
       selector: "h1",
     });
 

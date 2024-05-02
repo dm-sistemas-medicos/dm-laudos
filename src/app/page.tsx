@@ -6,11 +6,11 @@ import DoctorLogo from "./components/DoctorLogo/DoctorLogo";
 const Page = () => (
   <section className={styles.page}>
     <DoctorLogo />
-    <Link className={styles.button} href="/templates/videonasolaringoscopia">
+    <Link className={styles.button} href="/videonasolaringoscopia">
       VIDEONASOLARINGOSCOPIA
     </Link>
-    <Link className={styles.button} href="/templates/videonasoscopia">
-      VIDEONASOSCOPIA
+    <Link className={styles.button} href="/videonasoescopia">
+      VIDEONASOESCOPIA
     </Link>
   </section>
 );

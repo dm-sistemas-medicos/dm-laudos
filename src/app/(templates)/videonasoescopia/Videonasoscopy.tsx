@@ -8,7 +8,7 @@ import styles from "../layout.module.scss";
 
 const Videonasoscopy = () => (
   <>
-    <h1 className={styles["exam-title"]}>Videonasoscopia</h1>
+    <h1 className={styles["exam-title"]}>Videonasoescopia</h1>
     <form>
       <NasalCavity />
       <Rhinopharynx />
