@@ -1,0 +1,240 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Templates layout renders the layout 1`] = `
+<div>
+  <section
+    class="page"
+  >
+    <header
+      class="header"
+    >
+      <a
+        href="/"
+      >
+        <img
+          alt=""
+          data-nimg="1"
+          decoding="async"
+          fetchpriority="high"
+          height="123"
+          src="/_next/image?url=%2Flogo.png&w=828&q=75"
+          srcset="/_next/image?url=%2Flogo.png&w=640&q=75 1x, /_next/image?url=%2Flogo.png&w=828&q=75 2x"
+          style="color: transparent;"
+          width="400"
+        />
+      </a>
+      <form
+        class="patient-info"
+      >
+        <div
+          data-testid="name-container"
+        >
+          <label
+            for="name"
+          >
+            Nome
+            :
+          </label>
+          <input
+            data-testid="name"
+            id="name"
+            type="text"
+            value=""
+          />
+        </div>
+        <div
+          data-testid="medical-record-number-container"
+        >
+          <label
+            for="medical-record-number"
+          >
+            Prontuário
+            :
+          </label>
+          <input
+            class="small-input"
+            data-testid="medical-record-number"
+            id="medical-record-number"
+            type="text"
+            value=""
+          />
+        </div>
+        <div
+          data-testid="medical-report-date-container"
+        >
+          <label
+            for="medical-report-date"
+          >
+            Data:
+          </label>
+          <input
+            class="input"
+            data-testid="medical-report-date"
+            id="medical-report-date"
+            type="date"
+            value="2024-06-05"
+          />
+        </div>
+        <div
+          data-testid="requester-name-container"
+        >
+          <label
+            for="requester-name"
+          >
+            Solicitante
+            :
+          </label>
+          <input
+            data-testid="requester-name"
+            id="requester-name"
+            type="text"
+            value="DRA MARIANA MACHOSKI"
+          />
+        </div>
+        <div
+          class="container"
+          data-testid="birthdate-input-container"
+        >
+          <label
+            for="birthdate"
+          >
+            Nascimento:
+          </label>
+          <input
+            class="input"
+            data-testid="birthdate-input"
+            id="birthdate"
+            type="date"
+            value=""
+          />
+          <span
+            data-testid="lifetime-span"
+          />
+        </div>
+        <div
+          data-testid="operator-name-container"
+        >
+          <label
+            for="operator-name"
+          >
+            Operador
+            :
+          </label>
+          <input
+            data-testid="operator-name"
+            id="operator-name"
+            type="text"
+            value="DRA MARIANA MACHOSKI"
+          />
+        </div>
+        <div
+          class="double-container"
+          data-testid="medical-insurance-name-container"
+        >
+          <label
+            for="medical-insurance-name"
+          >
+            Convênio
+            :
+          </label>
+          <input
+            data-testid="medical-insurance-name"
+            id="medical-insurance-name"
+            type="text"
+            value=""
+          />
+        </div>
+      </form>
+    </header>
+    <main
+      class="main"
+    >
+      children
+    </main>
+    <aside
+      class="aside"
+    >
+      <form
+        class="drag-and-drop"
+        data-testid="drag-and-drop-container"
+      >
+        <input
+          accept="image/*"
+          data-testid="drag-and-drop-input"
+          multiple=""
+          type="file"
+        />
+        <label
+          class="drag-and-drop-label "
+          data-testid="drag-and-drop-label"
+          for="drag-and-drop-input"
+        >
+          <p>
+            Arraste as imagens aqui
+          </p>
+          <p>
+            OU
+          </p>
+          <button>
+            Selecione as imagens
+          </button>
+        </label>
+      </form>
+      <div
+        class="aside-images"
+        data-testid="aside-images-container"
+      />
+    </aside>
+    <section
+      class="section"
+    >
+      <div
+        class="section-images "
+        data-testid="section-images-container"
+      />
+    </section>
+    <footer
+      class="footer"
+    >
+      <div
+        class="doctor-signature"
+      >
+        <img
+          alt="Assinatura"
+          data-nimg="1"
+          decoding="async"
+          height="75"
+          loading="lazy"
+          src="/_next/image?url=%2Fassinatura.png&w=256&q=75"
+          srcset="/_next/image?url=%2Fassinatura.png&w=96&q=75 1x, /_next/image?url=%2Fassinatura.png&w=256&q=75 2x"
+          style="color: transparent;"
+          width="75"
+        />
+        <p>
+          Dra. Mariana Carolina C. Machoski
+        </p>
+        <p>
+          Médica Otorrinolaringologista
+        </p>
+        <p>
+          CRM-SC 35.098 | RQE 23.991
+        </p>
+      </div>
+      <hr />
+      <p
+        class="doctor-info"
+      >
+        Dra. Mariana Machoski
+        , 
+        CRM/SC 35098
+        , 
+        RQE/SC 23991
+         - Email: 
+        marianamachoski@gmail.com
+         - Instagram: 
+        @marimachoski
+      </p>
+    </footer>
+  </section>
+</div>
+`;

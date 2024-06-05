@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Root layout renders the layout 1`] = `
+<div>
+  <html
+    lang="pt-BR"
+  >
+    <body
+      class="className"
+    >
+      children
+    </body>
+  </html>
+</div>
+`;

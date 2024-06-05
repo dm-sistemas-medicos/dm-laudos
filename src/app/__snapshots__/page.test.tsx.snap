@@ -1,0 +1,37 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Root page renders the page 1`] = `
+<div>
+  <section
+    class="page"
+  >
+    <a
+      href="/"
+    >
+      <img
+        alt=""
+        data-nimg="1"
+        decoding="async"
+        fetchpriority="high"
+        height="123"
+        src="/_next/image?url=%2Flogo.png&w=828&q=75"
+        srcset="/_next/image?url=%2Flogo.png&w=640&q=75 1x, /_next/image?url=%2Flogo.png&w=828&q=75 2x"
+        style="color: transparent;"
+        width="400"
+      />
+    </a>
+    <a
+      class="button"
+      href="/videonasolaringoscopia"
+    >
+      VIDEONASOLARINGOSCOPIA
+    </a>
+    <a
+      class="button"
+      href="/videonasoescopia"
+    >
+      VIDEONASOESCOPIA
+    </a>
+  </section>
+</div>
+`;
