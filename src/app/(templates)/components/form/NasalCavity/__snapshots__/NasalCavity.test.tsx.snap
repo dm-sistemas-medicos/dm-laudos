@@ -1,0 +1,114 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NasalCavity component renders the component 1`] = `
+<div>
+  <fieldset>
+    <h2
+      class="exam-section-title"
+    >
+      Cavidade Nasal
+    </h2>
+    <ul
+      class="exam-item-list"
+    >
+      <li
+        class="exam-item"
+        data-testid="nasal-cavity-nasal-septum-container"
+      >
+        <label
+          for="nasal-cavity-nasal-septum"
+        >
+          Septo nasal
+        </label>
+        <textarea
+          data-testid="nasal-cavity-nasal-septum"
+          id="nasal-cavity-nasal-septum"
+          rows="2"
+        >
+          com desvio para direita, com esporão ósseo associado, parcialmente obstrutivo
+        </textarea>
+      </li>
+      <li
+        class="exam-item"
+        data-testid="nasal-cavity-middle-turbinates-container"
+      >
+        <label
+          for="nasal-cavity-middle-turbinates"
+        >
+          Cornetos médios
+        </label>
+        <textarea
+          data-testid="nasal-cavity-middle-turbinates"
+          id="nasal-cavity-middle-turbinates"
+          rows="1"
+        >
+          normotróficos
+        </textarea>
+      </li>
+      <li
+        class="exam-item"
+        data-testid="nasal-cavity-inferior-turbinates-container"
+      >
+        <label
+          for="nasal-cavity-inferior-turbinates"
+        >
+          Cornetos inferiores
+        </label>
+        <textarea
+          data-testid="nasal-cavity-inferior-turbinates"
+          id="nasal-cavity-inferior-turbinates"
+          rows="1"
+        >
+          hipertróficos
+        </textarea>
+      </li>
+      <li
+        class="exam-item"
+        data-testid="nasal-cavity-secretion-container"
+      >
+        <label
+          for="nasal-cavity-secretion"
+        >
+          Secreção
+        </label>
+        <textarea
+          data-testid="nasal-cavity-secretion"
+          id="nasal-cavity-secretion"
+          rows="1"
+        >
+          aquosa
+        </textarea>
+      </li>
+      <li
+        class="exam-item"
+        data-testid="nasal-cavity-mucosa-container"
+      >
+        <label
+          for="nasal-cavity-mucosa"
+        >
+          Mucosa
+        </label>
+        <textarea
+          data-testid="nasal-cavity-mucosa"
+          id="nasal-cavity-mucosa"
+          rows="1"
+        >
+          pálida
+        </textarea>
+      </li>
+      <li
+        class="exam-item non-printable"
+        data-testid="nasal-cavity-comments-container"
+      >
+        <textarea
+          class="exam-item-double"
+          data-testid="nasal-cavity-comments"
+          id="nasal-cavity-comments"
+          placeholder="Observações"
+          rows="1"
+        />
+      </li>
+    </ul>
+  </fieldset>
+</div>
+`;

@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`DoctorSignature component renders the component 1`] = `
+<div>
+  <div
+    class="doctor-signature"
+  >
+    <img
+      alt="Assinatura"
+      data-nimg="1"
+      decoding="async"
+      height="75"
+      loading="lazy"
+      src="/_next/image?url=%2Fassinatura.png&w=256&q=75"
+      srcset="/_next/image?url=%2Fassinatura.png&w=96&q=75 1x, /_next/image?url=%2Fassinatura.png&w=256&q=75 2x"
+      style="color: transparent;"
+      width="75"
+    />
+    <p>
+      Dra. Mariana Carolina C. Machoski
+    </p>
+    <p>
+      Médica Otorrinolaringologista
+    </p>
+    <p>
+      CRM-SC 35.098 | RQE 23.991
+    </p>
+  </div>
+</div>
+`;

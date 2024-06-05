@@ -1,0 +1,80 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Oropharynx component renders the component 1`] = `
+<div>
+  <fieldset>
+    <h2
+      class="exam-section-title"
+    >
+      Orofaringe
+    </h2>
+    <ul
+      class="exam-item-list"
+    >
+      <li
+        class="exam-item"
+        data-testid="oropharynx-oropharynx-container"
+      >
+        <label
+          for="oropharynx-oropharynx"
+        >
+          Orofaringe
+        </label>
+        <textarea
+          data-testid="oropharynx-oropharynx"
+          id="oropharynx-oropharynx"
+          rows="1"
+        >
+          e hipofaringe com mucosa normal
+        </textarea>
+      </li>
+      <li
+        class="exam-item"
+        data-testid="oropharynx-base-of-tongue-container"
+      >
+        <label
+          for="oropharynx-base-of-tongue"
+        >
+          Base da língua
+        </label>
+        <textarea
+          data-testid="oropharynx-base-of-tongue"
+          id="oropharynx-base-of-tongue"
+          rows="1"
+        >
+          sem alterações
+        </textarea>
+      </li>
+      <li
+        class="exam-item"
+        data-testid="oropharynx-vallecula-pyriform-sinuses-container"
+      >
+        <label
+          for="oropharynx-vallecula-pyriform-sinuses"
+        >
+          Valéculas e seios piriformes
+        </label>
+        <textarea
+          data-testid="oropharynx-vallecula-pyriform-sinuses"
+          id="oropharynx-vallecula-pyriform-sinuses"
+          rows="1"
+        >
+          livres
+        </textarea>
+      </li>
+      <li
+        class="exam-item non-printable"
+        data-testid="oropharynx-comments-container"
+      >
+        <textarea
+          class="exam-item-double"
+          data-testid="oropharynx-comments"
+          id="oropharynx-comments"
+          placeholder="Observações"
+          rows="1"
+        />
+      </li>
+    </ul>
+  </fieldset>
+</div>
+`;

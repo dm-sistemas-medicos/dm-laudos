@@ -1,0 +1,111 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Rhinopharynx component renders the component 1`] = `
+<div>
+  <fieldset>
+    <h2
+      class="exam-section-title"
+    >
+      Rinofaringe
+    </h2>
+    <ul
+      class="exam-item-list"
+    >
+      <li
+        class="exam-item"
+        data-testid="rhinopharynx-mucosa-container"
+      >
+        <label
+          for="rhinopharynx-mucosa"
+        >
+          Mucosa
+        </label>
+        <textarea
+          data-testid="rhinopharynx-mucosa"
+          id="rhinopharynx-mucosa"
+          rows="1"
+        >
+          normal
+        </textarea>
+      </li>
+      <li
+        class="exam-item"
+        data-testid="rhinopharynx-meatus-container"
+      >
+        <label
+          for="rhinopharynx-meatus"
+        >
+          Meatos
+        </label>
+        <textarea
+          data-testid="rhinopharynx-meatus"
+          id="rhinopharynx-meatus"
+          rows="1"
+        >
+          pérvios
+        </textarea>
+      </li>
+      <li
+        class="exam-item"
+        data-testid="rhinopharynx-tubal-ostia-container"
+      >
+        <label
+          for="rhinopharynx-tubal-ostia"
+        >
+          Óstios tubários
+        </label>
+        <textarea
+          data-testid="rhinopharynx-tubal-ostia"
+          id="rhinopharynx-tubal-ostia"
+          rows="1"
+        >
+          visualidados bilateralmente e pérvios
+        </textarea>
+      </li>
+      <li
+        class="exam-item"
+        data-testid="rhinopharynx-velopharyngeal-function-container"
+      >
+        <label
+          for="rhinopharynx-velopharyngeal-function"
+        >
+          Função velofaringea
+        </label>
+        <textarea
+          data-testid="rhinopharynx-velopharyngeal-function"
+          id="rhinopharynx-velopharyngeal-function"
+          rows="1"
+        >
+          preservada
+        </textarea>
+      </li>
+      <li
+        class="exam-item"
+        data-testid="rhinopharynx-injuries-container"
+      >
+        <textarea
+          aria-label="Lesões"
+          class="exam-item-double"
+          data-testid="rhinopharynx-injuries"
+          id="rhinopharynx-injuries"
+          rows="1"
+        >
+          Ausência de lesões
+        </textarea>
+      </li>
+      <li
+        class="exam-item non-printable"
+        data-testid="rhinopharynx-comments-container"
+      >
+        <textarea
+          class="exam-item-double"
+          data-testid="rhinopharynx-comments"
+          id="rhinopharynx-comments"
+          placeholder="Observações"
+          rows="1"
+        />
+      </li>
+    </ul>
+  </fieldset>
+</div>
+`;

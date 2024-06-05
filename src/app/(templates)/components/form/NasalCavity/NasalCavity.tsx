@@ -4,7 +4,7 @@ import Comments from "../Comments/Comments";
 import parentStyles from "@/app/(templates)/layout.module.scss";
 
 const NasalCavity = () => (
-  <fieldset data-testid="nasal-cavity-container">
+  <fieldset>
     <h2 className={parentStyles["exam-section-title"]}>Cavidade Nasal</h2>
     <ul className={parentStyles["exam-item-list"]}>
       <ExamItem

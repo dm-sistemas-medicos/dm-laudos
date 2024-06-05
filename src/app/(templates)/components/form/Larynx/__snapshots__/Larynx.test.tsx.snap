@@ -1,0 +1,114 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Larynx component renders the component 1`] = `
+<div>
+  <fieldset>
+    <h2
+      class="exam-section-title"
+    >
+      Laringe
+    </h2>
+    <ul
+      class="exam-item-list"
+    >
+      <li
+        class="exam-item"
+        data-testid="larynx-vocal-folds-container"
+      >
+        <label
+          for="larynx-vocal-folds"
+        >
+          Pregas vocais
+        </label>
+        <textarea
+          data-testid="larynx-vocal-folds"
+          id="larynx-vocal-folds"
+          rows="1"
+        >
+          com mobilidade preservada bilateralmente
+        </textarea>
+      </li>
+      <li
+        class="exam-item"
+        data-testid="larynx-free-edges-container"
+      >
+        <label
+          for="larynx-free-edges"
+        >
+          Bordos livres
+        </label>
+        <textarea
+          data-testid="larynx-free-edges"
+          id="larynx-free-edges"
+          rows="1"
+        >
+          regulares, sem lesões
+        </textarea>
+      </li>
+      <li
+        class="exam-item"
+        data-testid="larynx-coaptation-container"
+      >
+        <label
+          for="larynx-coaptation"
+        >
+          Coaptação
+        </label>
+        <textarea
+          data-testid="larynx-coaptation"
+          id="larynx-coaptation"
+          rows="1"
+        >
+          normal
+        </textarea>
+      </li>
+      <li
+        class="exam-item"
+        data-testid="larynx-mucosa-container"
+      >
+        <label
+          for="larynx-mucosa"
+        >
+          Mucosa
+        </label>
+        <textarea
+          data-testid="larynx-mucosa"
+          id="larynx-mucosa"
+          rows="1"
+        >
+          com hiperemia e edema leve
+        </textarea>
+      </li>
+      <li
+        class="exam-item"
+        data-testid="larynx-subglottis-container"
+      >
+        <label
+          for="larynx-subglottis"
+        >
+          Subglote
+        </label>
+        <textarea
+          data-testid="larynx-subglottis"
+          id="larynx-subglottis"
+          rows="1"
+        >
+          livre, sem lesões
+        </textarea>
+      </li>
+      <li
+        class="exam-item non-printable"
+        data-testid="larynx-comments-container"
+      >
+        <textarea
+          class="exam-item-double"
+          data-testid="larynx-comments"
+          id="larynx-comments"
+          placeholder="Observações"
+          rows="1"
+        />
+      </li>
+    </ul>
+  </fieldset>
+</div>
+`;

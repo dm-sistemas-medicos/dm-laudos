@@ -18,10 +18,7 @@ const PatientInfo = () => {
   );
 
   return (
-    <form
-      className={styles["patient-info"]}
-      data-testid="patient-info-container"
-    >
+    <form className={styles["patient-info"]}>
       <TextInput id="name" label="Nome" />
       <TextInput
         id="medical-record-number"

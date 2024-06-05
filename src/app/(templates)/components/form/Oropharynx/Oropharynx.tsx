@@ -4,7 +4,7 @@ import Comments from "../Comments/Comments";
 import parentStyles from "@/app/(templates)/layout.module.scss";
 
 const Oropharynx = () => (
-  <fieldset data-testid="oropharynx-container">
+  <fieldset>
     <h2 className={parentStyles["exam-section-title"]}>Orofaringe</h2>
     <ul className={parentStyles["exam-item-list"]}>
       <ExamItem
