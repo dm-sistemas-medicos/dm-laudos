@@ -1,7 +1,35 @@
 {
+  "description": "A SPA built with React, Next.js, TypeScript and SASS.",
   "name": "dm-laudos",
   "version": "0.1.0",
-  "private": true,
+  "keywords": [
+    "react",
+    "next.js",
+    "typescript",
+    "sass",
+    "jest",
+    "react-testing-library",
+    "vercel"
+  ],
+  "homepage": "https://github.com/dm-sistemas-medicos/dm-laudos#readme",
+  "bugs": {
+    "url": "https://github.com/dm-sistemas-medicos/dm-laudos/issues"
+  },
+  "license": "UNLICENSED",
+  "author": {
+    "name": "Daniel Xavier",
+    "email": "dxdanielxavier@gmail.com",
+    "url": "https://www.danielxavier.dev/en"
+  },
+  "contributors": [
+    {
+      "name": "Mariana Machoski"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dm-sistemas-medicos/dm-laudos.git"
+  },
   "scripts": {
     "dev": "next dev",
     "lint": "next lint",
@@ -29,5 +57,11 @@
     "jest-environment-jsdom": "^29.7.0",
     "sass": "^1.77.2",
     "typescript": "^5.4.5"
-  }
+  },
+  "engines": {
+    "node": ">=18.17",
+    "yarn": "^1.22.22"
+  },
+  "private": true,
+  "packageManager": "yarn@1.22.22"
 }
