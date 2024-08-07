@@ -72,7 +72,7 @@ exports[`Templates layout renders the layout 1`] = `
             data-testid="medical-report-date"
             id="medical-report-date"
             type="date"
-            value="2024-06-05"
+            value="2024-08-07"
           />
         </div>
         <div
