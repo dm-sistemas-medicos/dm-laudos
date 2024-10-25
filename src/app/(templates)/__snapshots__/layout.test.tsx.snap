@@ -15,7 +15,6 @@ exports[`Templates layout renders the layout 1`] = `
           alt=""
           data-nimg="1"
           decoding="async"
-          fetchpriority="high"
           height="123"
           src="/_next/image?url=%2Flogo.png&w=828&q=75"
           srcset="/_next/image?url=%2Flogo.png&w=640&q=75 1x, /_next/image?url=%2Flogo.png&w=828&q=75 2x"
@@ -72,7 +71,7 @@ exports[`Templates layout renders the layout 1`] = `
             data-testid="medical-report-date"
             id="medical-report-date"
             type="date"
-            value="2024-08-07"
+            value="2024-10-25"
           />
         </div>
         <div

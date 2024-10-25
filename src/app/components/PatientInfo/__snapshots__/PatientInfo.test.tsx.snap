@@ -51,7 +51,7 @@ exports[`PatientInfo component renders the component 1`] = `
         data-testid="medical-report-date"
         id="medical-report-date"
         type="date"
-        value="2024-08-07"
+        value="2024-10-25"
       />
     </div>
     <div

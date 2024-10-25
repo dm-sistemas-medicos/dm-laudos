@@ -9,7 +9,6 @@ exports[`DoctorLogo component renders the component 1`] = `
       alt=""
       data-nimg="1"
       decoding="async"
-      fetchpriority="high"
       height="123"
       src="/_next/image?url=%2Flogo.png&w=828&q=75"
       srcset="/_next/image?url=%2Flogo.png&w=640&q=75 1x, /_next/image?url=%2Flogo.png&w=828&q=75 2x"
