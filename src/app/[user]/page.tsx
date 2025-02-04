@@ -1,10 +1,12 @@
 import Link from "next/link";
 
+import { User } from "@/users";
+
 import DoctorLogo from "./components/DoctorLogo/DoctorLogo";
 
 import styles from "./page.module.scss";
 
-const Page = async ({ params }: { params: Promise<{ user: string }> }) => {
+const Page = async ({ params }: { params: Promise<{ user: User }> }) => {
   const user = (await params).user;
 
   return (

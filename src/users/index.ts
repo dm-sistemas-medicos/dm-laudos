@@ -6,4 +6,6 @@ const users = {
   "leticia-leahy": LeticiaLeahy,
 };
 
+export type User = keyof typeof users;
+
 export default users;

@@ -1,6 +1,8 @@
 import { ImagesProvider } from "@/app/contexts/images-context";
 import { AsideImagesProvider } from "@/app/contexts/aside-images-context";
 
+import { User } from "@/users";
+
 import DoctorLogo from "../components/DoctorLogo/DoctorLogo";
 import DoctorInfo from "../components/DoctorInfo/DoctorInfo";
 import DragAndDrop from "./components/images/DragAndDrop/DragAndDrop";
@@ -15,7 +17,7 @@ const Layout = async ({
   params,
   children,
 }: {
-  params: Promise<{ user: string }>;
+  params: Promise<{ user: User }>;
   children: React.ReactNode;
 }) => {
   const user = (await params).user;
