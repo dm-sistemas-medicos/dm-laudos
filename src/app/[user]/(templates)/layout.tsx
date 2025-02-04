@@ -43,7 +43,7 @@ const Layout = async ({
       <footer className={styles.footer}>
         <DoctorSignature user={user} />
         <hr />
-        <DoctorInfo />
+        <DoctorInfo user={user} />
       </footer>
     </section>
   );
