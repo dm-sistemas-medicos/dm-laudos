@@ -2,18 +2,22 @@
 
 import { useState } from "react";
 
+import { useParams } from "next/navigation";
+
 import TextInput from "./components/TextInput/TextInput";
 import BirthdateInput from "./components/BirthdateInput/BirthdateInput";
 import MedicalReportDateInput from "./components/MedicalReportDateInput/MedicalReportDateInput";
 
-import users from "@/users";
+import users, { User } from "@/users";
 
 import styles from "./PatientInfo.module.scss";
 
 const today = new Date();
 
 const PatientInfo = () => {
-  const userInfo = users["mariana-machoski"];
+  const { user } = useParams<{ user: User }>();
+
+  const userInfo = users[user];
 
   const [medicalReportDate, setMedicalReportDate] = useState(
     today.toISOString().substring(0, 10)
