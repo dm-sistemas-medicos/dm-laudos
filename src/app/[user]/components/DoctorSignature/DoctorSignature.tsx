@@ -1,16 +1,16 @@
 import Image from "next/image";
 
-import users from "@/users";
+import users, { User } from "@/users";
 
 import styles from "./DoctorSignature.module.scss";
 
-const DoctorSignature = () => {
-  const userInfo = users["mariana-machoski"];
+const DoctorSignature = ({ user }: { user: User }) => {
+  const userInfo = users[user];
 
   return (
     <div className={styles["doctor-signature"]}>
       <Image
-        src={"/mariana-machoski/assinatura.png"}
+        src={`/${user}/assinatura.png`}
         width={75}
         height={75}
         alt="Assinatura"

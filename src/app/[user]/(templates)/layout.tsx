@@ -41,7 +41,7 @@ const Layout = async ({
         </AsideImagesProvider>
       </ImagesProvider>
       <footer className={styles.footer}>
-        <DoctorSignature />
+        <DoctorSignature user={user} />
         <hr />
         <DoctorInfo />
       </footer>
