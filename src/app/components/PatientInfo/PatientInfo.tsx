@@ -6,13 +6,15 @@ import TextInput from "./components/TextInput/TextInput";
 import BirthdateInput from "./components/BirthdateInput/BirthdateInput";
 import MedicalReportDateInput from "./components/MedicalReportDateInput/MedicalReportDateInput";
 
-import userInfo from "@/users/mariana-machoski/user-info.json";
+import users from "@/users";
 
 import styles from "./PatientInfo.module.scss";
 
 const today = new Date();
 
 const PatientInfo = () => {
+  const userInfo = users["mariana-machoski"];
+
   const [medicalReportDate, setMedicalReportDate] = useState(
     today.toISOString().substring(0, 10)
   );
