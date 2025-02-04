@@ -1,17 +1,9 @@
-import Link from "next/link";
-
 import styles from "./page.module.scss";
-import DoctorLogo from "./components/DoctorLogo/DoctorLogo";
 
 const Page = () => (
   <section className={styles.page}>
-    <DoctorLogo />
-    <Link className={styles.button} href="/videonasolaringoscopia">
-      VIDEONASOLARINGOSCOPIA
-    </Link>
-    <Link className={styles.button} href="/videonasoescopia">
-      VIDEONASOESCOPIA
-    </Link>
+    <h1 className={styles.title}>DM Laudos</h1>
+    <p className={styles.description}>Sistema para geração de laudos médicos</p>
   </section>
 );
 

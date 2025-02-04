@@ -1,7 +1,7 @@
 import ExamItem from "../ExamItem/ExamItem";
 import Comments from "../Comments/Comments";
 
-import parentStyles from "@/app/(templates)/layout.module.scss";
+import parentStyles from "@/app/[user]/(templates)/layout.module.scss";
 
 const NasalCavity = () => (
   <fieldset>

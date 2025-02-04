@@ -1,5 +1,5 @@
-import { ImagesProvider } from "../contexts/images-context";
-import { AsideImagesProvider } from "../contexts/aside-images-context";
+import { ImagesProvider } from "@/app/contexts/images-context";
+import { AsideImagesProvider } from "@/app/contexts/aside-images-context";
 
 import DoctorLogo from "../components/DoctorLogo/DoctorLogo";
 import DoctorInfo from "../components/DoctorInfo/DoctorInfo";

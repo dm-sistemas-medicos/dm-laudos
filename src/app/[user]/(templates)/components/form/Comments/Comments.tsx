@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import parentStyles from "@/app/(templates)/layout.module.scss";
+import parentStyles from "@/app/[user]/(templates)/layout.module.scss";
 
 type CommentsProps = {
   parentId?: string;
