@@ -1,10 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 
-const DoctorLogo = ({ user }: { user: string }) => (
+import { User } from "@/users";
+
+const DoctorLogo = ({ user }: { user: User }) => (
   <Link href={`/${user}`}>
     <Image
-      src={"/mariana-machoski/logo.png"}
+      src={`/${user}/logo.png`}
       alt=""
       width={400}
       height={123}
