@@ -7,8 +7,11 @@ const DoctorInfo = ({ user }: { user: User }) => {
 
   return (
     <p className={styles["doctor-info"]}>
-      {userInfo.name}, {userInfo.crm}, {userInfo.rqe} - Email: {userInfo.email}{" "}
-      - Instagram: {userInfo.instagram}
+      <span>
+        {userInfo.name}, {userInfo.crm}, {userInfo.rqe}
+      </span>
+      {userInfo.email && <span> - Email: {userInfo.email}</span>}
+      {userInfo.instagram && <span> - Instagram: {userInfo.instagram}</span>}
     </p>
   );
 };
