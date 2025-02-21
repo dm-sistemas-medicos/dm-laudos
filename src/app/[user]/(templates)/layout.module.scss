@@ -58,6 +58,10 @@
       left: 0;
       height: 1px;
       background-color: #000;
+
+      @media print {
+        background-color: transparent;
+      }
     }
 
     @media print {
