@@ -9,12 +9,14 @@ const DoctorSignature = ({ user }: { user: User }) => {
 
   return (
     <div className={styles["doctor-signature"]}>
-      <Image
-        src={`/${user}/assinatura.png`}
-        width={75}
-        height={75}
-        alt="Assinatura"
-      />
+      {userInfo.hasSignatureImage && (
+        <Image
+          src={`/${user}/assinatura.png`}
+          width={75}
+          height={75}
+          alt="Assinatura"
+        />
+      )}
       {userInfo.signature.map((text, i) => (
         <p key={i}>{text}</p>
       ))}
