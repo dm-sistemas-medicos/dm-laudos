@@ -1,3 +1,5 @@
+import { PropsWithChildren, use } from "react";
+
 import { ImagesProvider } from "@/app/contexts/images-context";
 import { AsideImagesProvider } from "@/app/contexts/aside-images-context";
 
@@ -13,14 +15,12 @@ import PatientInfo from "../components/PatientInfo/PatientInfo";
 
 import styles from "./layout.module.scss";
 
-const Layout = async ({
-  params,
-  children,
-}: {
-  params: Promise<{ user: User }>;
-  children: React.ReactNode;
-}) => {
-  const user = (await params).user;
+type LayoutProps = PropsWithChildren<{
+  params: Promise<{ user: string }>;
+}>;
+
+const Layout = ({ params, children }: LayoutProps) => {
+  const { user } = use(params) as { user: User };
 
   return (
     <section className={styles.page}>

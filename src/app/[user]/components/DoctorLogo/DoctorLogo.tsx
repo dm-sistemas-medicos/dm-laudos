@@ -3,7 +3,11 @@ import Link from "next/link";
 
 import { User } from "@/users";
 
-const DoctorLogo = ({ user }: { user: User }) => (
+type DoctorLogoProps = {
+  user: User;
+};
+
+const DoctorLogo = ({ user }: DoctorLogoProps) => (
   <Link href={`/${user}`}>
     <Image
       src={`/${user}/logo.png`}

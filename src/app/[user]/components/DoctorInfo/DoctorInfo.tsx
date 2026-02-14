@@ -2,7 +2,11 @@ import users, { User } from "@/users";
 
 import styles from "./DoctorInfo.module.scss";
 
-const DoctorInfo = ({ user }: { user: User }) => {
+type DoctorInfoProps = {
+  user: User;
+};
+
+const DoctorInfo = ({ user }: DoctorInfoProps) => {
   const userInfo = users[user];
 
   return (

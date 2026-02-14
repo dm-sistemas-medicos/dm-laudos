@@ -1,5 +1,7 @@
 import "./globals.scss";
 
+import { PropsWithChildren } from "react";
+
 import type { Metadata } from "next";
 
 import { Inter } from "next/font/google";
@@ -11,7 +13,7 @@ export const metadata: Metadata = {
   description: "Sistema para geração de laudos médicos",
 };
 
-const RootLayout = ({ children }: { children: React.ReactNode }) => (
+const RootLayout = ({ children }: PropsWithChildren) => (
   <html lang="pt-BR">
     <body className={inter.className}>{children}</body>
   </html>

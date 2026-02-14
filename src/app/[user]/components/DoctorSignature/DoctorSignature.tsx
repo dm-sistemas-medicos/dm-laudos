@@ -4,7 +4,11 @@ import users, { User } from "@/users";
 
 import styles from "./DoctorSignature.module.scss";
 
-const DoctorSignature = ({ user }: { user: User }) => {
+type DoctorSignatureProps = {
+  user: User;
+};
+
+const DoctorSignature = ({ user }: DoctorSignatureProps) => {
   const userInfo = users[user];
 
   return (
