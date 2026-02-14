@@ -1,4 +1,4 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`DoctorSignature component renders the component 1`] = `
 <div>
@@ -11,8 +11,8 @@ exports[`DoctorSignature component renders the component 1`] = `
       decoding="async"
       height="75"
       loading="lazy"
-      src="/_next/image?url=%2Fassinatura.png&w=256&q=75"
-      srcset="/_next/image?url=%2Fassinatura.png&w=96&q=75 1x, /_next/image?url=%2Fassinatura.png&w=256&q=75 2x"
+      src="/_next/image?url=%2Fmariana-machoski%2Fassinatura.png&w=256&q=75"
+      srcset="/_next/image?url=%2Fmariana-machoski%2Fassinatura.png&w=96&q=75 1x, /_next/image?url=%2Fmariana-machoski%2Fassinatura.png&w=256&q=75 2x"
       style="color: transparent;"
       width="75"
     />

@@ -6,7 +6,7 @@ import DoctorSignature from "./DoctorSignature";
 
 describe("DoctorSignature component", () => {
   it("renders the component", () => {
-    const { container } = render(<DoctorSignature />);
+    const { container } = render(<DoctorSignature user="mariana-machoski" />);
 
     expect(container).toMatchSnapshot();
   });

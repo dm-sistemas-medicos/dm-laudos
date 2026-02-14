@@ -6,7 +6,7 @@ import DoctorLogo from "./DoctorLogo";
 
 describe("DoctorLogo component", () => {
   it("renders the component", () => {
-    const { container } = render(<DoctorLogo />);
+    const { container } = render(<DoctorLogo user="mariana-machoski" />);
 
     expect(container).toMatchSnapshot();
   });

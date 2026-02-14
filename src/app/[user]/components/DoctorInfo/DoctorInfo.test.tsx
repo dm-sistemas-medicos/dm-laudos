@@ -6,7 +6,7 @@ import DoctorInfo from "./DoctorInfo";
 
 describe("DoctorInfo component", () => {
   it("renders the component", () => {
-    const { container } = render(<DoctorInfo />);
+    const { container } = render(<DoctorInfo user="mariana-machoski" />);
 
     expect(container).toMatchSnapshot();
   });

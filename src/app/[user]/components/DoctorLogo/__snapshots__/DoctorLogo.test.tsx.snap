@@ -1,17 +1,17 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`DoctorLogo component renders the component 1`] = `
 <div>
   <a
-    href="/"
+    href="/mariana-machoski"
   >
     <img
       alt=""
       data-nimg="1"
       decoding="async"
       height="123"
-      src="/_next/image?url=%2Flogo.png&w=828&q=75"
-      srcset="/_next/image?url=%2Flogo.png&w=640&q=75 1x, /_next/image?url=%2Flogo.png&w=828&q=75 2x"
+      src="/_next/image?url=%2Fmariana-machoski%2Flogo.png&w=828&q=75"
+      srcset="/_next/image?url=%2Fmariana-machoski%2Flogo.png&w=640&q=75 1x, /_next/image?url=%2Fmariana-machoski%2Flogo.png&w=828&q=75 2x"
       style="color: transparent;"
       width="400"
     />

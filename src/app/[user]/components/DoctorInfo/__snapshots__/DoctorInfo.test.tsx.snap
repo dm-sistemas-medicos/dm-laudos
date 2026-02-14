@@ -1,19 +1,25 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`DoctorInfo component renders the component 1`] = `
 <div>
   <p
     class="doctor-info"
   >
-    Dra. Mariana Machoski
-    , 
-    CRM/SC 35098
-    , 
-    RQE/SC 23991
-     - Email: 
-    marianamachoski@gmail.com
-     - Instagram: 
-    @marimachoski
+    <span>
+      Dra. Mariana Machoski
+      , 
+      CRM/SC 35098
+      , 
+      RQE/SC 23991
+    </span>
+    <span>
+       - Email: 
+      marianamachoski@gmail.com
+    </span>
+    <span>
+       - Instagram: 
+      @marimachoski
+    </span>
   </p>
 </div>
 `;

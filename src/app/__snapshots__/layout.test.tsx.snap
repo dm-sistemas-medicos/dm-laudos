@@ -1,15 +1,7 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Jest Snapshot v1, https://jestjs.io/docs/snapshot-testing
 
 exports[`Root layout renders the layout 1`] = `
 <div>
-  <html
-    lang="pt-BR"
-  >
-    <body
-      class="className"
-    >
-      children
-    </body>
-  </html>
+  children
 </div>
 `;
