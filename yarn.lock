@@ -1770,7 +1770,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^26.1.0":
+"@types/node@npm:*, @types/node@npm:^26.6.5":
   version: 26.6.5
   resolution: "@types/node@npm:26.6.5"
   dependencies:
@@ -1779,7 +1779,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react-dom@npm:^19.2.3":
+"@types/react-dom@npm:^19.3.0":
   version: 19.3.0
   resolution: "@types/react-dom@npm:19.3.0"
   peerDependencies:
@@ -1788,7 +1788,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/react@npm:^19.2.17":
+"@types/react@npm:^19.3.0":
   version: 19.3.0
   resolution: "@types/react@npm:19.3.0"
   dependencies:
@@ -2935,18 +2935,18 @@ __metadata:
     "@testing-library/jest-dom": "npm:^6.9.1"
     "@testing-library/react": "npm:^16.3.3"
     "@types/jest": "npm:^30.0.0"
-    "@types/node": "npm:^26.1.0"
-    "@types/react": "npm:^19.2.17"
-    "@types/react-dom": "npm:^19.2.3"
-    eslint: "npm:^10.6.0"
-    eslint-config-next: "npm:^16.2.10"
+    "@types/node": "npm:^26.6.5"
+    "@types/react": "npm:^19.3.0"
+    "@types/react-dom": "npm:^19.3.0"
+    eslint: "npm:^10.12.0"
+    eslint-config-next: "npm:^16.4.2"
     eslint-config-prettier: "npm:^10.1.8"
-    jest: "npm:^30.4.2"
-    jest-environment-jsdom: "npm:^30.4.1"
-    next: "npm:^16.2.10"
-    react: "npm:^19.2.7"
-    react-dom: "npm:^19.2.7"
-    sass: "npm:^1.101.0"
+    jest: "npm:^30.5.2"
+    jest-environment-jsdom: "npm:^30.5.2"
+    next: "npm:^16.4.2"
+    react: "npm:^19.3.1"
+    react-dom: "npm:^19.3.1"
+    sass: "npm:^1.105.1"
     typescript: "npm:^6.0.3"
   languageName: unknown
   linkType: soft
@@ -3227,7 +3227,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-config-next@npm:^16.2.10":
+"eslint-config-next@npm:^16.4.2":
   version: 16.4.2
   resolution: "eslint-config-next@npm:16.4.2"
   dependencies:
@@ -3431,7 +3431,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint@npm:^10.6.0":
+"eslint@npm:^10.12.0":
   version: 10.12.0
   resolution: "eslint@npm:10.12.0"
   dependencies:
@@ -4639,7 +4639,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jest-environment-jsdom@npm:^30.4.1":
+"jest-environment-jsdom@npm:^30.5.2":
   version: 30.5.2
   resolution: "jest-environment-jsdom@npm:30.5.2"
   dependencies:
@@ -4921,7 +4921,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"jest@npm:^30.4.2":
+"jest@npm:^30.5.2":
   version: 30.5.2
   resolution: "jest@npm:30.5.2"
   dependencies:
@@ -5300,7 +5300,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"next@npm:^16.2.10":
+"next@npm:^16.4.2":
   version: 16.4.2
   resolution: "next@npm:16.4.2"
   dependencies:
@@ -5811,7 +5811,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react-dom@npm:^19.2.7":
+"react-dom@npm:^19.3.1":
   version: 19.3.1
   resolution: "react-dom@npm:19.3.1"
   dependencies:
@@ -5836,7 +5836,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"react@npm:^19.2.7":
+"react@npm:^19.3.1":
   version: 19.3.1
   resolution: "react@npm:19.3.1"
   checksum: 10c0/f0ed036d1223562c09c8347858ca712733ea6e27a30db709ee9c3f3f176d3e9e767afce735d59956addf3d030102e256bba82dea635fc1bdb0e01107e98fef10
@@ -6016,7 +6016,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"sass@npm:^1.101.0":
+"sass@npm:^1.105.1":
   version: 1.105.1
   resolution: "sass@npm:1.105.1"
   dependencies:
